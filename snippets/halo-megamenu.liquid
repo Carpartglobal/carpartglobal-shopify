@@ -1,0 +1,77 @@
+{%- comment -%}
+  HALO CUSTOM MEGA MENU – STYLE 6 (EXTENDED)
+  Supports:
+  - Match by Menu Title
+  - Up to 30 items
+  - 3 promo images
+{%- endcomment -%}
+
+{%- assign current_title = link.title | strip | downcase -%}
+
+{%- for block in section.blocks -%}
+  {%- if block.type == 'mega_style_6' -%}
+    {%- assign block_title = block.settings.menu_title | strip | downcase -%}
+
+    {%- if current_title == block_title -%}
+
+<div class="menu-dropdown custom-scrollbar megamenu_style_6 p-absolute top-auto left-0 w-100 zi-10 o-x-hidden o-y-auto text-left opacity-0"
+     data-mega-menu="{{ block_title | handle }}">
+
+  <div class="container" style="--container_size: 1200px">
+    <div class="menu-dropdown__wrapper d-flex flex-align-stretch">
+
+      <!-- LEFT GRID (30 ITEMS) -->
+      <div class="menu-dropdown__column menu-dropdown__column-4 w-auto">
+        <div class="halo-mega-grid">
+
+          {%- for i in (1..30) -%}
+            {%- assign label = 'label_' | append: i -%}
+            {%- assign linkk = 'link_' | append: i -%}
+            {%- assign icon = 'icon_' | append: i -%}
+
+            {%- if block.settings[label] != blank -%}
+              <a href="{{ block.settings[linkk] | default: '#' }}"
+                 class="halo-mega-item">
+
+                {%- if block.settings[icon] != blank -%}
+                  <img src="{{ block.settings[icon] | image_url: width: 60 }}" alt="">
+                {%- endif -%}
+
+                <span>{{ block.settings[label] }}</span>
+              </a>
+            {%- endif -%}
+          {%- endfor -%}
+
+        </div>
+      </div>
+
+      <!-- RIGHT PROMO IMAGES -->
+      <div class="menu-dropdown__banner halo-mega-promos">
+
+        {%- if block.settings.promo_1 != blank -%}
+          <a href="{{ block.settings.promo_1_link }}">
+            <img src="{{ block.settings.promo_1 | image_url: width: 500 }}">
+          </a>
+        {%- endif -%}
+
+        {%- if block.settings.promo_2 != blank -%}
+          <a href="{{ block.settings.promo_2_link }}">
+            <img src="{{ block.settings.promo_2 | image_url: width: 500 }}">
+          </a>
+        {%- endif -%}
+
+        {%- if block.settings.promo_3 != blank -%}
+          <a href="{{ block.settings.promo_3_link }}">
+            <img src="{{ block.settings.promo_3 | image_url: width: 500 }}">
+          </a>
+        {%- endif -%}
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}

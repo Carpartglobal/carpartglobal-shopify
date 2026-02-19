@@ -1,0 +1,78 @@
+<div class="sema-search-bar page-width">
+  <form action="/pages/catalog-search-sd" method="GET" id="form-searchbar">
+    <div>
+      <select id="year-select" name="yearselect" class="catalog-select">
+        <option value="">- Year -</option>
+      </select>
+      <select id="make-select" name="makeselect" class="catalog-select" disabled>
+        <option value="">- Make -</option>
+      </select>
+      <select id="model-select" name="modelselect" class="catalog-select" disabled>
+        <option value="">- Model -</option>
+      </select>
+      <select id="sub-model-select" name="submodelselect" class="catalog-select" disabled>
+        <option value="">- Sub-Model -</option>
+      </select>
+      <button class="dba-search-btn" id="search">search</button>
+      <button class="dba-search-btn" id="reset">reset</button>
+    </div>
+  </form>
+</div>
+
+{% schema %}
+{
+  "name": "SEMA Search Bar",
+  "settings": [
+  ],
+  "presets": [
+    {
+      "name": "SEMA Search Bar",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+{% stylesheet %}
+  .sema-search-bar {
+      flex-flow: nowrap;
+      width: 100%;
+      padding: 8px;
+  }
+  .dba-search-btn{
+      background: #1a1a1a none repeat scroll 0 0;
+      border: 0 none;
+      border-radius: 2px;
+      color: #fff;
+      font-family: Montserrat,"Helvetica Neue",sans-serif;
+      font-weight: 100;
+      letter-spacing: 0.046875em;
+      line-height: 1;
+      padding: 9px;
+      text-transform: uppercase;
+      margin:1px;
+      width: 10%;
+      font-size:14
+
+  }
+  button.dba-search-btn:disabled {
+    background: #777;
+    cursor: not-allowed;
+  }    
+  .catalog-select{
+      width: 18%;
+      padding: 5px;
+      border-radius: 0;
+      border-width: 1px;
+      border-style: solid;
+    display:inline-block;
+  }
+  @media only screen and (max-width: 768px) {
+      #year-select, #make-select, #model-select, #sub-model-select, #search,#reset{
+            width: 100%;
+            margin: 1px;
+      }
+  }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

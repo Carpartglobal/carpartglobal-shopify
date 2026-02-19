@@ -1,0 +1,142 @@
+{% comment %}
+  Halo Custom Mega Menu – Style 6
+{% endcomment %}
+
+{% if section.settings.enable and section.settings.menu_label != blank %}
+
+
+<div
+  class="halo-custom-mega-menu"
+  data-mega-menu="{{ section.settings.menu_label | handleize }}"
+  style="display:none;"
+>
+  <div class="container">
+    <div class="mega-inner">
+ <!-- MAIN TITLE -->
+  <span class="mega-item-main-title">
+    {{ section.settings.menu_label }}
+  </span>
+  <div class="mega-inner-sub">
+      <!-- LEFT ITEMS -->
+  <div class="mega-items">
+  {% for block in section.blocks %}
+    {% if block.type == 'item' %}
+      <a href="{{ block.settings.link }}" class="mega-item">
+        
+        {% if block.settings.icon %}
+          <img src="{{ block.settings.icon | image_url: width: 60 }}">
+        {% endif %}
+
+        {% if block.settings.title != blank %}
+          <span class="mega-item-title">
+            {{ block.settings.title }}
+          </span>
+        {% endif %}
+
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+      <!-- RIGHT BANNERS -->
+      <div class="mega-banners">
+       {% if section.settings.banner_1 %}
+  <img src="{{ section.settings.banner_1 | image_url: width: 400 }}">
+{% endif %}
+{% if section.settings.banner_2 %}
+  <img src="{{ section.settings.banner_2 | image_url: width: 400 }}">
+{% endif %}
+
+    {% if section.settings.banner_3 %}
+  <img src="{{ section.settings.banner_3 | image_url: width: 400 }}">
+{% endif %}
+
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+
+
+{% schema %}
+{
+  "name": "Halo – Custom Mega Menu",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable",
+      "label": "Enable Mega Menu",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "menu_label",
+      "label": "Nav Label Name",
+      "info": "Must match header menu text exactly (example: Regular Service)"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_1",
+      "label": "Banner Image 1"
+    },
+    {
+      "type": "url",
+      "id": "banner_1_link",
+      "label": "Banner Link 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_2",
+      "label": "Banner Image 2"
+    },
+    {
+      "type": "url",
+      "id": "banner_2_link",
+      "label": "Banner Link 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner_3",
+      "label": "Banner Image 3"
+    },
+    {
+      "type": "url",
+      "id": "banner_3_link",
+      "label": "Banner Link 3"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Mega Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Item Title"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Item Link"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Item Icon"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 30,
+  "presets": [
+    {
+      "name": "Halo Custom Mega Menu"
+    }
+  ]
+}
+{% endschema %}

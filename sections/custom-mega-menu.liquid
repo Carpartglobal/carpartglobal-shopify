@@ -1,0 +1,117 @@
+{% if section.settings.enable %}
+<div class="custom-mega-menu"
+     data-mega-label="{{ section.settings.menu_label | handle }}">
+  <div class="custom-mega-inner">
+
+    <!-- LEFT GRID -->
+    <div class="custom-mega-grid">
+      {% for block in section.blocks %}
+        <a href="{{ block.settings.link }}" class="custom-mega-item">
+          {% if block.settings.icon %}
+            <img src="{{ block.settings.icon | image_url: width: 80 }}">
+          {% endif %}
+          <span>{{ block.settings.title }}</span>
+        </a>
+      {% endfor %}
+    </div>
+
+    <!-- RIGHT IMAGES -->
+    <div class="custom-mega-side">
+      {% if section.settings.image_1 %}
+        <img src="{{ section.settings.image_1 | image_url: width: 600 }}">
+      {% endif %}
+      {% if section.settings.image_2 %}
+        <img src="{{ section.settings.image_2 | image_url: width: 600 }}">
+      {% endif %}
+      {% if section.settings.image_3 %}
+        <img src="{{ section.settings.image_3 | image_url: width: 600 }}">
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+{% endif %}
+
+<style>
+.custom-mega-menu{
+  position:absolute;
+  width:90%;
+  left:50%;
+  transform:translateX(-50%);
+  background:#fff;
+  padding:30px;
+  display:none;
+  z-index:999;
+}
+.custom-mega-inner{
+  display:flex;
+  gap:30px;
+}
+.custom-mega-grid{
+  flex:1;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+.custom-mega-item{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:#f5f5f5;
+  padding:10px;
+  border-radius:6px;
+  text-decoration:none;
+  color:#000;
+}
+.custom-mega-item img{
+  width:36px;
+}
+.custom-mega-side{
+  width:280px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+.custom-mega-side img{
+  width:100%;
+  border-radius:6px;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Custom Mega Menu",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable",
+      "label": "Enable",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "menu_label",
+      "label": "Navigation Label Name",
+      "info": "Example: Regular Service"
+    },
+    { "type": "image_picker", "id": "image_1", "label": "Side Image 1" },
+    { "type": "image_picker", "id": "image_2", "label": "Side Image 2" },
+    { "type": "image_picker", "id": "image_3", "label": "Side Image 3" }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Menu Item",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Label Title" },
+        { "type": "url", "id": "link", "label": "Link" },
+        { "type": "image_picker", "id": "icon", "label": "Icon" }
+      ]
+    }
+  ],
+  "max_blocks": 30,
+  "presets": [
+    { "name": "Custom Mega Menu" }
+  ]
+}
+{% endschema %}

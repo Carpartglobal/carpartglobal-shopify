@@ -1,0 +1,254 @@
+{% comment %}
+  Shop By Brands – Grid with Load More
+{% endcomment %}
+
+<section class="shop-by-brands">
+  <div class="brands-container">
+
+    {% if section.settings.heading != blank %}
+      <h2 class="brands-heading">
+        {{ section.settings.heading }}
+      </h2>
+    {% endif %}
+
+    <!-- BRANDS GRID -->
+    <div id="brandsGrid-{{ section.id }}"
+         class="brands-grid collapsed">
+
+      {% for block in section.blocks %}
+        <a href="{{ block.settings.brand_link }}"
+           class="brand-item"
+           {{ block.shopify_attributes }}>
+
+          {% if block.settings.brand_image != blank %}
+            <img
+              src="{{ block.settings.brand_image | image_url: width: 120 }}"
+              alt="{{ block.settings.brand_title }}"
+              loading="lazy"
+              class="brand-logo">
+          {% endif %}
+
+          <span class="brand-title">
+            {{ block.settings.brand_title }}
+          </span>
+
+          <span class="arrow">›</span>
+        </a>
+      {% endfor %}
+
+    </div>
+
+    {% if section.blocks.size > 18 %}
+      <!-- LOAD MORE BUTTON -->
+      <div class="brands-btn-wrap">
+        <button type="button"
+                class="brands-toggle-btn"
+                data-target="brandsGrid-{{ section.id }}">
+          <span class="btn-text">Load More Brands</span>
+          <span class="btn-arrow">⌄</span>
+        </button>
+      </div>
+    {% endif %}
+
+  </div>
+</section>
+
+<style>
+/* CONTAINER */
+.shop-by-brands {
+  padding: 2rem 1rem;
+}
+
+.brands-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADING */
+.brands-heading {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #000000;
+}
+
+/* GRID */
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  transition: max-height .5s ease;
+}
+
+/* COLLAPSED HEIGHT (3 ROWS) */
+.brands-grid.collapsed {
+  max-height: 320px;
+  overflow: hidden;
+}
+
+/* BRAND ITEM (STYLE FROM SECTION 1) */
+.brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 14px;
+  background: #f6f7f8;
+  border: 1px solid #e6e7e8;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.brand-item:hover {
+  background: #000000;
+  color: #fff;
+}
+
+.brand-item:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* LOGO */
+.brand-logo {
+ max-width: 78px;
+    max-height: 37px;
+  object-fit: contain;
+}
+
+/* TITLE */
+.brand-title {
+        text-align: -webkit-center;
+  width: 98px;
+  font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px!important;
+}
+
+/* ARROW */
+.arrow {
+  font-weight: bold;
+  transition: transform .3s ease;
+}
+
+/* BUTTON */
+.brands-btn-wrap {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.brands-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 32px;
+  border-radius: 10px;
+  background: #000000;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background .3s ease;
+}
+
+.brands-toggle-btn:hover {
+  background: #081f6a;
+}
+
+.btn-arrow {
+  transition: transform .3s ease;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .brands-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+.brand-item {
+    display: flex;
+   
+   padding: 10px 10px !important;
+   
+    
+    flex-wrap: wrap!important;
+}
+.brand-title {
+    text-align: left!important;
+    width: 88%!important;
+    font-size: 10px!important;
+}
+  .brands-grid.collapsed {
+    max-height: 390px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('click', function (e) {
+  const btn = e.target.closest('.brands-toggle-btn');
+  if (!btn) return;
+
+  const grid = document.getElementById(btn.dataset.target);
+  const text = btn.querySelector('.btn-text');
+  const arrow = btn.querySelector('.btn-arrow');
+
+  grid.classList.toggle('collapsed');
+
+  const collapsed = grid.classList.contains('collapsed');
+  text.textContent = collapsed ? 'Load More Brands' : 'Show Less';
+  arrow.style.transform = collapsed ? 'rotate(0deg)' : 'rotate(180deg)';
+});
+</script>
+
+{% schema %}
+{
+  "name": "Shop By Brands",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Shop By Brands"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand",
+      "settings": [
+        {
+          "type": "text",
+          "id": "brand_title",
+          "label": "Brand Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "brand_image",
+          "label": "Brand Logo"
+        },
+        {
+          "type": "url",
+          "id": "brand_link",
+          "label": "Brand Link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 60,
+  "presets": [
+    {
+      "name": "Shop By Brands"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,209 @@
+{% comment %}
+  Shopify-Compatible FAQ Tabs Section
+  Each block = one FAQ (with Tab name, Question, Answer)
+  Tabs auto-group by their tab_title
+{% endcomment %}
+
+<div class="faq-wrapper" style="display:flex; gap:90px; max-width:1200px; margin:0 auto; padding:80px 20px;">
+
+  <!-- LEFT SIDE TABS -->
+  <div class="faq-tabs" style="flex:1; max-width:250px;">
+    <ul style="list-style:none; padding:0; margin:0;">
+      {% assign tabs = section.blocks | map: "settings" | map: "tab_title" | uniq %}
+      {% for tab_title in tabs %}
+        <li class="faq-tab {% if forloop.first %}active{% endif %}" data-target="tab-{{ forloop.index }}">
+          {{ tab_title }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- RIGHT SIDE FAQ CONTENT -->
+  <div class="faq-content" style="flex:3;">
+    <div style="margin-bottom:30px;">
+      <h4 style="margin:0; font-size:16px; font-weight:500; color:#000;">NEED HELP</h4>
+      <h2 style="margin:5px 0 0; font-size:28px; font-weight:700; color:#000;">Frequently Asked Questions</h2>
+    </div>
+
+    {% assign tabs = section.blocks | map: "settings" | map: "tab_title" | uniq %}
+    {% for tab_title in tabs %}
+      <div class="faq-group {% if forloop.first %}active{% endif %}" id="tab-{{ forloop.index }}">
+        {% for block in section.blocks %}
+          {% if block.settings.tab_title == tab_title %}
+            <div class="faq-item">
+              <div class="faq-question">{{ block.settings.question }} <span class="toggle">+</span></div>
+              <div class="faq-answer">{{ block.settings.answer }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  /* Tabs */
+  .faq-tabs li {
+    text-wrap: nowrap;
+   text-transform: uppercase;
+    text-align: -webkit-left;
+    min-width: 257px;
+    border-bottom: 1px solid #d8d8d8;
+    float: left;
+    cursor: pointer;
+    padding: 12px 15px;
+    border-left: 3px solid transparent;
+    color: #000;
+    transition: all 0.5s ease;
+  }
+  .faq-tabs li.active {
+    text-wrap: nowrap;
+    font-weight: 600;
+    border-left: 3px solid #000;
+  }
+
+  /* FAQ Group */
+  .faq-group { display: none; }
+  .faq-group.active { display: block; }
+
+  /* FAQ Item */
+  .faq-item {
+    border-bottom: 1px solid #000;
+    padding: 15px 0;
+  }
+  .faq-question {
+    text-align: -webkit-left;
+    font-weight: 500;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+  }
+  .faq-answer {
+    text-align: left;
+    display: none;
+    padding-top: 10px;
+    color: #000;
+  }
+  .faq-tabs {
+    margin-top: 114px;
+}
+  .faq-item.open .faq-answer { text-align-last: left; display: block; font-size: 14px; }
+  .faq-item.open .toggle { content: "-"; }
+  .faq-item.open .faq-question .toggle { transform: rotate(180deg); }
+  @media (max-width:600px){
+    .faq-wrapper { flex-direction: column; }
+    .faq-tabs {
+    margin-top: 14px;
+}
+  }
+  div#shopify-section-template--20028718088451__faq_tabs_FQrTeb {
+    background: white;
+}
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Tab switching
+    document.querySelectorAll('.faq-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.faq-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.faq-group').forEach(g => g.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.target).classList.add('active');
+      });
+    });
+
+    // FAQ toggle open/close
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        item.classList.toggle('open');
+        const toggle = q.querySelector('.toggle');
+        toggle.textContent = item.classList.contains('open') ? '-' : '+';
+      });
+    });
+  });
+</script>
+
+
+
+
+<script>
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const view = params.get('view');
+  const tab = params.get('tab');
+
+  if (view === 'faq' && tab === '2') {
+
+    function activateTab2() {
+      const tab2 = document.querySelector('.faq-tab[data-target="tab-2"]');
+      const content2 = document.querySelector('#tab-2');
+
+      if (tab2 && content2) {
+        // Remove active from all tabs and groups
+        document.querySelectorAll('.faq-tab').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.faq-group').forEach(el => el.classList.remove('active'));
+
+        // Activate tab 2 and its group (uses your existing CSS)
+        tab2.classList.add('active');
+        content2.classList.add('active');
+        return true;
+      }
+      return false;
+    }
+
+    // Observe until elements exist
+    const observer = new MutationObserver(() => {
+      if (activateTab2()) observer.disconnect();
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    // Fallback check every half second
+    const interval = setInterval(() => {
+      if (activateTab2()) clearInterval(interval);
+    }, 500);
+  }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "FAQ Tabs Section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_title",
+          "label": "Tab Title (e.g. Shipping & Returns)"
+        },
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 100,
+  "presets": [
+    {
+      "name": "FAQ Tabs",
+      "category": "FAQ"
+    }
+  ]
+}
+{% endschema %}
+

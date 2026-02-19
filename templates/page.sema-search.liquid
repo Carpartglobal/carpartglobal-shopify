@@ -1,0 +1,86 @@
+<link rel='stylesheet' id='catalog-search-css'  href='https://demo.semadata.org/shopify/css/semasearch.css' type='text/css' media='all' />
+<link rel='stylesheet' href='https://demo.semadata.org/shopify/css/jtree.css' type='text/css' media='all' />
+<link rel='stylesheet' href='https://demo.semadata.org/shopify/css/pagination.css' type='text/css' media='all' />
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+
+{% comment %} Use string splitting to pull the value from content_for_header and apply some string clean up {% endcomment %}
+{% assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+   replace:'\/','/' | 
+   replace:'%20',' ' | 
+   replace:'\u0026','&'
+%}
+{% assign parts = pageUrl | split:'/' %}
+<script>var Shopify = Shopify || {};
+{%- if template.name == 'collection' -%}
+Shopify.baseURL='/collections/';
+Shopify.category='{{parts[2]}}';
+Shopify.domain='{{shop.permanent_domain}}';
+{%- else -%}
+Shopify.baseURL='/pages/{{page.handle}}/';
+Shopify.category='{{parts[3]}}';
+Shopify.domain='{{shop.permanent_domain}}';
+{%- endif -%}
+</script>
+
+<div class="page-width"><div class="entry-content">
+   <div class="ymms-bar">
+      <select id="year-select" name="yearselect" class="catalog-select">
+         <option value="">- Year -</option>
+      </select>
+      <select disabled="disabled" id="make-select" name="makeselect" class="catalog-select">
+         <option value="">- Make -</option>
+      </select>
+      <select disabled="disabled" id="model-select" name="modelselect" class="catalog-select">
+         <option value="">- Model -</option>
+      </select>
+      <select disabled="disabled" id="sub-model-select" name="submodelselect" class="catalog-select">
+         <option value="">- Sub-Model -</option>
+      </select>
+      <div class="search-controls">
+         <button class="dba-search-btn" id="search" disabled="disabled" >search</button>
+         <button class="dba-search-btn" id="reset" disabled="disabled" >reset</button>
+      </div>
+   </div>
+   <div id="container1">
+      <div id="col1">
+         <div class="sema-search-container">
+            <input type="text" class="sema-search-box" id="sema-text-search-input" title="Search For a Product.." placeholder="Search For a Product..">
+            <button class="sema-search-button" id="sema-text-search-button" >Go</button>
+         </div>
+         <div id="tree">&nbsp;</div>
+         <div id="product-filter-list" class="product-filter-list">
+         </div>
+      </div>
+      <div id="col2">
+         <div id="search-main">
+            <div class="col-header">
+               Products 
+               <div class="search-title-text"></div>
+            </div>
+            <div id="search-title-div">
+               <div id="filter_category" class="ags-breadcrumb" style="display:none;">
+                  <span class="ags_sticky_link_label">Category: </span>
+                  <span id="filter_category_value" class="ags_sticky_link_value"></span>
+                  <a class="ags-sticky-remove">✘</a>
+               </div>
+               <div id="filter_keyword" class="ags-breadcrumb" style="display:none;">
+                  <span class="ags_sticky_link_label">Keyword: </span>
+                  <span id="filter_keyword_value" class="ags_sticky_link_value"></span>
+                  <a class="ags-sticky-remove">✘</a>
+               </div>
+               <div id="filter_YMM" class="ags-breadcrumb" style="display:none;">
+                  <span class="ags_sticky_link_label">Year/Make/Model: </span>
+                  <span id="filter_YMM_value" class="ags_sticky_link_value"></span>
+                  <a class="ags-sticky-remove" id="gs_sticky_ymm">✘</a>
+               </div>
+            </div>
+            <div id="loader-div-out"></div>
+         </div>
+         <div id="pagination-product">
+            <div class="paginationjs">
+               <div class="paginationjs-pages" id="paginationjs-pages"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div></div>

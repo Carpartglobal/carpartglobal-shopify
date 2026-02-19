@@ -1,0 +1,241 @@
+<section class="cpg-tabs-section">
+  <div class="cpg-container">
+    <h2 class="cpg-heading">
+      Shop By <span>Categories</span>
+    </h2>
+
+    <!-- TABS -->
+    <div class="cpg-tabs">
+      {% for block in section.blocks %}
+        {% if block.type == 'tab' %}
+          <button
+            class="cpg-tab-btn {% if forloop.first %}active{% endif %}"
+            data-tab="{{ block.id }}">
+            {{ block.settings.tab_name }}
+          </button>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- TAB CONTENT -->
+    {% for block in section.blocks %}
+      {% if block.type == 'tab' %}
+        <div class="cpg-tab-content {% if forloop.first %}active{% endif %}" data-tab-content="{{ block.id }}">
+          <div class="cpg-grid collapsed">
+            {% for cat in section.blocks %}
+              {% if cat.type == 'category' and cat.settings.parent_tab == block.id %}
+                <a href="{{ cat.settings.category_link }}" class="category-card">
+                  <img src="{{ cat.settings.category_image | img_url: '200x' }}" alt="">
+                  <div class="card-title">{{ cat.settings.category_name }}</div>
+                </a>
+              {% endif %}
+            {% endfor %}
+          </div>
+
+          <!-- MOBILE LOAD MORE -->
+          <div class="cpg-load-more">
+            <button class="load-more-btn">Load More Categories</button>
+          </div>
+
+          <!-- VIEW ALL -->
+          <div class="cpg-view-all">
+            <a href="{{ block.settings.tab_url }}" class="view-all-btn">
+              View All {{ block.settings.tab_name }}
+            </a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+.cpg-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 4rem 1rem;
+  font-family: Inter, sans-serif;
+}
+
+.cpg-heading {
+  text-align: center;
+     font-weight: 700;
+    font-family: 'Montserrat';
+    font-size: 22px;
+   
+  margin-bottom: 30px;
+}
+.cpg-heading span { color: #e5002b; }
+
+/* Tabs */
+.cpg-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.cpg-tab-btn {
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+.cpg-tab-btn.active {
+  background: #e5002b;
+  color: #fff;
+  border-color: #e5002b;
+}
+.category-card img {
+    object-fit: contain;
+    height: 120px;
+}
+/* Tab Content */
+.cpg-tab-content { display: none; }
+.cpg-tab-content.active { display: block; }
+
+/* Grid */
+.cpg-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+@media (max-width: 1024px) {
+  .cpg-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 640px) {
+  .cpg-grid { grid-template-columns: repeat(3, 1fr); }
+  .cpg-grid.collapsed {
+    max-height: 390px;
+    overflow: hidden;
+  }
+  .card-title {
+  text-align: -webkit-center;
+   
+    font-size: 12px !important;
+}
+}
+@media (min-width: 1024px){
+.collapsed {
+    max-height: 1500px!important;
+}
+.cpg-tab-btn {
+    font-size: 15px;
+}
+.card-title {
+  text-align: -webkit-center;
+    min-height: 32px;
+    font-size: 13px !important;
+}
+}
+/* Cards (UNCHANGED styling) */
+.category-card {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  min-height: 120px;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .3s ease;
+  text-decoration: none;
+}
+
+.category-card:hover .card-title {
+ color:#e5002b;
+}
+.card-title {
+  font-size: 11px!important;
+  font-weight: 500;
+  padding-top: 4px;
+  color: #111;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: -webkit-left!important;
+}
+
+/* Buttons */
+.cpg-load-more {
+  display: none;
+  text-align: center;
+  margin-top: 24px;
+}
+@media (max-width: 640px) {
+  .cpg-load-more { display: block; }
+}
+.load-more-btn,
+.view-all-btn {
+  background: #e5002b;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+}
+.cpg-view-all {
+  text-align: center;
+  margin-top: 28px;
+}
+</style>
+
+<script>
+document.querySelectorAll('.cpg-tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.cpg-tab-btn, .cpg-tab-content')
+      .forEach(el => el.classList.remove('active'));
+
+    btn.classList.add('active');
+    document.querySelector(`[data-tab-content="${btn.dataset.tab}"]`)
+      .classList.add('active');
+  });
+});
+
+document.querySelectorAll('.load-more-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    const grid = e.target.closest('.cpg-tab-content').querySelector('.cpg-grid');
+    grid.classList.toggle('collapsed');
+    btn.textContent = grid.classList.contains('collapsed')
+      ? 'Load More Categories'
+      : 'Show Less';
+  });
+});
+</script>
+
+{% schema %}
+{
+  "name": "Category Tabs Grid",
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        { "type": "text", "id": "tab_name", "label": "Tab Name" },
+        { "type": "url", "id": "tab_url", "label": "Tab URL (View All)" }
+      ]
+    },
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+        { "type": "text", "id": "category_name", "label": "Category Name" },
+        { "type": "image_picker", "id": "category_image", "label": "Category Image" },
+        { "type": "url", "id": "category_link", "label": "Category Link" },
+        {
+          "type": "text",
+          "id": "parent_tab",
+          "label": "Parent Tab ID",
+          "info": "Paste the Tab block ID this category belongs to"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Shop By Categories Tabs" }
+  ]
+}
+{% endschema %}

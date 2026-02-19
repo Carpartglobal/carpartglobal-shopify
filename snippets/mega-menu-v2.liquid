@@ -1,0 +1,102 @@
+<style>
+    .mega-menu-container {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #000000;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  padding: 30px 0;
+  display: none; /* Toggle with JS or Hover */
+  z-index: 100;
+}
+
+.mega-menu-wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.mega-menu-nav { flex: 3; }
+.mega-menu-banner { flex: 1; min-width: 250px; }
+
+.mega-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.mega-menu-link {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: red;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.mega-menu-link:hover { background: #eee; }
+
+.item-icon { width: 40px; margin-right: 15px; }
+
+.promo-card {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.promo-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+
+<p>
+    mega menu v2
+</p>
+
+<div class="mega-menu-container" id="MegaMenu-{{ link.title | handle }}">
+  <div class="container">
+    <div class="mega-menu-wrapper">
+      
+      <div class="mega-menu-nav">
+        <h3 class="mega-menu-title">{{ link.title }}</h3>
+        <div class="mega-menu-grid">
+          {% for childlink in link.links %}
+            <div class="mega-menu-item">
+              <a href="{{ childlink.url }}" class="mega-menu-link">
+                <div class="item-icon">
+                  <img src="{{ childlink.object.image | img_url: '100x' }}" alt="">
+                </div>
+                <span class="item-text">{{ childlink.title }}</span>
+                <span class="arrow">›</span>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      {% if section.blocks.size > 0 %}
+        <div class="mega-menu-banner">
+          {% for block in section.blocks %}
+            {% if block.type == 'banner' %}
+              <a href="{{ block.settings.banner_link }}" class="promo-link">
+                <div class="promo-card">
+                  <img src="{{ block.settings.banner_image | img_url: '600x' }}" alt="Promo">
+                  <div class="promo-overlay">
+                    <p>{{ block.settings.banner_text }}</p>
+                  </div>
+                </div>
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+</div>

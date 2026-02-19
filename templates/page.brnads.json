@@ -1,0 +1,1262 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "custom_liquid_Tw9KTa": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<style>\n  .stats-section {\n    max-width: 1200px;\n    margin: 0px auto;\n    padding: 20px;\n  }\n\n  .stats-grid {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 20px;\n    text-align: center;\n  }\n\n  .stat-box {\n    border: 1px solid #eee;\n    padding: 30px 15px;\n    border-radius: 8px;\n    background: #fff;\n  }\n\n  .stat-icon {\ntext-align: -webkit-center;\n    font-size: 40px;\n    color: #e5002b;\n    margin-bottom: 10px;\n  }\n\n  .stat-number {\n    font-size: 28px;\n    font-weight: 700;\n    color: #e5002b;\n    margin: 5px 0;\n  }\n\n  .stat-title {\n    font-size: 16px;\n    font-weight: 600;\n    color: #333;\n  }\n\n  /* Mobile responsive */\n  @media (max-width: 768px) {\n    .stats-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n.stat-box {\n    border: 1px solid #eee;\n    padding: 20px 5px;\n    border-radius: 8px;\n    background: #fff;\n  }\n.stat-icon {\n    font-size: 30px;\n    color: #e5002b;\n    margin-bottom: 10px;\n  }\n .stat-number {\n    font-size: 20px;\n    font-weight: 700;\n    color: #e5002b;\n    margin: 5px 0;\n  }\n .stat-title {\n    font-size: 12px;\n    font-weight: 600;\n    color: #333;\n  }\n  }\n\n  @media (max-width: 480px) {\n     .stats-grid {\n    gap: 10px;\n}\n  }\n</style>\n\n<div class=\"stats-section\">\n  <div class=\"stats-grid\">\n\n    <div class=\"stat-box\">\n      <div class=\"stat-icon\"><img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Auto_Parts.png?v=1768490135\"></div>\n      <div class=\"stat-number\">790,000+</div>\n      <div class=\"stat-title\">Auto Parts</div>\n    </div>\n\n    <div class=\"stat-box\">\n      <div class=\"stat-icon\"><img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Trusted_Brands.png?v=1768490135\"></div>\n      <div class=\"stat-number\">250+</div>\n      <div class=\"stat-title\">Trusted Brands</div>\n    </div>\n\n    <div class=\"stat-box\">\n      <div class=\"stat-icon\"><img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Vehicle_Fits.png?v=1768490135\"></div>\n      <div class=\"stat-number\">20,000+</div>\n      <div class=\"stat-title\">Vehicle Fits</div>\n    </div>\n\n    <div class=\"stat-box\">\n      <div class=\"stat-icon\"><img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/itment_Accuracy.png?v=1768490134\"></div>\n      <div class=\"stat-number\">99%</div>\n      <div class=\"stat-title\">Fitment Accuracy</div>\n    </div>\n\n  </div>\n</div>"
+      }
+    },
+    "shop_by_brands_xKKFw6": {
+      "type": "shop-by-brands",
+      "blocks": {
+        "brand_pHM3yT": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "DV8 OFFROAD",
+            "brand_image": "shopify://shop_images/logo_5b0bf7c5-bac1-43e1-81e8-85cff2cbafbc.png",
+            "brand_link": "shopify://collections/dv8-offroad"
+          }
+        },
+        "brand_P8MkVf": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Warn",
+            "brand_image": "shopify://shop_images/WARN_LOGO_842271a4-6d0d-4572-99b3-b5c241479227.jpg",
+            "brand_link": "shopify://collections/warn"
+          }
+        },
+        "brand_4k7DBp": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Addictive Desert Designs",
+            "brand_image": "shopify://shop_images/logo__89526.webp",
+            "brand_link": "shopify://collections/addictive-desert-designs"
+          }
+        },
+        "brand_aj3Xkg": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Advanced Clutch",
+            "brand_image": "shopify://shop_images/ACT_Logo_a4284d03-b44f-42ea-b396-cace5366e15f.png",
+            "brand_link": "shopify://collections/advanced-clutch"
+          }
+        },
+        "brand_CwFA9W": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "BDS Suspension",
+            "brand_image": "shopify://shop_images/BDS-vert-silver.png",
+            "brand_link": "shopify://collections/bds-suspension"
+          }
+        },
+        "brand_mjCqrW": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Bilstein",
+            "brand_image": "shopify://shop_images/Logo_465b8250-05b7-41f8-9388-e8fb469523a2.jpg",
+            "brand_link": "shopify://collections/bilstein"
+          }
+        },
+        "brand_9LFQ3c": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Borla",
+            "brand_image": "shopify://shop_images/BORLA_Exhaust_Logo_ec20d00c-3286-44cf-b26f-78a2011a5b5f.jpg",
+            "brand_link": "shopify://collections/borla"
+          }
+        },
+        "brand_jqnpzY": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "ANZO USA",
+            "brand_image": "shopify://shop_images/AnzoUSA_logo_970a4a88-85e9-4100-aff7-1f784013b1f1.jpg",
+            "brand_link": "shopify://collections/anzo-usa"
+          }
+        },
+        "brand_jitpPg": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Edelbrock",
+            "brand_image": "shopify://shop_images/Edelbrock_logo_bce62550-25dd-4e02-9958-36c402100b47.jpg",
+            "brand_link": "shopify://collections/edelbrock"
+          }
+        },
+        "brand_UpadAE": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Eibach",
+            "brand_image": "shopify://shop_images/eibach-logo_0a7292d1-6d81-4e7e-821a-edef6def3eca.jpg",
+            "brand_link": "shopify://collections/eibach"
+          }
+        },
+        "brand_WRQ7ND": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Fabtech",
+            "brand_image": "shopify://shop_images/fabtech-logo.jpg",
+            "brand_link": "shopify://collections/fabtech"
+          }
+        },
+        "brand_HwbMBT": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Factor 55",
+            "brand_image": "shopify://shop_images/Factor55-red_ffa24ec4-9095-415e-95af-92abaa094a59.png",
+            "brand_link": "shopify://collections/factor-55"
+          }
+        },
+        "brand_76czib": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "FOX Offroad Shocks",
+            "brand_image": "shopify://shop_images/FoxFactory_Logo_9cf13649-cb3d-4acb-90c4-ce4daee023c8.jpg",
+            "brand_link": "shopify://collections/fox-offroad-shocks"
+          }
+        },
+        "brand_U3Mdi7": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Gibson Performance Exhaust",
+            "brand_image": "shopify://shop_images/Gibson_logo.jpg",
+            "brand_link": "shopify://collections/gibson-performance-exhaust"
+          }
+        },
+        "brand_KqRWd3": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Hella",
+            "brand_image": "shopify://shop_images/Hella_logo.png",
+            "brand_link": "shopify://collections/hella"
+          }
+        },
+        "brand_A6ijde": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "MagnaFlow Exhaust",
+            "brand_image": "shopify://shop_images/MagnaFlow_Logo_226cc185-af22-444f-9d40-b00fbe30573f.jpg",
+            "brand_link": "shopify://collections/magnaflow"
+          }
+        },
+        "brand_HcLHeq": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "HELLA Brakes",
+            "brand_image": "shopify://shop_images/HELLA_PAGID_800_600.jpg",
+            "brand_link": "shopify://collections/hella-brakes"
+          }
+        },
+        "brand_JNpMgt": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "HPS Performance",
+            "brand_image": "shopify://shop_images/HPS-Logo_BLK_c0fb81eb-a12f-447d-a2ef-88f5c02c14e6.jpg",
+            "brand_link": "shopify://collections/hps-performance"
+          }
+        },
+        "brand_ALnPa3": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Husky Liners",
+            "brand_image": "shopify://shop_images/HRO_HUSKY_Brand_Logo_4200x2400_f7af7dbc-1ea9-403b-ae73-b0fbb62b66b0.jpg",
+            "brand_link": "shopify://collections/husky-liners"
+          }
+        },
+        "brand_BBYRYd": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "ICON Vehicle Dynamics",
+            "brand_image": "shopify://shop_images/Bronco_EXP_Logo.png",
+            "brand_link": "shopify://collections/icon-vehicle-dynamics"
+          }
+        },
+        "brand_n7K4hE": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "JKS",
+            "brand_image": "shopify://shop_images/logo-red.png",
+            "brand_link": "shopify://collections/jks"
+          }
+        },
+        "brand_cHzUM3": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "KC HiLiTES",
+            "brand_image": "shopify://shop_images/kchilites_logo_circleonly_black.jpg",
+            "brand_link": "shopify://collections/kc-hilites"
+          }
+        },
+        "brand_YEkWWY": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "King Shocks",
+            "brand_image": "shopify://shop_images/King_Logo_Standard_white.jpg",
+            "brand_link": "shopify://collections/king-shocks"
+          }
+        },
+        "brand_J6kfhL": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Ford Performance",
+            "brand_image": "shopify://shop_images/Ford_Perform_4c_K.png",
+            "brand_link": "shopify://collections/ford-performance-parts"
+          }
+        },
+        "brand_H8it6m": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "LoD Offroad",
+            "brand_image": "shopify://shop_images/logo-main-header_LOD_Offroad_ab5c121d-e6bc-413a-b203-c29a405ad201.png",
+            "brand_link": "shopify://collections/lod-offroad"
+          }
+        },
+        "brand_fb6GVG": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Mickey Thompson",
+            "brand_image": "shopify://shop_images/MT-Logo-black.jpg",
+            "brand_link": "shopify://collections/mickey-thompson"
+          }
+        },
+        "brand_ffptVC": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "ReadyLift",
+            "brand_image": "shopify://shop_images/readylift_type_R_logo.jpg",
+            "brand_link": "shopify://collections/readylift"
+          }
+        },
+        "brand_9PLTqE": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "RIGID Industries",
+            "brand_image": "shopify://shop_images/RIGID_Logo_Blk_68a0c809-ef98-4a35-af77-ee1df1b53fd5.jpg",
+            "brand_link": "shopify://collections/rigid-industries"
+          }
+        },
+        "brand_MnYEe7": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Skyjacker",
+            "brand_image": "shopify://shop_images/Skyjacker_Logo_f792cf57-ce1a-41f8-ba9d-7115f14e22fe.jpg",
+            "brand_link": "shopify://collections/skyjacker"
+          }
+        },
+        "brand_rUx8DX": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Smittybilt",
+            "brand_image": "shopify://shop_images/images.jpg",
+            "brand_link": "shopify://collections/smittybilt"
+          }
+        },
+        "brand_iC7xgp": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Vision X Lighting",
+            "brand_image": "shopify://shop_images/Vision_X_Logo.png",
+            "brand_link": ""
+          }
+        },
+        "brand_KWxwEG": {
+          "type": "brand",
+          "settings": {
+            "brand_title": "Zone Offroad",
+            "brand_image": "shopify://shop_images/zone-logo_76470715-0477-49eb-b0fa-3b3e126c3d95.png",
+            "brand_link": "shopify://collections/zone-offroad"
+          }
+        }
+      },
+      "block_order": [
+        "brand_pHM3yT",
+        "brand_P8MkVf",
+        "brand_4k7DBp",
+        "brand_aj3Xkg",
+        "brand_CwFA9W",
+        "brand_mjCqrW",
+        "brand_9LFQ3c",
+        "brand_jqnpzY",
+        "brand_jitpPg",
+        "brand_UpadAE",
+        "brand_WRQ7ND",
+        "brand_HwbMBT",
+        "brand_76czib",
+        "brand_U3Mdi7",
+        "brand_KqRWd3",
+        "brand_A6ijde",
+        "brand_HcLHeq",
+        "brand_JNpMgt",
+        "brand_ALnPa3",
+        "brand_BBYRYd",
+        "brand_n7K4hE",
+        "brand_cHzUM3",
+        "brand_YEkWWY",
+        "brand_J6kfhL",
+        "brand_H8it6m",
+        "brand_fb6GVG",
+        "brand_ffptVC",
+        "brand_9PLTqE",
+        "brand_MnYEe7",
+        "brand_rUx8DX",
+        "brand_iC7xgp",
+        "brand_KWxwEG"
+      ],
+      "name": "Shop By Brands",
+      "settings": {
+        "heading": "Shop By Brands"
+      }
+    },
+    "custom_liquid_FfeXDQ": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
+    "rich_text_3q46CF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_azaGHw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Trusted Source For Auto Parts",
+            "heading_size": 30,
+            "heading_size_mb": 30,
+            "heading_line_height": 1,
+            "heading_color": "#000000",
+            "heading_tag": "h1"
+          }
+        },
+        "text_MEF7it": {
+          "type": "text",
+          "settings": {
+            "text": "Easily find the parts you need by selecting the specific brand below. We stock products from every major OE and aftermarket parts manufacturer.",
+            "text_size": 16,
+            "text_size_mb": 12,
+            "text_font_weight": "400",
+            "text_line_height": 1.5,
+            "margin_top_text": 10,
+            "text_color": "#000000",
+            "text_width": "800px"
+          }
+        }
+      },
+      "block_order": [
+        "heading_azaGHw",
+        "text_MEF7it"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h1 {font-size: 30px; font-weight: 700;}",
+        "@media (max-width: 700px) {h1 {font-size: 20px; font-weight: 700; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "container": "container",
+        "padding_full_width": 0,
+        "enable_border_top": false,
+        "enable_border_bottom": false,
+        "color_border_bottom": "#e8e8e8",
+        "enable_minus_mg_top": false,
+        "minus_spacing_top": -100,
+        "rich_text_bg": "#ffffff",
+        "rich_text_bg_gradient": "",
+        "enable_column": false,
+        "content_align": "center",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 30,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 0,
+        "mg_bottom_mobile": 0
+      }
+    },
+    "custom_liquid_W9L4Li": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Featured Auto Parts Brands Directory</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n    <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap\" rel=\"stylesheet\">\n    <style>\n       \n        .text-cpg-red { color: #e5002b; }\n        .bg-cpg-red { background-color: #e5002b; }\n        \n        /* Custom class for 1000px width and center alignment */\n        .list-container-1000 {\n            width: 100%;\n            max-width: 1000px; /* Enforces the 1000px maximum width */\n            margin-left: auto; /* Centers the container */\n            margin-right: auto; /* Centers the container */\n            padding: 2.5rem 1rem; /* Vertical padding and horizontal padding for mobile safety */\n        }\n        \n        /* Enhanced Letter Header Styling */\n        .letter-header {\n            font-size: 2rem; /* Larger font size (32px) */\n            font-weight: 900;\n            line-height: 1.2;\n            color: #e5002b;\n            margin-top: 1rem;\n            margin-bottom: 0.5rem;\n            /* Underline effect for emphasis */\n            position: relative;\n            display: inline-block;\n        }\n        .letter-header::after {\n            content: '';\n            position: absolute;\n            bottom: 0;\n            left: 0;\n            width: 100%;\n            height: 4px;\n            background: linear-gradient(90deg, #e5002b 0%, rgba(229, 0, 43, 0.2) 100%);\n            border-radius: 2px;\n            transform: translateY(4px);\n        }\n\n        /* Enhanced Brand Link Styling */\n        .brand-link {\n            display: block;\n            padding: 8px 0;\n            /* CRITICAL CHANGE: Explicitly setting font size to 14px (above 13px minimum) */\n            font-size: 14px; \n            font-weight: 500;\n            color: #4b5563;\n            transition: color 0.2s, padding-left 0.2s;\n            text-decoration: none;\n            width: fit-content;\n        }\n        .brand-link:hover {\n            color: #1f2937;\n            padding-left: 5px;\n            text-decoration: none;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"list-container-1000\">\n        \n        <!-- Main Title -->\n        <h1 class=\"text-3xl md:text-4xl font-extrabold mb-10 text-center\">\n            Explore All <span class=\"text-cpg-red\">100+</span> Featured Automotive Brands\n        </h1>\n\n        <!-- Alphabetical Brand Grid Container -->\n        <div id=\"brandsList\" class=\"grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-2 gap-x-8\">\n            <!-- Content injected by JavaScript -->\n        </div>\n\n    </div>\n\n    <script>\n        // List of popular auto parts brands\n        const brands = [\n            'ACDelco', 'Akebono', 'Atlas', 'ARP', 'AEM Induction', 'AP Exhaust', 'Aisin', 'Auto Ventshade (AVS)', 'AWE Tuning', \n            'Bosch', 'Bendix', 'Bilstein', 'Borla Exhaust', 'Brembo Brakes', 'Beck/Arnley', 'Bully Dog', 'BFGoodrich', 'B&M Racing', \n            'Continental', 'Castrol', 'Centric Parts', 'CIPA', 'Champion', 'Crown Automotive', 'Curt Manufacturing', 'Cobb Tuning', \n            'Cosworth', 'Dorman', 'Dayco', 'Denso', 'Delphi', 'DiabloSport', 'Dunlop Tires', 'DeatschWerks', 'Eibach Springs', \n            'Exedy Clutch', 'Edelbrock', 'ECS Tuning', 'FRAM Filters', 'Fel-Pro Gaskets', 'Firestone', 'Fuzion Tires', 'Gates', \n            'GMB', 'Goodyear', 'Gabriel', 'Grant Products', 'Hawk Performance', 'Holley Performance', 'Hella', 'Husky Liners', \n            'Hypertech', 'INA', 'Injen Technology', 'Injector Dynamics', 'K&N Filters', 'KYB Shocks', 'Koni', 'Kumho Tires', \n            'KW Suspensions', 'Lucas Oil', 'LuK Clutch', 'Lisle Tools', 'MagnaFlow', 'Monroe Shocks', 'Mobil 1', 'MOOG Chassis', \n            'Motul', 'Michelin', 'Mahle', 'McLeod Racing', 'Mishimoto', 'NGK', 'Nitto Tires', 'NOS Systems', 'Neuspeed', 'Noco', \n            'OE Solutions', 'OPTIMA Batteries', 'OMP', 'OTC Tools', 'PIAA', 'Power Stop', 'Permatex', 'Pirelli', 'Pro Comp', \n            'Purolator', 'Raybestos', 'Rotella', 'Roush Performance', 'Red Line Oil', 'StopTech', 'Spectre', 'Spicer', \n            'Standard Motor Products', 'Sylvania', 'Summit Racing', 'Superchips', 'TEIN', 'Tokico', 'TruXedo', 'TYC', 'TSW Wheels', \n            'Tenneco', 'TurboSmart', 'VHT', 'VDO', 'Valvoline', 'Wagner', 'WeatherTech', 'WIX Filters', 'Zex Nitrous', 'ZF Group', \n            'Yokohama', 'Tomei', 'Sachs', 'HKS', 'AEM Electronics', 'EBC Brakes'\n        ].sort(); \n\n        const brandsListElement = document.getElementById('brandsList');\n        \n        // Group brands by their first letter\n        const brandsByLetter = brands.reduce((acc, brand) => {\n            const firstLetter = brand[0].toUpperCase();\n            if (!acc[firstLetter]) {\n                acc[firstLetter] = [];\n            }\n            acc[firstLetter].push(brand);\n            return acc;\n        }, {});\n\n        let htmlContent = '';\n        const letters = Object.keys(brandsByLetter).sort();\n\n        // Generate the HTML for the alphabetical list\n        letters.forEach(letter => {\n            htmlContent += `\n                <div class=\"list-section\">\n                    <div class=\"letter-header\">${letter}</div>\n                    ${brandsByLetter[letter].map(brand => \n                        `<a href=\"#\" class=\"brand-link\" title=\"Shop ${brand} Parts\">${brand}</a>`\n                    ).join('')}\n                </div>\n            `;\n        });\n\n        brandsListElement.innerHTML = htmlContent;\n\n    </script>\n</body>\n</html>"
+      }
+    },
+    "product_tab_block_4hUmDR": {
+      "type": "product-tab-block",
+      "blocks": {
+        "product_tabs_FTXgG4": {
+          "type": "ProductTabs",
+          "settings": {
+            "title": "DV8 Offroad",
+            "collection": "dv8-offroad"
+          }
+        },
+        "product_tabs_wAe9tJ": {
+          "type": "ProductTabs",
+          "settings": {
+            "title": "Warn",
+            "collection": "warn"
+          }
+        },
+        "product_tabs_F8BiAz": {
+          "type": "ProductTabs",
+          "settings": {
+            "title": "Skyjacker",
+            "collection": "skyjacker"
+          }
+        },
+        "product_tabs_YVWA9f": {
+          "type": "ProductTabs",
+          "settings": {
+            "title": "BDS Suspension",
+            "collection": "bds-suspension"
+          }
+        },
+        "product_tabs_GQWRUm": {
+          "type": "ProductTabs",
+          "settings": {
+            "title": "Zone Offroad",
+            "collection": "zone-offroad"
+          }
+        },
+        "product_tabs_P4ANgp": {
+          "type": "ProductTabs",
+          "settings": {
+            "title": "LoD Offroad",
+            "collection": "brake-wheel-parts"
+          }
+        },
+        "product_tabs_q98Rkq": {
+          "type": "ProductTabs",
+          "settings": {
+            "title": "Husky Liners",
+            "collection": "husky-liners"
+          }
+        },
+        "product_tabs_xUbAhT": {
+          "type": "ProductTabs",
+          "disabled": true,
+          "settings": {
+            "title": "HELLA Brakes",
+            "collection": "brake"
+          }
+        },
+        "product_tabs_LWkDCh": {
+          "type": "ProductTabs",
+          "disabled": true,
+          "settings": {
+            "title": "Smittybilt",
+            "collection": "accessories"
+          }
+        },
+        "product_tabs_ARPeqt": {
+          "type": "ProductTabs",
+          "settings": {
+            "title": "HPS Performance",
+            "collection": "hps-performance"
+          }
+        },
+        "product_tabs_xU3VE9": {
+          "type": "ProductTabs",
+          "settings": {
+            "title": "Advanced Clutch",
+            "collection": "advanced-clutch"
+          }
+        },
+        "product_tabs_Dwt4me": {
+          "type": "ProductTabs",
+          "settings": {
+            "title": "Addictive Desert Designs",
+            "collection": "add-offroad"
+          }
+        }
+      },
+      "block_order": [
+        "product_tabs_FTXgG4",
+        "product_tabs_wAe9tJ",
+        "product_tabs_F8BiAz",
+        "product_tabs_YVWA9f",
+        "product_tabs_GQWRUm",
+        "product_tabs_P4ANgp",
+        "product_tabs_q98Rkq",
+        "product_tabs_xUbAhT",
+        "product_tabs_LWkDCh",
+        "product_tabs_ARPeqt",
+        "product_tabs_xU3VE9",
+        "product_tabs_Dwt4me"
+      ],
+      "custom_css": [
+        ".card-price {margin-bottom: 0px;}",
+        ".card-media {min-height: 186px;}",
+        ".card-action.has-compare {padding: 0px;}",
+        ".slick-slider .slick-track {transform: translate3d(0px, 0px, 0px);}",
+        "@media screen and (min-width: 700px) {.product.scroll-trigger.animate--slide-in.slick-slide.slick-active {width: 208px !important; } .halo-product-block .product {padding: 0px 5px; } .container-1170 {padding: 0px; } .halo-product-block .products-carousel {margin: 0px; }}",
+        ".product-item {min-height: 282px; padding: 5px; border-radius: 5px; border: 1px solid #e8e8e8;}"
+      ],
+      "name": "t:sections.product_tab_block.name",
+      "settings": {
+        "container": "1170",
+        "padding_full_width": 0,
+        "product_bg": "#ffffff",
+        "product_bg_gradient": "",
+        "product_block_layout": "slider",
+        "product_block_limit": 20,
+        "product_block_title": "Trending Now",
+        "fontsize_title": 16,
+        "fontsize_title_mb": 14,
+        "mg_bottom_title": 12,
+        "enable_border_title": true,
+        "border_color_title": "#232323",
+        "enable_border_title2": false,
+        "border_color_title2": "#232323",
+        "color_title": "#232323",
+        "title_align": "center",
+        "view_all_style": "style_1",
+        "view_all": "",
+        "font_weight_view_all": "400",
+        "mg_bottom_view": 30,
+        "link_view_all": "",
+        "color_view_all": "#3c3c3c",
+        "image_behavior": "ambient",
+        "product_block_per_row": "5",
+        "product_block_infinite_scroll": true,
+        "min_width_button": "",
+        "product_block_dots": false,
+        "product_block_dots_mb": true,
+        "product_block_arrows": true,
+        "product_block_arrows_mb": true,
+        "product_block_arrows_custom_position": false,
+        "product_block_progress_bar": false,
+        "enable_infinite": true,
+        "product_block_show": "5",
+        "product_block_per_view": "1",
+        "show_half": true,
+        "scroll_height": 4,
+        "scroll_track_bg": "#f1f1f1",
+        "scroll_thumb_color": "#e5002b",
+        "scroll_thumb_hover_color": "#444444",
+        "position": "left",
+        "width_banner": 20,
+        "tab_title_style": "style_1",
+        "layout_mobile": "grid",
+        "mg_bottom_title_tab": 24,
+        "type_tab_font": "font_1",
+        "separation": true,
+        "style_separation": "style2",
+        "color_separation": "#e5002b",
+        "enable_scroll_title": true,
+        "fontsize_tab": 10,
+        "fontsize_tab_mb": 10,
+        "font_weight_tab": "700",
+        "font_weight_active_tab": "700",
+        "spacing_between_title": 24,
+        "line_height_tab": 20,
+        "line_height_tab_mobile": 20,
+        "border_tab_radius": 3,
+        "min_width_tab": 5,
+        "border_width_tab": 3,
+        "tab_align": "center",
+        "color_tab": "#232323",
+        "border_color_tab": "",
+        "bg_color_tab": "#ffffff",
+        "bg_color_gradient_tab": "",
+        "color_tab_active": "#e5002b",
+        "border_color_tab_active": "#e5002b",
+        "bg_color_tab_active": "#f8f8f8",
+        "bg_color_gradient_tab_active": "",
+        "mg_top_desktop": 20,
+        "mg_top_tablet": 50,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 0,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 20
+      }
+    },
+    "brand_slider_qiYBkC": {
+      "type": "brand-slider",
+      "blocks": {
+        "image_DVwAy7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo_9624555e-1a33-4aab-8846-bf9ecd6db5cd.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "https://carpartglobal.com/collections/dv8-offroad"
+          }
+        },
+        "image_yDnJEe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WARN_LOGO_d54ee264-6787-4623-b463-e846f6a0453c.jpg",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/warn"
+          }
+        },
+        "image_P6CYcz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/BDS-vert-silver.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/bds-suspension"
+          }
+        },
+        "image_bt9cry": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/HELLA_PAGID_800_600_1.jpg",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/accessories"
+          }
+        },
+        "image_kJcH6Y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/HPS-Logo_BLK.jpg",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/hps-performance"
+          }
+        },
+        "image_mGkUWc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SkyjackerLogo.jpg",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/skyjacker"
+          }
+        },
+        "image_8fjkPE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ZoneOffroadLogo.jpg",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/zone-offroad"
+          }
+        },
+        "image_dkenmy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo-main-header_LOD_Offroad.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/lod-offroad"
+          }
+        },
+        "image_HXAqQf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/59-591137_husky-liners-logo.jpg",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/husky-liners"
+          }
+        },
+        "image_UjTDKb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo__89526.webp",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/add-offroad"
+          }
+        },
+        "image_GhJ79y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ACT-Performance-Clutch-logo-scaled-1024x192.jpg",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/advanced-clutch"
+          }
+        },
+        "image_dwNPzk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/images.jpg",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": "shopify://collections/skid-plate-kit"
+          }
+        }
+      },
+      "block_order": [
+        "image_DVwAy7",
+        "image_yDnJEe",
+        "image_P6CYcz",
+        "image_bt9cry",
+        "image_kJcH6Y",
+        "image_mGkUWc",
+        "image_8fjkPE",
+        "image_dkenmy",
+        "image_HXAqQf",
+        "image_UjTDKb",
+        "image_GhJ79y",
+        "image_dwNPzk"
+      ],
+      "custom_css": [
+        ".halo-row .halo-item {margin-right: 0px;}",
+        ".brand-slider .halo-row.brand-layout--infinite .halo-item {width: 11vw;}",
+        "@media (min-width: 600px) {.brand-slider {margin: auto; width: 1200px; max-width: 1200px !important; }}",
+        "@media (max-width: 767px) {.section-block-template--18310420398124__brand_slider_HpECML {padding: 15px; }}"
+      ],
+      "name": "t:sections.brand.presets.name",
+      "settings": {
+        "container": "1170",
+        "padding_full_width": 80,
+        "brands_block_style": "style_1",
+        "brand_layout": "infinite",
+        "scroll_from": "ltr",
+        "brand_scroll_time": "50",
+        "display_brand_border": false,
+        "brand_bg": "#ffffff",
+        "brand_bg_gradient": "",
+        "title_align": "left",
+        "brand_title": "Featured Brands",
+        "color_title": "#232323",
+        "fontsize_title": 18,
+        "fontsize_title_mb": 14,
+        "mg_bottom_title": 12,
+        "mg_bottom_title_mb": 8,
+        "enable_border_title": true,
+        "border_color_title": "#e5002b",
+        "brand_des": "",
+        "color_des": "#3c3c3c",
+        "fontsize_des": 16,
+        "mg_bottom_des": 0,
+        "view_all": "",
+        "view_all_fs": 12,
+        "font_weight_view_all": "400",
+        "mg_bottom_view": 0,
+        "enable_border_view_all": true,
+        "link_view_all": "",
+        "color_view_all": "#3c3c3c",
+        "icon_view_all": "",
+        "color_view_all_icon": "#e5002b",
+        "view_all_icon_side": "left",
+        "spacing_view_all_icon": 0,
+        "btn_text": "",
+        "fontsize_btn": 12,
+        "btn_spacing_top": 15,
+        "btn_color": "#828282",
+        "btn_link": "",
+        "enable_autoplay": false,
+        "brand_speed": "3000",
+        "brand_rows": "6",
+        "enable_arrows": true,
+        "enable_dots": false,
+        "enable_center_mode": false,
+        "style_position_arrows": "none",
+        "position_horizontal_arrow": 15,
+        "color_arrow": "",
+        "arrow_background": "",
+        "arrow_background_gradient": "",
+        "arrow_border": "",
+        "color_arrow_hover": "",
+        "arrow_background_hover": "",
+        "arrow_background_gradient_hover": "",
+        "arrow_border_hover": "",
+        "brand_rows_mb": "3",
+        "brand_image_ratio": "square",
+        "item_distance": 24,
+        "margin_bottom_image": 0,
+        "margin_bottom_image_mb": 0,
+        "brand_item_border": "none",
+        "border_radius": 0,
+        "border_color": "#e2e5e7",
+        "border_color_hover": "#2d2d2d",
+        "hover_effect": "fadeup",
+        "color_underline_image_hover": "#000000",
+        "fontsize_text": 18,
+        "fontsize_text_mb": 13,
+        "font_weight_title": "400",
+        "margin_bottom_title": 0,
+        "mg_top_desktop": 20,
+        "mg_top_tablet": 20,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 40,
+        "mg_bottom_tablet": 20,
+        "mg_bottom_mobile": 20
+      }
+    },
+    "custom_liquid_h6XBAY": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>Shop By Categories</title>\n\n<script src=\"https://cdn.tailwindcss.com\"></script>\n<link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap\" rel=\"stylesheet\">\n\n<style>\nbody { font-family: 'Inter', sans-serif; }\n\n.text-cpg-red { color: #e5002b; }\n.bg-cpg-red { background-color: #e5002b; }\n\n.list-container-1200 {\n    max-width: 1200px;\n    margin: auto;\n    padding: 4rem 1rem;\n}\n\n.category-card {\n    background: #fff;\n    border-radius: 12px;\n    border: 1px solid #e5e7eb;\n    min-height: 120px;\n    padding: 1rem 0;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    transition: all .3s ease;\n    text-decoration: none;\n}\n\n.category-card:hover {\n    transform: translateY(-4px);\n    box-shadow: 0 8px 15px rgba(229,0,43,.15);\n}\n\n.card-title {\n    font-size: 13px;\n    font-weight: 600;\n    padding-top: 14px;\n    text-align: center;\n}\n\n/* MOBILE: 2 columns × 3 rows */\n.collapsed {\n    max-height: 390px;\n    overflow: hidden;\n}\n\n/* TABLET: 3 columns × 3 rows */\n@media (min-width: 640px) {\n    .collapsed {\n        max-height: 390px;\n    }\n}\n\n/* DESKTOP: 6 columns × 3 rows */\n@media (min-width: 1024px) {\n    .collapsed {\n        max-height: 390px;\n    }\n}\n</style>\n</head>\n\n<body>\n\n<div class=\"list-container-1200\">\n\n<h2 class=\"text-3xl md:text-4xl font-extrabold mb-12 text-center\">\n    Shop By <span class=\"text-cpg-red\">Categories</span>\n</h2>\n\n<!-- CATEGORY GRID -->\n<div id=\"categoryGrid\"\n     class=\"grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 collapsed transition-all duration-500\">\n\n    <!-- CATEGORY ITEMS -->\n    <a href=\"https://carpartglobal.com/collections/electrical-lighting-and-body\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Charging_Starting.svg\">\n    <div class=\"card-title\">Charging & Starting</div>\n</a>\n\n<a href=\"https://carpartglobal.com/collections/ignition\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Ignition.svg\">\n    <div class=\"card-title\">Ignition</div>\n</a>\n\n<a href=\"https://carpartglobal.com/collections/mufflers\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Mufflers.svg\">\n    <div class=\"card-title\">Mufflers</div>\n</a>\n\n<a href=\"https://carpartglobal.com/collections/belts-and-cooling\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Belts_and_Cooling.svg\">\n    <div class=\"card-title\">Belts & Cooling</div>\n</a>\n\n<a href=\"https://carpartglobal.com/collections/bumper\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Bumper.svg\">\n    <div class=\"card-title\">Bumper</div>\n</a>\n\n<a href=\"https://carpartglobal.com/collections/air-and-fuel-delivery\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Air_Fuel_Delivery.svg\">\n    <div class=\"card-title\">Air & Fuel Delivery</div>\n</a>\n\n<a href=\"https://carpartglobal.com/collections/winch\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Winch.svg\">\n    <div class=\"card-title\">Winch</div>\n</a>\n\n<a href=\"https://carpartglobal.com/collections/truck-box\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Truck_Box.svg\">\n    <div class=\"card-title\">Truck Box</div>\n</a>\n\n<a href=\"https://carpartglobal.com/collections/wheels-tires\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Wheels_Tires.svg\">\n    <div class=\"card-title\">Wheels & Tires</div>\n</a>\n\n<a href=\"https://carpartglobal.com/collections/wiper-and-washer\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Wiper_and_Washer.svg\">\n    <div class=\"card-title\">Wiper & Washer</div>\n</a>\n\n<a href=\"https://carpartglobal.com/collections/driveline-and-axles\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Driveline_and_Axles.svg\">\n    <div class=\"card-title\">Driveline & Axles</div>\n</a>\n\n<a href=\"https://carpartglobal.com/collections/brake\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Brakes.svg\">\n    <div class=\"card-title\">Brakes</div>\n</a>\n\n<a href=\"https://carpartglobal.com/collections/transmission\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Transmission.svg\">\n    <div class=\"card-title\">Transmission</div>\n</a>\n\n<a href=\"https://carpartglobal.com/collections/hvac\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/HVAC.svg\">\n    <div class=\"card-title\">Batteries & Charging</div>\n</a>\n\n<a href=\"https://carpartglobal.com/collections/hvac\" class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Suspension.svg\">\n    <div class=\"card-title\">HVAC</div>\n</a>\n<a href=\"https://carpartglobal.com/collections/electronics-and-toys\"  class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Electronics.svg?v=1768492521\">\n    <div class=\"card-title\">Electronics</div>\n</a>\n<a href=\"https://carpartglobal.com/collections/steering\"  class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Steering.svg?v=1768492521\">\n    <div class=\"card-title\">Steering</div>\n</a>\n<a href=\"https://carpartglobal.com/collections/hardware-and-service-supplies\"  class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Hardware_Supplies.svg?v=1768492521\">\n    <div class=\"card-title\">Hardware & Supplies</div>\n</a>\n<a href=\"https://carpartglobal.com/collections/engine\"  class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Engine_Components.svg?v=1768492521\">\n    <div class=\"card-title\">Engine Components</div>\n</a>\n<a href=\"https://carpartglobal.com/collections/doors\"  class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Doors.svg?v=1768492521\">\n    <div class=\"card-title\">Doors</div>\n</a>\n<a href=\"https://carpartglobal.com/collections/exhaust\"  class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Exhaust.svg?v=1768492521\">\n    <div class=\"card-title\">Exhaust</div>\n</a>\n<a href=\"https://carpartglobal.com/collections/frame\"  class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Frame.svg?v=1768492521\">\n    <div class=\"card-title\">Frame</div>\n</a>\n<a href=\"https://carpartglobal.com/collections/floor\"  class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Floor.svg?v=1768492521\">\n    <div class=\"card-title\">Floor</div>\n</a>\n<a href=\"https://carpartglobal.com/collections/shocks-and-struts\"  class=\"category-card\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0687/6007/6332/files/Shocks_and_Struts.svg?v=1768492521\">\n    <div class=\"card-title\">Shocks And Struts</div>\n</a>\n\n</div>\n\n<!-- LOAD MORE BUTTON -->\n<div class=\"text-center mt-10\">\n<button id=\"toggleBtn\"\n    class=\"inline-flex items-center gap-2 px-10 py-3 rounded-xl bg-cpg-red text-white hover:bg-red-700 transition shadow-lg\">\n    <span id=\"btnText\">Load More Categories</span>\n    <svg id=\"btnIcon\" xmlns=\"http://www.w3.org/2000/svg\" class=\"h-5 w-5 transition-transform duration-300\"\n        fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\">\n        <path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"\n            d=\"M19 9l-7 7-7-7\" />\n    </svg>\n</button>\n</div>\n\n</div>\n\n<script>\nconst grid = document.getElementById('categoryGrid');\nconst btnText = document.getElementById('btnText');\nconst btnIcon = document.getElementById('btnIcon');\n\ndocument.getElementById('toggleBtn').addEventListener('click', () => {\n    grid.classList.toggle('collapsed');\n    const collapsed = grid.classList.contains('collapsed');\n\n    btnText.textContent = collapsed ? 'Load More Categories' : 'Show Less';\n    btnIcon.style.transform = collapsed ? 'rotate(0deg)' : 'rotate(180deg)';\n});\n</script>\n\n</body>\n</html>"
+      }
+    },
+    "findpart_3FVYen": {
+      "type": "findpart",
+      "name": "Vehicle Search Header",
+      "settings": {}
+    },
+    "brand_slider_h98wnt": {
+      "type": "brand-slider",
+      "blocks": {
+        "image_Db3h7V": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Acura.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        },
+        "image_rbqM3X": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Ford.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        },
+        "image_GdqXJw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Buick.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        },
+        "image_CHFrqc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Cadillac.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        },
+        "image_W7qekD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Honda.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        },
+        "image_ntgBaC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Toyota.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        },
+        "image_XF3KHj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Bmw.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        },
+        "image_97kK8G": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/GMC.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        },
+        "image_AH8DhQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Pontiac.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        },
+        "image_jxFXPM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Hyundai.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        },
+        "image_aLWJME": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Infiniti.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        },
+        "image_RQknR7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Jeep.png",
+            "title": "",
+            "color_text": "#000000",
+            "color_text_hover": "#3e8cc4",
+            "description": "",
+            "color_des": "#3c3c3c",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Db3h7V",
+        "image_rbqM3X",
+        "image_GdqXJw",
+        "image_CHFrqc",
+        "image_W7qekD",
+        "image_ntgBaC",
+        "image_XF3KHj",
+        "image_97kK8G",
+        "image_AH8DhQ",
+        "image_jxFXPM",
+        "image_aLWJME",
+        "image_RQknR7"
+      ],
+      "custom_css": [
+        ".halo-row .halo-item {margin-right: 0px;}",
+        ".brand-slider .halo-row.brand-layout--infinite .halo-item {width: 11vw;}",
+        "@media (min-width: 600px) {.brand-slider {margin: auto; width: 1200px; max-width: 1200px !important; }}",
+        "@media (max-width: 767px) {div#brands-template--18310420398124__brand_slider_MA79bM {padding: 15px; } .brand-slider .brand-layout--infinite.sm-column-3 .halo-item {padding: 0px 15px; width: 23.3333vw !important; }}"
+      ],
+      "name": "t:sections.brand.presets.name",
+      "settings": {
+        "container": "1170",
+        "padding_full_width": 80,
+        "brands_block_style": "style_1",
+        "brand_layout": "infinite",
+        "scroll_from": "ltr",
+        "brand_scroll_time": "25",
+        "display_brand_border": false,
+        "brand_bg": "#ffffff",
+        "brand_bg_gradient": "",
+        "title_align": "left",
+        "brand_title": "Shop by Popular Makes",
+        "color_title": "#e5002b",
+        "fontsize_title": 18,
+        "fontsize_title_mb": 14,
+        "mg_bottom_title": 12,
+        "mg_bottom_title_mb": 8,
+        "enable_border_title": true,
+        "border_color_title": "#e5002b",
+        "brand_des": "",
+        "color_des": "#3c3c3c",
+        "fontsize_des": 16,
+        "mg_bottom_des": 0,
+        "view_all": "",
+        "view_all_fs": 12,
+        "font_weight_view_all": "400",
+        "mg_bottom_view": 0,
+        "enable_border_view_all": true,
+        "link_view_all": "",
+        "color_view_all": "#3c3c3c",
+        "icon_view_all": "",
+        "color_view_all_icon": "#e5002b",
+        "view_all_icon_side": "left",
+        "spacing_view_all_icon": 0,
+        "btn_text": "",
+        "fontsize_btn": 12,
+        "btn_spacing_top": 15,
+        "btn_color": "#828282",
+        "btn_link": "",
+        "enable_autoplay": false,
+        "brand_speed": "3000",
+        "brand_rows": "7",
+        "enable_arrows": false,
+        "enable_dots": false,
+        "enable_center_mode": false,
+        "style_position_arrows": "none",
+        "position_horizontal_arrow": 15,
+        "color_arrow": "",
+        "arrow_background": "",
+        "arrow_background_gradient": "",
+        "arrow_border": "",
+        "color_arrow_hover": "",
+        "arrow_background_hover": "",
+        "arrow_background_gradient_hover": "",
+        "arrow_border_hover": "",
+        "brand_rows_mb": "3",
+        "brand_image_ratio": "square",
+        "item_distance": 30,
+        "margin_bottom_image": 0,
+        "margin_bottom_image_mb": 0,
+        "brand_item_border": "none",
+        "border_radius": 0,
+        "border_color": "#e2e5e7",
+        "border_color_hover": "#2d2d2d",
+        "hover_effect": "fadeup",
+        "color_underline_image_hover": "#000000",
+        "fontsize_text": 18,
+        "fontsize_text_mb": 13,
+        "font_weight_title": "400",
+        "margin_bottom_title": 0,
+        "mg_top_desktop": 20,
+        "mg_top_tablet": 20,
+        "mg_top_mobile": 0,
+        "mg_bottom_desktop": 40,
+        "mg_bottom_tablet": 20,
+        "mg_bottom_mobile": 40
+      }
+    },
+    "custom_liquid_8kpykR": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Final Call-to-Action Banner</title>\n    <script src=\"https://cdn.tailwindcss.com\"></script>\n    <link href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap\" rel=\"stylesheet\">\n    <style>\n        \n        /* Define the exact custom red color */\n        .cpg-red-bg { background-color: #e5002b; }\n        .cpg-red-text { color: #e5002b; }\n        .cpg-red-border { border-color: #e5002b; }\n\n        /* Custom class for max width and center alignment */\n        .list-container-1200 {\n            width: 100%;\n            max-width: 1200px;\n            margin-left: auto;\n            margin-right: auto;\n            padding-left: 1.5rem; /* Increased padding for better mobile spacing */\n            padding-right: 1.5rem;\n        }\n\n        /* Base button styling */\n        .cta-button {\n            display: inline-flex;\n            align-items: center;\n            justify-content: center;\n            padding: 0.75rem 2rem; /* Adjusted padding for better button height */\n            font-weight: 600; /* Semi-bold */\n            border-radius: 0.75rem; /* Rounded-xl */\n            transition: all 0.3s ease;\n            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n            font-size: 0.875rem; /* 14px minimum for buttons */\n        }\n        \n        /* Secondary Button Styling for Red Background */\n        .secondary-btn {\n            border: 2px solid white;\n            color: white;\n            background-color: transparent;\n        }\n        .secondary-btn:hover {\n            background-color: white;\n            color: #e5002b; /* Text becomes red on hover */\n            transform: translateY(-2px);\n        }\n.buttn {\n    padding: 15px 30px;\n    font-size: 16px !important;\nfont-weight: 500;\n}\n.pcl {\nfont-size: 15px;\nmax-width: 700px;\n}\n    </style>\n</head>\n<body>\n    \n    <!-- SECTION: Final CTA Banner (Contact or Shop) - Primary Red Background -->\n    <div class=\"cpg-red-bg py-16\">\n        <div class=\"list-container-1200 flex flex-col items-center text-center\">\n            \n            <!-- Heading: Text Size: 32px - 36px (appropriate for main heading) -->\n            <h3 class=\"text-3xl md:text-4xl font-extrabold text-white mb-4\">\n                Need Assistance Finding the Right Part?\n            </h3>\n            \n            <!-- Paragraph Text: Text Size: 16px (text-base, >14px minimum) -->\n            <p class=\"pcl text-red-100 mb-10 max-w-3xl\">\n                Contact our highly-trained experts for personalized advice, or jump straight into browsing our entire inventory. We're here to help you get the exact automotive part you need.\n            </p>\n            \n            <div class=\"flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8\">\n                \n                <!-- CTA Button 1: Contact Us (Primary White Button) - Text Size: 14px -->\n                <a href=\"https://carpartglobal.com/pages/contact\" class=\" buttn cta-button text-white bg-white hover:bg-gray-100 text-cpg-red\">\n                    <svg class=\"w-5 h-5 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498A1 1 0 0121 15.72V19a2 2 0 01-2 2H5a2 2 0 01-2-2z\"></path></svg>\n                    Contact Our Experts\n                </a>\n                \n                <!-- CTA Button 2: See the Shop (Secondary Outline Button) - Text Size: 14px -->\n                <a href=\"https://carpartglobal.com/products/\" class=\"buttn cta-button secondary-btn\">\n                    <svg class=\"w-5 h-5 mr-2\" fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z\"></path></svg>\n                    See Our Full Shop\n                </a>\n            </div>\n        </div>\n    </div>\n    <!-- END OF SECTION -->\n\n</body>\n</html>"
+      }
+    },
+    "policies_block_f9WEDk": {
+      "type": "policies-block",
+      "blocks": {
+        "text_K6FRLU": {
+          "type": "Text",
+          "settings": {
+            "image": "shopify://shop_images/Free_return_icon_cpg.svg",
+            "icon_type": "image",
+            "icon": "",
+            "icon_width": 100,
+            "icon_height": 1,
+            "icon_mg_right": 10,
+            "text": "Free return",
+            "font_size_text": 14,
+            "font_size_text_mb": 14,
+            "mg_bottom_text": 0,
+            "font_weight_text": "700",
+            "font_style_text": "normal",
+            "description": "Changed your mind? Return your purchase within 30 days at no cost.",
+            "font_size_des": 12,
+            "font_size_des_mb": 12,
+            "margin_bottom_description": 0,
+            "button": "",
+            "button_font_size": 14,
+            "button_font_size_mb": 12,
+            "link": ""
+          }
+        },
+        "text_k7qHWj": {
+          "type": "Text",
+          "settings": {
+            "image": "shopify://shop_images/free-delivery.png",
+            "icon_type": "image",
+            "icon": "",
+            "icon_width": 100,
+            "icon_height": 100,
+            "icon_mg_right": 10,
+            "text": "Expert Fit Assistance",
+            "font_size_text": 14,
+            "font_size_text_mb": 14,
+            "mg_bottom_text": 0,
+            "font_weight_text": "700",
+            "font_style_text": "normal",
+            "description": "Our experts are here to help you pick the perfect fit for your vehicle.",
+            "font_size_des": 12,
+            "font_size_des_mb": 12,
+            "margin_bottom_description": 0,
+            "button": "",
+            "button_font_size": 14,
+            "button_font_size_mb": 12,
+            "link": ""
+          }
+        },
+        "text_VBFCh3": {
+          "type": "Text",
+          "settings": {
+            "image": "shopify://shop_images/24-hours.png",
+            "icon_type": "image",
+            "icon": "",
+            "icon_width": 100,
+            "icon_height": 1,
+            "icon_mg_right": 10,
+            "text": "24/7 service",
+            "font_size_text": 14,
+            "font_size_text_mb": 14,
+            "mg_bottom_text": 0,
+            "font_weight_text": "700",
+            "font_style_text": "normal",
+            "description": "Have a question? Our team is available 24/7 to assist you.",
+            "font_size_des": 12,
+            "font_size_des_mb": 12,
+            "margin_bottom_description": 0,
+            "button": "",
+            "button_font_size": 14,
+            "button_font_size_mb": 12,
+            "link": ""
+          }
+        },
+        "text_VxxNiR": {
+          "type": "Text",
+          "settings": {
+            "image": "shopify://shop_images/insurance.png",
+            "icon_type": "image",
+            "icon": "",
+            "icon_width": 100,
+            "icon_height": 1,
+            "icon_mg_right": 10,
+            "text": "Guaranteed fit",
+            "font_size_text": 14,
+            "font_size_text_mb": 14,
+            "mg_bottom_text": 0,
+            "font_weight_text": "700",
+            "font_style_text": "normal",
+            "description": "We stand behind our parts. If it doesn't fit your vehicle, we’ll make it right.",
+            "font_size_des": 12,
+            "font_size_des_mb": 12,
+            "margin_bottom_description": 0,
+            "button": "",
+            "button_font_size": 14,
+            "button_font_size_mb": 12,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_K6FRLU",
+        "text_k7qHWj",
+        "text_VBFCh3",
+        "text_VxxNiR"
+      ],
+      "custom_css": [
+        "@media (max-width: 600px) {.halo-row {display: flex; flex-wrap: nowrap; } .policies-block .policies-content .policies-des {display: none; } .policies-block .halo-item a {padding: 0px !important; flex-direction: column; } .policies-block .policies-content .policies-text {font-size: 10px !important; text-wrap: nowrap; } img {padding-bottom: 7px; width: 50px; }}"
+      ],
+      "name": "t:sections.policies_block.name",
+      "settings": {
+        "container": "1670",
+        "padding_full_width": 0,
+        "policies_block_swipe_on_mobile": "list",
+        "spacing_tablet": 5,
+        "spacing_mobile": 32,
+        "policies_bg": "#ffffff",
+        "policies_bg_gradient": "",
+        "border": "none",
+        "border_color": "#000000",
+        "border_item": "style_2",
+        "item_color_border": "#e95144",
+        "align_items": "center",
+        "text_align_items": "center",
+        "enable_item_distance": true,
+        "item_padding_top": 0,
+        "item_padding_bottom": 0,
+        "item_padding_left_right": 10,
+        "item_radius": 4,
+        "bg_color_block": "#ffffff",
+        "border_block": "#ffffff",
+        "color_block": "#232323",
+        "color_icon": "#f8f8f8",
+        "mg_top_desktop": 50,
+        "mg_top_tablet": 43,
+        "mg_top_mobile": 36,
+        "mg_bottom_desktop": 30,
+        "mg_bottom_tablet": 50,
+        "mg_bottom_mobile": 38
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_Tw9KTa",
+    "shop_by_brands_xKKFw6",
+    "custom_liquid_FfeXDQ",
+    "rich_text_3q46CF",
+    "custom_liquid_W9L4Li",
+    "product_tab_block_4hUmDR",
+    "brand_slider_qiYBkC",
+    "custom_liquid_h6XBAY",
+    "findpart_3FVYen",
+    "brand_slider_h98wnt",
+    "custom_liquid_8kpykR",
+    "policies_block_f9WEDk"
+  ]
+}

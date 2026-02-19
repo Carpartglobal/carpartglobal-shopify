@@ -1,0 +1,104 @@
+<section 
+  class="faq-search-section" 
+  style="background: url({{ section.settings.bg_image | image_url: width: 1600 }}) center/cover no-repeat; padding: 80px 20px; text-align: center;">
+
+  <div class="faq-search-bar" style="max-width:600px; margin:0 auto;">
+    <form id="faq-search-form" onsubmit="return false;">
+      <input 
+        type="search" 
+        id="faq-search-input"
+        placeholder="{{ section.settings.placeholder_text }}"
+        style="width:100%; padding:15px; border-radius:8px; border:1px solid #ccc; font-size:16px; color:#000;"
+      >
+    </form>
+  </div>
+
+  <style>
+    /* Placeholder color */
+    .faq-search-bar input::placeholder {
+      color: #000 !important;
+      opacity: 1;
+    }
+    section.faq-search-section {
+    padding: 120px 20px !important;
+}
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('faq-search-input');
+      if (!searchInput) return;
+
+      searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase().trim();
+        if (!query) return;
+
+        // Find all FAQ items (in the FAQ Tabs section)
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        let matchFound = false;
+
+        faqItems.forEach(item => {
+          const question = item.querySelector('.faq-question')?.textContent.toLowerCase();
+          const answer = item.querySelector('.faq-answer')?.textContent.toLowerCase();
+
+          if (question && question.includes(query) || answer && answer.includes(query)) {
+            matchFound = true;
+
+            // Find parent tab
+            const group = item.closest('.faq-group');
+            const tabId = group.getAttribute('id');
+            const tab = document.querySelector(`.faq-tab[data-target="${tabId}"]`);
+
+            // Activate that tab
+            document.querySelectorAll('.faq-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.faq-group').forEach(g => g.classList.remove('active'));
+            if (tab && group) {
+              tab.classList.add('active');
+              group.classList.add('active');
+            }
+
+            // Expand the found question
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+            item.classList.add('open');
+            const toggle = item.querySelector('.toggle');
+            if (toggle) toggle.textContent = '-';
+
+            // Smooth scroll
+            group.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+
+        if (!matchFound) {
+          // optional: could show a message
+          console.log('No match found');
+        }
+      });
+    });
+  </script>
+</section>
+
+{% schema %}
+{
+  "name": "FAQ Search Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "placeholder_text",
+      "label": "Search Placeholder Text",
+      "default": "Search FAQs..."
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Search Bar",
+      "category": "FAQ"
+    }
+  ]
+}
+{% endschema %}

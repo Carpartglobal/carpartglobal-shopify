@@ -1,0 +1,32 @@
+<div class="halo-mega-menu style-6">
+  <div class="mega-90">
+
+    <div class="mega-left">
+      <div class="icon-grid">
+        {% for block in section.blocks %}
+          {% if block.type == 'style6_item' %}
+            <a href="{{ block.settings.link }}" class="icon-item">
+              {% if block.settings.icon %}
+                <img src="{{ block.settings.icon | image_url: width: 60 }}">
+              {% endif %}
+              <span>{{ block.settings.label }}</span>
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="mega-right">
+      {% if section.settings.style6_banner_1 %}
+        <img src="{{ section.settings.style6_banner_1 | image_url: width: 500 }}">
+      {% endif %}
+      {% if section.settings.style6_banner_2 %}
+        <img src="{{ section.settings.style6_banner_2 | image_url: width: 500 }}">
+      {% endif %}
+      {% if section.settings.style6_banner_3 %}
+        <img src="{{ section.settings.style6_banner_3 | image_url: width: 500 }}">
+      {% endif %}
+    </div>
+
+  </div>
+</div>
