@@ -1,7 +1,7 @@
 /* CarPartGlobal Custom Overrides */
 :root {
-  --color-primary: var(--color-primary);
-  --color-primary-dark: var(--color-primary-dark);
+  --color-primary: #e5002b;
+  --color-primary-dark: #dc2626;
   --color-primary-darker: #b91c1c;
   --color-black: #000000;
   --color-white: #ffffff;
