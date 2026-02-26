@@ -984,8 +984,8 @@
       "#cm-collection-list,#cm-collection-header,#cm-collections-carousel-list,#cm-collection-page,#cm-related-products {max-width: 1200px; margin: 0 auto; padding: 30px 15px 0 15px;}",
       "#cm-garage {order: 0;}",
       " /* Vehicle dropdown: limit height so it doesn't overlap the hero */.cm_collapsible-elem,#cm-home-ymm .cm_collapsible-elem {max-height: 320px !important; overflow-y: auto !important;}",
-      " /* Vehicle selector + search: move right so they don't overlap the logo */@media (min-width: 1025px) {.header-advanced .header-vehicle-search-bar {margin-left: 100px !important; }}",
-      "@media (min-width: 2000px) {.header-advanced .header-vehicle-search-bar {margin-left: 100px !important; } .header-advanced__content .cm_vehicle-widget_header, .header-advanced__content .cm_tabs .cm_tab-content:first-child {margin-left: 100px !important; } .header-advanced__content div:has(> .cm_vehicle-widget_header), .header-advanced__content div:has(> .cm_tabs) {margin-left: 40px !important; }}"
+      " /* Vehicle selector + search: move right so they don't overlap the logo */@media (min-width: 1025px) {.header-advanced .header-vehicle-search-bar {margin-left: 2204px !important; }}",
+      "@media (min-width: 2000px) {.header-advanced .header-vehicle-search-bar {margin-left: 40px !important; } .header-advanced__content .cm_vehicle-widget_header, .header-advanced__content .cm_tabs .cm_tab-content:first-child {margin-left: 40px !important; } .header-advanced__content div:has(> .cm_vehicle-widget_header), .header-advanced__content div:has(> .cm_tabs) {margin-left: 40px !important; }}"
     ]
   }
 }
