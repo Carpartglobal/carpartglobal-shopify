@@ -1510,6 +1510,7 @@ span.cm_vehicle-widget_header-label::after {
   color: #ff0000; /* Optional: Red color for X, change to #000 if you want black */
 }
 span.cm_vehicle-widget_header-label {
+  color: var(--color-primary) !important;
   column-gap: 10px;
   display: flex;
   flex-direction: row;
