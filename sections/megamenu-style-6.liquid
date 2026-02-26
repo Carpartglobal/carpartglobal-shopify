@@ -9,7 +9,7 @@
       {% for block in section.blocks %}
         <a href="{{ block.settings.link }}" class="megamenu-6-item">
           {% if block.settings.icon %}
-            <img src="{{ block.settings.icon | image_url: width: 80 }}">
+            <img src="{{ block.settings.icon | image_url: width: 80 }}" alt="{{ block.settings.label | escape }}">
           {% endif %}
           <span>{{ block.settings.label }}</span>
         </a>
@@ -20,17 +20,17 @@
     <div class="megamenu-6-side">
       {% if section.settings.image_1 %}
         <a href="{{ section.settings.image_1_link }}">
-          <img src="{{ section.settings.image_1 | image_url: width: 500 }}">
+          <img src="{{ section.settings.image_1 | image_url: width: 500 }}" alt="{{ section.settings.image_1.alt | default: 'Menu banner' | escape }}">
         </a>
       {% endif %}
       {% if section.settings.image_2 %}
         <a href="{{ section.settings.image_2_link }}">
-          <img src="{{ section.settings.image_2 | image_url: width: 500 }}">
+          <img src="{{ section.settings.image_2 | image_url: width: 500 }}" alt="{{ section.settings.image_2.alt | default: 'Menu banner' | escape }}">
         </a>
       {% endif %}
       {% if section.settings.image_3 %}
         <a href="{{ section.settings.image_3_link }}">
-          <img src="{{ section.settings.image_3 | image_url: width: 500 }}">
+          <img src="{{ section.settings.image_3 | image_url: width: 500 }}" alt="{{ section.settings.image_3.alt | default: 'Menu banner' | escape }}">
         </a>
       {% endif %}
     </div>

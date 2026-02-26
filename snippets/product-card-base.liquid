@@ -1,0 +1,834 @@
+{% doc %}
+    Consolidated base product card snippet that replaces product-card.liquid
+    and product-card-02 through product-card-08 via a single `card_layout` parameter.
+
+    @param {object} product_card_product
+        The Product Liquid object to render.
+
+    @param {string} card_layout
+        Which layout variant to use. Accepted values:
+        'default' - Original product-card.liquid (enable_custom_layout_card_1, enable_background_button_card classes)
+        '02'      - product-card-02 (disable_product_card_border, enable_infor_on_image, enable_custom_layout_card, duplicated info on image)
+        '03'      - product-card-03 (wishlist + ATC in card-group-abs-center, quick-view in card-group-abs-bottom)
+        '04'      - product-card-04 (sold-out/notify classes, ATC + wishlist combined in card-action with card-action-bottom)
+        '05'      - product-card-05 (sold-out/notify, wishlist in vendor group, swatch before title, compare in card-action-bottom)
+        '06'      - product-card-06 (disable_product_card_border, card-action outside card-product with quickshop-2 data attr, custom button colors)
+        '07'      - product-card-07 (quick-view-default nested inside card-action with above-button class, action group has-size/has-marquee)
+        '08'      - product-card-08 (simplified quick-view, group-items-N counting, countdown timer, view-details link)
+
+    @param {boolean} [complementary_product_button_atc]
+        Whether to show the add-to-cart button. Passed through to sub-snippets.
+
+    @param {string} [sectionId]
+        The section ID, used for form IDs and compare rendering.
+
+    @param {string} [serial]
+        Serial number passed to the product-badge snippet.
+
+    @param {boolean} [loading]
+        Whether the card is in a loading state (adds loading-effect class to media).
+
+    @param {boolean} [hasCountdown]
+        Whether to pass countdown flag to the price snippet.
+
+    Usage:
+    {% render 'product-card-base',
+        product_card_product: product,
+        card_layout: 'default',
+        complementary_product_button_atc: true,
+        sectionId: section.id,
+        loading: true
+    %}
+{% enddoc %}
+
+{%- liquid
+    unless card_layout
+        assign card_layout = 'default'
+    endunless
+
+    assign product_swatch_option = settings.swatch | downcase
+    assign isColor = false
+    assign variant_img = ''
+    for option in product_card_product.options_with_values
+        assign option_name = option.name | downcase
+        if product_swatch_option contains option_name
+            assign isColor = true
+            assign index = forloop.index0
+            assign position = forloop.index | minus: 1
+            assign variant_selected = option.selected_value
+            if settings.show_quick_shop
+                for variant in product_card_product.variants limit: 1
+                    if variant.image != null
+                        assign variant_img = variant.image
+                    endif
+                endfor
+            endif
+            break
+        else
+            assign position = 0
+            assign variant_selected = nil
+        endif
+    endfor
+
+    assign media_size = settings.product_block_image_ratio
+    if media_size == 'portrait'
+        assign portrait_aspect_ratio = settings.portrait_height
+    endif
+
+    assign featured_media_aspect_ratio = product_card_product.featured_media.aspect_ratio
+    if product_card_product.featured_media.aspect_ratio == nil
+        assign featured_media_aspect_ratio = 1
+    endif
+
+    assign product_action_group = false
+
+    assign show_quick_view = false
+    if card_layout == '08'
+        assign show_quick_view = settings.show_quick_view
+    else
+        if settings.show_quick_view
+            if settings.product_quick_view_type == 'icon' or settings.show_quick_view_mb
+                assign show_quick_view = true
+            endif
+        endif
+    endif
+
+    assign show_wishlist = false
+    if settings.show_wishlist_card and settings.show_wishlist
+        assign show_wishlist = true
+    elsif template.suffix == 'ajax_wishlist_card'
+        assign show_wishlist = true
+    endif
+
+    assign show_compare = false
+    if settings.show_compare and settings.product_compare_type == 'icon'
+        assign show_compare = true
+    endif
+
+    if card_layout == '03'
+        if show_quick_view or show_compare
+            assign product_action_group = true
+        endif
+    else
+        if show_quick_view or show_wishlist or show_compare
+            assign product_action_group = true
+        endif
+    endif
+
+    assign sold_out = false
+    if card_layout == '04' or card_layout == '05'
+        if product_card_product.available == false
+            assign sold_out = true
+        endif
+    endif
+
+    assign has_video = product_card_product.media | where: 'media_type','video'
+
+    if card_layout == '06'
+        assign card_06_button_text_color = settings.card_06_button_text_color
+        assign card_06_button_background = settings.card_06_button_background
+        assign card_06_button_gradient = settings.card_06_button_gradient
+        assign card_06_button_border = settings.card_06_button_border
+        assign card_06_button_text_color_hover = settings.card_06_button_text_color_hover
+        assign card_06_button_background_hover = settings.card_06_button_background_hover
+        assign card_06_button_gradient_hover = settings.card_06_button_gradient_hover
+        assign card_06_button_border_hover = settings.card_06_button_border_hover
+    endif
+
+    assign show_price = settings.show_price
+    assign custom_fields = product_card_product.metafields.custom.product_variant_custom
+-%}
+
+{%- comment -%} === PRODUCT ITEM WRAPPER === {%- endcomment -%}
+<div class="product-item
+    {%- if card_layout == 'default' -%}
+        {%- if settings.enable_background_button_card %} enable_background_button_card{% endif -%}
+        {%- if settings.enable_custom_layout_card_1 %} enable_custom_layout_card_1{% endif -%}
+        {%- if settings.enable_custom_position_swatch_layout_card_1 %} enable_custom_position_swatch{% endif -%}
+    {%- elsif card_layout == '02' -%}
+        {%- if settings.disable_product_card_border %} disable_product_card_border{% endif -%}
+        {%- if settings.enable_infor_on_image %} enable_infor_on_image{% endif -%}
+        {%- if settings.enable_custom_layout_card %} enable_custom_layout_card{% endif -%}
+        {%- if settings.disable_product_card_border and settings.enable_custom_layout_card %} enable_custom_content{% endif -%}
+    {%- elsif card_layout == '04' or card_layout == '05' -%}
+        {%- if sold_out %} sold-out{% endif -%}
+        {%- if sold_out and settings.show_notify_form %} has-notify{% endif -%}
+    {%- elsif card_layout == '06' -%}
+        {%- if settings.disable_product_card_border %} disable_product_card_border{% endif -%}
+    {%- endif -%}
+" data-product-id="{{ product_card_product.id }}" data-json-product='{"id": {{product_card_product.id}},"handle": "{{product_card_product.handle}}","media": {{product.media | json | escape}},"variants": {{ product_card_product.variants | json | escape }}}'>
+    <div class="card{% if product_card_product.media[0].media_type == 'video' %} has-first-video{% endif %}">
+        <div class="card-product{% if product_card_product.featured_media == nil %} card--text-only card--soft{% endif %}">
+            <div class="card-product__wrapper">
+
+                {%- comment -%} === BADGE === {%- endcomment -%}
+                {%- if settings.show_badge -%}
+                    {% render 'product-badge', product: product_card_product, class: 'card__badge', badge_detail: true, serial: serial %}
+                {%- endif -%}
+
+                {%- comment -%} === CARD MEDIA === {%- endcomment -%}
+                <div class="card-media card-media--{{ media_size }}
+                    {%- if product_card_product.media[1] != nil and settings.show_image_swap %} media--hover-effect{% endif -%}
+                    {%- if card_layout == 'default' or card_layout == '05' or card_layout == '06' or card_layout == '07' or card_layout == '08' -%}
+                        {%- if settings.show_compare and settings.product_compare_type == 'default' %} has-compare{% endif -%}
+                    {%- endif -%}
+                    {%- if loading %} media--loading-effect{% endif -%}
+                "
+                    {% if product_card_product.featured_media %}
+                        {% if media_size == 'adapt' %}
+                            style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"
+                        {% elsif media_size == 'square' %}
+                            style="padding-bottom: 100%;"
+                        {% elsif media_size == 'portrait' %}
+                            {% if portrait_aspect_ratio != blank %}
+                                style="padding-bottom: {{ portrait_aspect_ratio | append: '%' }};"
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+                >
+                    {% render 'image-product-card', product_card_product: product_card_product, variant_img: variant_img, has_video: has_video, loading: loading %}
+                    <a class="card-link" href="{{ product_card_product.url }}" title="{{ product_card_product.title | escape }}"></a>
+                </div>
+
+                {%- comment -%} === ACTION GROUP (quickview/wishlist/compare icons) === {%- endcomment -%}
+                {%- if product_action_group -%}
+                    {%- comment -%} Layout 08: count group items for class {%- endcomment -%}
+                    {%- if card_layout == '08' -%}
+                        {%- liquid
+                            assign number_items = 1
+                            if show_wishlist and show_quick_view and show_compare != true
+                                assign number_items = 2
+                            elsif show_wishlist and show_compare and show_quick_view != true
+                                assign number_items = 2
+                            elsif show_quick_view and show_compare and show_wishlist != true
+                                assign number_items = 2
+                            elsif show_wishlist and show_quick_view and show_compare
+                                assign number_items = 3
+                            endif
+                        -%}
+                    {%- endif -%}
+                    <div class="card-product__group
+                        {%- if card_layout == '08' %} group-items-{{ number_items }}{% endif %}
+                        {%- unless card_layout == '08' %} group-{{ settings.group_quickview_wishlist }}{% endunless -%}
+                        {%- if card_layout == '08' %} group-{{ settings.group_quickview_wishlist }}{% endif -%}
+                        {%- if card_layout == '07' or card_layout == '08' -%}
+                            {%- if settings.display_item_size %} has-size{% endif -%}
+                            {%- if settings.show_product_marquee %} has-marquee{% endif -%}
+                        {%- endif -%}
+                        {%- if card_layout == '08' -%}
+                            {%- if show_compare %} show_compare{% endif -%}
+                            {%- if settings.hide_compare_homepage %} hide_compare_homepage{% endif -%}
+                        {%- endif -%}
+                    ">
+                        {%- comment -%} Wishlist in action group: layouts default, 02, 06, 07, 08 (not 03, 04, 05) {%- endcomment -%}
+                        {%- if card_layout == '02' -%}
+                            {%- unless settings.enable_custom_layout_card -%}
+                                {%- if show_wishlist -%}
+                                    <div class="card-product__group-item card-wishlist">
+                                        <button type="button" title="{{ 'wishlist.general.add' | t }}" class="wishlist-icon{% if settings.show_wishlist_card_mb %} show-mb{% endif %}" data-wishlist data-wishlist-handle="{{ product_card_product.handle }}" data-product-id="{{ product_card_product.id }}">
+                                            <span class="visually-hidden">{{ 'wishlist.general.add' | t }}</span>
+                                            <span class="text">{{ 'wishlist.general.add' | t }}</span>
+                                            {% render 'icon-heart-2' %}
+                                            {% if settings.show_wishlist_full_icon %}{% render 'icon-heart-add' %}{% endif %}
+                                        </button>
+                                    </div>
+                                {%- endif -%}
+                            {%- endunless -%}
+                        {%- elsif card_layout == 'default' or card_layout == '06' or card_layout == '07' or card_layout == '08' -%}
+                            {%- if show_wishlist -%}
+                                <div class="card-product__group-item card-wishlist">
+                                    <button type="button" title="{{ 'wishlist.general.add' | t }}" class="wishlist-icon{% if settings.show_wishlist_card_mb %} show-mb{% endif %}" data-wishlist data-wishlist-handle="{{ product_card_product.handle }}" data-product-id="{{ product_card_product.id }}"><span class="text">{{ 'wishlist.general.add' | t }}</span> {% render 'icon-heart-2' %}{% if settings.show_wishlist_full_icon %}{% render 'icon-heart-add' %}{% endif %}</button>
+                                </div>
+                            {%- endif -%}
+                        {%- endif -%}
+
+                        {%- comment -%} Quick view icon {%- endcomment -%}
+                        {%- if show_quick_view -%}
+                            <div class="card-product__group-item card-quickview card-quickviewIcon{% if settings.show_quick_view_mb %} show-mb{% endif %}{% if card_layout != '08' %}{% if settings.product_quick_view_type == 'default' %} default{% endif %}{% endif %}">
+                                <button type="button" title="{{ 'products.product.quick_view' | t }}" class="quickview-icon" data-product-id="{{ product_card_product.id }}" data-open-quick-view-popup data-product-handle="{{ product_card_product.handle }}">
+                                    {%- if card_layout == '02' or card_layout == '03' -%}
+                                        <span class="visually-hidden">{{ 'products.product.quick_view' | t }}</span>
+                                        <span class="text">{{ 'products.product.quick_view' | t }}</span>
+                                    {%- elsif card_layout == '04' or card_layout == '05' -%}
+                                        <span class="text">{{ 'products.product.quick_view_2' | t }}</span>
+                                    {%- else -%}
+                                        <span class="text">{{ 'products.product.quick_view' | t }}</span>
+                                    {%- endif -%}
+                                    {% render 'icon-eyes' %}
+                                </button>
+                            </div>
+                        {%- endif -%}
+
+                        {%- comment -%} Compare icon {%- endcomment -%}
+                        {%- if show_compare -%}
+                            {% render 'product-compare', product: product_card_product, sectionId: sectionId, class: 'card-product__group-item card-compare card-compareIcon' %}
+                        {%- endif -%}
+                    </div>
+                {%- endif -%}
+
+                {%- comment -%} === LAYOUT 03: card-group-abs-center (wishlist + ATC) === {%- endcomment -%}
+                {%- if card_layout == '03' -%}
+                    <div class="card-group-abs-center">
+                        {%- if show_wishlist -%}
+                            <div class="card-product__group-item card-wishlist">
+                                <button type="button" title="{{ 'wishlist.general.add' | t }}" class="wishlist-icon" data-wishlist data-wishlist-handle="{{ product_card_product.handle }}" data-product-id="{{ product_card_product.id }}"><span class="text">{{ 'wishlist.general.add' | t }}</span> {% render 'icon-heart-2' %}{% if settings.show_wishlist_full_icon %}{% render 'icon-heart-add' %}{% endif %}</button>
+                            </div>
+                        {%- endif -%}
+                        {%- if settings.show_action and complementary_product_button_atc -%}
+                            <div class="card-action">
+                                {% render 'add-to-cart-form', product: product_card_product, id: 'form', position: position, sectionId: sectionId %}
+                            </div>
+                        {%- endif -%}
+                    </div>
+                    <div class="card-group-abs-bottom">
+                        {% if settings.display_item_size %}
+                            {% render 'product-item-size', product: product_card_product %}
+                        {% endif %}
+                        {%- if settings.show_quick_view and settings.product_quick_view_type == 'default' -%}
+                            <div class="card-quickview">
+                                <button type="button" title="{{ 'products.product.quick_view' | t }}" class="quickview-button button" data-product-id="{{ product_card_product.id }}" data-open-quick-view-popup data-product-handle="{{ product_card_product.handle }}">
+                                    <span class="visually-hidden">{{ 'products.product.quick_view' | t }}</span>
+                                    {{ 'products.product.quick_view' | t }}
+                                </button>
+                            </div>
+                        {%- endif -%}
+                    </div>
+                {%- endif -%}
+
+                {%- comment -%} === LAYOUT 04: card-action with ATC + wishlist in card-action-bottom === {%- endcomment -%}
+                {%- if card_layout == '04' -%}
+                    {%- if settings.show_action or show_wishlist -%}
+                        <div class="card-action">
+                            {%- if settings.show_action and complementary_product_button_atc -%}
+                                {% render 'add-to-cart-form', product: product_card_product, id: 'form', position: position, sectionId: sectionId %}
+                            {%- endif -%}
+                            <div class="card-action-bottom{% if show_wishlist %} has-wishlist{% endif %}{% if settings.show_wishlist_card_mb %} show-mb{% endif %} text-{{ settings.product_content_text_align }}">
+                                {%- if show_wishlist -%}
+                                    <div class="card-product__group-item card-wishlist">
+                                        <button type="button" title="{{ 'wishlist.general.add' | t }}" class="wishlist-icon test-wishlist" data-wishlist data-wishlist-handle="{{ product_card_product.handle }}" data-product-id="{{ product_card_product.id }}">{% render 'icon-heart-2' %}{% if settings.show_wishlist_full_icon %}{% render 'icon-heart-add' %}{% endif %}<span class="text">{{ 'wishlist.general.add' | t }}</span></button>
+                                    </div>
+                                {%- endif -%}
+                            </div>
+                        </div>
+                    {%- endif -%}
+                {%- endif -%}
+
+                {%- comment -%} === LAYOUT 05: card-action with ATC + compare in card-action-bottom === {%- endcomment -%}
+                {%- if card_layout == '05' -%}
+                    {%- if settings.show_action or settings.show_compare -%}
+                        <div class="card-action{% if settings.show_compare and settings.product_compare_type == 'default' %} has-compare{% endif %}{% if settings.show_product_marquee %} has-marquee{% endif %}">
+                            {%- if settings.show_action and complementary_product_button_atc -%}
+                                {% render 'add-to-cart-form', product: product_card_product, id: 'form', position: position, sectionId: sectionId %}
+                            {%- endif -%}
+                            <div class="card-action-bottom">
+                                {%- if settings.show_compare and settings.product_compare_type == 'default' -%}
+                                    {% render 'product-compare', product: product_card_product, sectionId: sectionId, class: 'card-compare' %}
+                                {%- endif -%}
+                            </div>
+                        </div>
+                    {%- endif -%}
+                {%- endif -%}
+
+                {%- comment -%} === ITEM SIZE (layouts default, 02, 04, 06, 07, 08 -- not 03 or 05) === {%- endcomment -%}
+                {%- if card_layout != '03' and card_layout != '05' -%}
+                    {%- if card_layout == '08' -%}
+                        {%- comment -%} Layout 08: item size after card-action {%- endcomment -%}
+                    {%- else -%}
+                        {%- if settings.display_item_size -%}
+                            {% render 'product-item-size', product: product_card_product %}
+                        {%- endif -%}
+                    {%- endif -%}
+                {%- endif -%}
+
+                {%- comment -%} === QUICK VIEW DEFAULT BUTTON (layouts default, 02, 03, 04, 06) === {%- endcomment -%}
+                {%- if card_layout == 'default' or card_layout == '02' or card_layout == '04' or card_layout == '06' -%}
+                    {%- if settings.show_quick_view and settings.product_quick_view_type == 'default' -%}
+                        <div class="card-quickview">
+                            <button type="button" title="{{ 'products.product.quick_view' | t }}" class="quickview-button button" data-product-id="{{ product_card_product.id }}" data-open-quick-view-popup data-product-handle="{{ product_card_product.handle }}">
+                                {%- if card_layout == '02' -%}
+                                    <span class="visually-hidden">{{ 'products.product.quick_view' | t }}</span>
+                                {%- endif -%}
+                                {{ 'products.product.quick_view' | t }}
+                            </button>
+                        </div>
+                    {%- endif -%}
+                {%- endif -%}
+
+                {%- comment -%} === CARD ACTION inside card-product__wrapper (layouts default, 07, 08) === {%- endcomment -%}
+                {%- if card_layout == 'default' -%}
+                    {%- if settings.show_action and complementary_product_button_atc -%}
+                        <div class="card-action{% if settings.show_compare and settings.product_compare_type == 'default' %} has-compare{% endif %}">
+                            {% render 'add-to-cart-form', product: product_card_product, id: 'form', position: position, sectionId: sectionId %}
+                        </div>
+                    {%- endif -%}
+                {%- endif -%}
+
+                {%- if card_layout == '07' -%}
+                    {%- if settings.show_action and complementary_product_button_atc -%}
+                        <div class="card-action{% if settings.show_compare and settings.product_compare_type == 'default' %} has-compare{% endif %}">
+                            {%- if settings.show_quick_view and settings.product_quick_view_type == 'default' -%}
+                                <div class="card-quickview above-button">
+                                    <button type="button" title="{{ 'products.product.quick_view' | t }}" class="quickview-button button" data-product-id="{{ product_card_product.id }}" data-open-quick-view-popup data-product-handle="{{ product_card_product.handle }}">{{ 'products.product.quick_view' | t }}</button>
+                                </div>
+                            {%- endif -%}
+                            {% render 'add-to-cart-form', product: product_card_product, id: 'form', position: position, sectionId: sectionId %}
+                        </div>
+                    {%- endif -%}
+                {%- endif -%}
+
+                {%- if card_layout == '08' -%}
+                    {%- if settings.show_action and complementary_product_button_atc -%}
+                        <div class="card-action{% if settings.show_compare and settings.product_compare_type == 'default' %} has-compare{% endif %}">
+                            {% render 'add-to-cart-form', product: product_card_product, id: 'form', position: position, sectionId: sectionId %}
+                        </div>
+                    {%- endif -%}
+                    {%- if settings.display_item_size -%}
+                        {% render 'product-item-size', product: product_card_product %}
+                    {%- endif -%}
+                {%- endif -%}
+
+                {%- comment -%} === COMPARE DEFAULT inside card-product__wrapper (layout default only) === {%- endcomment -%}
+                {%- if card_layout == 'default' -%}
+                    {%- if settings.show_compare and settings.product_compare_type == 'default' -%}
+                        {% render 'product-compare', product: product_card_product, sectionId: sectionId, class: 'card-compare' %}
+                    {%- endif -%}
+                {%- endif -%}
+
+                {%- comment -%} === MARQUEE === {%- endcomment -%}
+                {%- if settings.show_product_marquee -%}
+                    {%- render 'product-card-marquee', product: product_card_product -%}
+                {%- endif -%}
+
+                {%- comment -%} === COUNTDOWN (layout 08 only) === {%- endcomment -%}
+                {%- if card_layout == '08' -%}
+                    {%- if settings.enable_countdown_layout_card -%}
+                        {%- liquid
+                            assign show_countdown = settings.show_countdown
+                            if show_countdown
+                                assign countdown_type = settings.countdown_type
+                                assign countdown_time = settings.countdown_time
+                                assign countdown_collection = settings.countdown_collection | downcase | handle
+                                assign countdown_style = settings.countdown_style
+                            endif
+                        -%}
+                        {%- if show_countdown -%}
+                            <div class="card-countDown">
+                                {% render 'product-countdown',
+                                    product: product_card_product,
+                                    countdown_type: countdown_type,
+                                    countdown_time: countdown_time,
+                                    countdown_collection: countdown_collection
+                                %}
+                            </div>
+                        {%- endif -%}
+                    {%- endif -%}
+                {%- endif -%}
+
+            </div>{%- comment -%} /card-product__wrapper {%- endcomment -%}
+
+            {%- comment -%} === LAYOUT 02: info-on-image block === {%- endcomment -%}
+            {%- if card_layout == '02' -%}
+                {% if settings.enable_infor_on_image %}
+                <div class="card-information__wrapper text-{{ settings.product_content_text_align }}">
+                    {% if settings.disable_product_card_border and settings.enable_custom_layout_card %}
+                        <div class="wrapper-title-vendor {% if settings.product_title_line_text != 'full' %} card-title-ellipsis{% endif %}">
+                    {% endif %}
+
+                    {%- if settings.show_vendor -%}
+                        {% unless settings.disable_product_card_border and settings.enable_custom_layout_card %}
+                        <div class="card-information__group card-information__group-2">
+                        {% endunless %}
+                            <div class="card-vendor link-underline">
+                                <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
+                                {{ product_card_product.vendor | link_to_vendor: class: 'vendor-text' }}
+                            </div>
+                        {% unless settings.disable_product_card_border and settings.enable_custom_layout_card %}
+                        </div>
+                        {% endunless %}
+                    {%- endif -%}
+
+                    <a class="card-title link-underline{% if settings.product_title_line_text != 'full' %} card-title-ellipsis{% endif %}{% if variant_selected != blank %} card-title-change{% endif %}" href="{{ product_card_product.url }}" data-product-title="{{ product_card_product.title | escape }}" data-product-url="{{ product_card_product.url }}">
+                        <span class="text">
+                            {{ product_card_product.title | escape }}
+                            {% if variant_selected != blank %}
+                                <span data-change-title> {% if settings.style_text_color_varriant == '01' %}-{% endif %} {{ variant_selected }}</span>
+                            {% endif %}
+                        </span>
+                    </a>
+
+                    {% if settings.disable_product_card_border and settings.enable_custom_layout_card %}
+                        </div>
+                    {% endif %}
+
+                    {% render 'product-card-summary', product: product_card_product, class: 'card-list__hidden' %}
+
+                    {%- if show_price -%}
+                        <div class="card-price">
+                            {% render 'price', product: product_card_product, price_class: '', hasCountdown: hasCountdown %}
+                        </div>
+                    {%- endif -%}
+
+                    {%- if product_card_product.metafields.custom.positive_vibes_almost_sold_out or product_card_product.metafields.custom.positive_vibes_recently_people_gave_review or product_card_product.metafields.custom.positive_vibes_top_best_seller -%}
+                        <positive-vibes class="card-positive_vibes positive_vibes">
+                            <div class="text-vibes">
+                                {%- if product_card_product.metafields.custom.positive_vibes_almost_sold_out -%}
+                                    <div class="text-vibes--child"><p>{% render 'icon-fire-3' %} {{product_card_product.metafields.custom.positive_vibes_almost_sold_out}}</p></div>
+                                {%- endif -%}
+                                {%- if product_card_product.metafields.custom.positive_vibes_recently_people_gave_review -%}
+                                    <div class="text-vibes--child"><p>{% render 'icon-check-2' %} {{product_card_product.metafields.custom.positive_vibes_recently_people_gave_review}}</p></div>
+                                {%- endif -%}
+                                {%- if product_card_product.metafields.custom.positive_vibes_top_best_seller -%}
+                                    <div class="text-vibes--child"><p><span class="hot-stock">{{ 'products.product.hot_stock_text' | t }}</span> {{product_card_product.metafields.custom.positive_vibes_top_best_seller}}</p></div>
+                                {%- endif -%}
+                            </div>
+                        </positive-vibes>
+                    {%- endif -%}
+                </div>
+                {% endif %}
+            {%- endif -%}
+
+        </div>{%- comment -%} /card-product {%- endcomment -%}
+
+        {%- comment -%} === LAYOUT 06: card-action OUTSIDE card-product === {%- endcomment -%}
+        {%- if card_layout == '06' -%}
+            {%- if settings.show_action and complementary_product_button_atc -%}
+                <div class="card-action card-grid__hidden{% if settings.show_compare and settings.product_compare_type == 'default' %} has-compare{% endif %}" data-cart-action-for-quickshop-2>
+                    {% render 'add-to-cart-form', product: product_card_product, id: 'form', position: position, sectionId: sectionId %}
+                </div>
+            {%- endif -%}
+        {%- endif -%}
+
+        {%- comment -%} === CARD INFORMATION === {%- endcomment -%}
+        <div class="card-information
+            {%- if card_layout == '05' and show_wishlist %} has-wishlist{% endif -%}
+        ">
+            <div class="card-information__wrapper text-{{ settings.product_content_text_align }}
+                {%- if card_layout == '02' and settings.enable_infor_on_image %} hidden{% endif -%}
+            ">
+
+                {%- comment -%} === LAYOUT default: custom layout card 1 - size text above title === {%- endcomment -%}
+                {%- if card_layout == 'default' -%}
+                    {% if settings.enable_custom_layout_card_1 %}
+                        {%- if settings.display_text_size -%}
+                            {% assign variant_size = product_card_product.options_by_name['Size'].values | size %}
+                            {%- if variant_size > 0 -%}
+                                <div class="wrapper-review-size">
+                                    <span class="text-size text-{{ settings.product_content_text_align }}">{{ 'products.product.more_sizes' | t }}</span>
+                                </div>
+                            {%- endif -%}
+                        {%- endif -%}
+                    {%- endif -%}
+                {%- endif -%}
+
+                {%- comment -%} === VENDOR === {%- endcomment -%}
+                {%- if card_layout == '02' -%}
+                    {%- if settings.show_vendor -%}
+                        {% unless settings.disable_product_card_border and settings.enable_custom_layout_card %}
+                        <div class="card-information__group card-information__group-2">
+                        {% endunless %}
+                            <div class="card-vendor link-underline">
+                                <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
+                                {{ product_card_product.vendor | link_to_vendor: class: 'vendor-text' }}
+                            </div>
+                        {% unless settings.disable_product_card_border and settings.enable_custom_layout_card %}
+                        </div>
+                        {% endunless %}
+                    {%- endif -%}
+                {%- elsif card_layout == '05' -%}
+                    {%- if settings.show_vendor -%}
+                        <div class="card-information__group card-information__group-2{% if show_wishlist %} has-wishlist{% endif %}">
+                            {%- if settings.show_vendor -%}
+                                <div class="card-vendor"><span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span> {{ product_card_product.vendor | link_to_vendor: class: 'vendor-text' }}</div>
+                            {%- endif -%}
+                            {%- if show_wishlist -%}
+                                <div class="card-product__group-item card-wishlist">
+                                    <button type="button" title="{{ 'wishlist.general.add' | t }}" class="wishlist-icon{% if settings.show_wishlist_card_mb %} show-mb{% endif %}" data-wishlist data-wishlist-handle="{{ product_card_product.handle }}" data-product-id="{{ product_card_product.id }}">{% render 'icon-heart-2' %}{% if settings.show_wishlist_full_icon %}{% render 'icon-heart-add' %}{% endif %} <span class="visually-hidden text">{{ 'wishlist.general.add' | t }}</span></button>
+                                </div>
+                            {%- endif -%}
+                        </div>
+                    {%- endif -%}
+                {%- elsif card_layout == '06' -%}
+                    {%- if settings.show_vendor -%}
+                        <div class="card-vendor link-underline"><span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>{{ product_card_product.vendor | link_to_vendor: class: 'vendor-text' }}</div>
+                    {%- endif -%}
+                {%- else -%}
+                    {%- if settings.show_vendor -%}
+                        <div class="card-information__group card-information__group-2">
+                            <div class="card-vendor"><span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span> {{ product_card_product.vendor | link_to_vendor: class: 'vendor-text' }}</div>
+                        </div>
+                    {%- endif -%}
+                {%- endif -%}
+
+                {%- comment -%} === LAYOUT 02: title as <a> tag with wrapper-title-vendor === {%- endcomment -%}
+                {%- if card_layout == '02' -%}
+                    {% if settings.disable_product_card_border and settings.enable_custom_layout_card %}
+                        <div class="wrapper-title-vendor {% if settings.product_title_line_text != 'full' %} card-title-ellipsis{% endif %}">
+                    {% endif %}
+
+                    <a class="card-title link-underline{% if settings.product_title_line_text != 'full' %} card-title-ellipsis{% endif %}{% if variant_selected != blank %} card-title-change{% endif %}" href="{{ product_card_product.url }}" data-product-title="{{ product_card_product.title | escape }}" data-product-url="{{ product_card_product.url }}">
+                        <span class="text">
+                            {{ product_card_product.title | escape }}
+                            {% if variant_selected != blank %}
+                                <span data-change-title> {% if settings.style_text_color_varriant == '01' %}-{% endif %} {{ variant_selected }}</span>
+                            {% endif %}
+                        </span>
+                    </a>
+
+                    {% if settings.disable_product_card_border and settings.enable_custom_layout_card %}
+                        </div>
+                    {% endif %}
+
+                {%- comment -%} === LAYOUT 03: title as <a> tag (no h3) === {%- endcomment -%}
+                {%- elsif card_layout == '03' -%}
+                    <a class="card-title link-underline{% if settings.product_title_line_text != 'full' %} card-title-ellipsis{% endif %}{% if variant_selected != blank %} card-title-change{% endif %}" href="{{ product_card_product.url }}" data-product-title="{{ product_card_product.title | escape }}" data-product-url="{{ product_card_product.url }}">
+                        <span class="text">
+                            {{ product_card_product.title | escape }}
+                            {% if variant_selected != blank %}
+                                <span data-change-title> {% if settings.style_text_color_varriant == '01' %}-{% endif %} {{ variant_selected }}</span>
+                            {% endif %}
+                        </span>
+                    </a>
+
+                {%- comment -%} === LAYOUT 05: swatch BEFORE title === {%- endcomment -%}
+                {%- elsif card_layout == '05' -%}
+                    {%- if settings.enable_combined_products_listing and custom_fields != blank -%}
+                        {% render 'combined-products-listing', product: product %}
+                    {%- else -%}
+                        {%- if isColor -%}
+                            {%- unless settings.show_swatch -%}
+                            <div class="hidden">
+                            {%- endunless -%}
+                                {% render 'product-swatch', product: product_card_product, index: index, variant_selected: variant_selected %}
+                            {%- unless settings.show_swatch -%}
+                            </div>
+                            {%- endunless -%}
+                        {%- endif -%}
+                    {%- endif -%}
+
+                    <h3 class="card__heading"><a class="card-title link-underline{% if settings.product_title_line_text != 'full' %} card-title-ellipsis{% endif %}{% if variant_selected != blank %} card-title-change{% endif %}" href="{{ product_card_product.url }}" data-product-title="{{ product_card_product.title | escape }}" data-product-url="{{ product_card_product.url }}">{{ product_card_product.title | escape }}{% if variant_selected != blank %} <span data-change-title> {% if settings.style_text_color_varriant == '01' %}-{% endif %} {{ variant_selected }}</span>{% endif %}</a></h3>
+
+                {%- comment -%} === ALL OTHER LAYOUTS: title as <h3> with variant text === {%- endcomment -%}
+                {%- else -%}
+                    <h3 class="card__heading"><a class="card-title link-underline{% if settings.product_title_line_text != 'full' %} card-title-ellipsis{% endif %}{% if variant_selected != blank %} card-title-change{% endif %}" href="{{ product_card_product.url }}" data-product-title="{{ product_card_product.title | escape }}" data-product-url="{{ product_card_product.url }}">{{ product_card_product.title | escape }}
+                        {%- if variant_selected != blank -%}
+                            {%- if card_layout == '07' or card_layout == '08' -%}
+                                <span data-change-title> {% unless settings.quick_shop_type == '2' %}{% if settings.style_text_color_varriant == '01' %}-{% endif %} {{ variant_selected }}{% endunless %}</span>
+                            {%- elsif card_layout == 'default' -%}
+                                <span data-change-title> {% unless settings.quick_shop_type == '2' %}{% if settings.style_text_color_varriant == '01' %}-{% endif %} {{ variant_selected }}{% endunless %}</span>
+                            {%- else -%}
+                                <span data-change-title> {% if settings.style_text_color_varriant == '01' %}-{% endif %} {{ variant_selected }}</span>
+                            {%- endif -%}
+                        {%- endif -%}
+                    </a></h3>
+                {%- endif -%}
+
+                {%- comment -%} === PRODUCT CARD SUMMARY === {%- endcomment -%}
+                {% render 'product-card-summary', product: product_card_product, class: 'card-list__hidden' %}
+
+                {%- comment -%} === LAYOUT default: custom position swatch wrapping price === {%- endcomment -%}
+                {%- if card_layout == 'default' -%}
+                    {%- if settings.enable_custom_position_swatch_layout_card_1 -%}
+                    <div class="wrapper-price-swatch d-flex flex-jc-between flex-align-center">
+                    {%- endif -%}
+                {%- endif -%}
+
+                {%- comment -%} === PRICE === {%- endcomment -%}
+                {%- if show_price -%}
+                    <div class="card-price">
+                        {% render 'price', product: product_card_product, price_class: '', hasCountdown: hasCountdown %}
+                    </div>
+                {%- endif -%}
+
+                {%- comment -%} === LAYOUT default: custom position swatch inside wrapper === {%- endcomment -%}
+                {%- if card_layout == 'default' -%}
+                    {%- if settings.enable_custom_position_swatch_layout_card_1 -%}
+                        {%- if isColor -%}
+                            {%- unless settings.show_swatch -%}
+                            <div class="hidden">
+                            {%- endunless -%}
+                                {% render 'product-swatch', product: product_card_product, variant_selected: variant_selected, index: index %}
+                            {%- unless settings.show_swatch -%}
+                            </div>
+                            {%- endunless -%}
+                        {%- endif -%}
+                    {%- endif -%}
+                    {%- if settings.enable_custom_position_swatch_layout_card_1 -%}
+                    </div>
+                    {%- endif -%}
+                {%- endif -%}
+
+                {%- comment -%} === POSITIVE VIBES === {%- endcomment -%}
+                {%- if product_card_product.metafields.custom.positive_vibes_almost_sold_out or product_card_product.metafields.custom.positive_vibes_recently_people_gave_review or product_card_product.metafields.custom.positive_vibes_top_best_seller -%}
+                    <positive-vibes class="card-positive_vibes positive_vibes">
+                        <div class="text-vibes">
+                            {%- if product_card_product.metafields.custom.positive_vibes_almost_sold_out -%}
+                                <div class="text-vibes--child"><p>{% render 'icon-fire-3' %} {{product_card_product.metafields.custom.positive_vibes_almost_sold_out}}</p></div>
+                            {%- endif -%}
+                            {%- if product_card_product.metafields.custom.positive_vibes_recently_people_gave_review -%}
+                                <div class="text-vibes--child"><p>{% render 'icon-check-2' %} {{product_card_product.metafields.custom.positive_vibes_recently_people_gave_review}}</p></div>
+                            {%- endif -%}
+                            {%- if product_card_product.metafields.custom.positive_vibes_top_best_seller -%}
+                                <div class="text-vibes--child"><p><span class="hot-stock">{{ 'products.product.hot_stock_text' | t }}</span> {{product_card_product.metafields.custom.positive_vibes_top_best_seller}}</p></div>
+                            {%- endif -%}
+                        </div>
+                    </positive-vibes>
+                {%- endif -%}
+
+                {%- comment -%} === LAYOUT 05: extra info-group for size, hidden list items === {%- endcomment -%}
+                {%- if card_layout == '05' -%}
+                    <div class="card-information__group">
+                        {%- if settings.display_text_size -%}
+                            {%- assign variant_size = product_card_product.options_by_name['Size'].values | size -%}
+                            {%- if variant_size > 0 -%}
+                                <span class="text-size text-{{ settings.product_content_text_align }}">{{ 'products.product.more_sizes' | t }}</span>
+                            {%- endif -%}
+                        {%- endif -%}
+                    </div>
+                    {% render 'product-card-summary', product: product_card_product, class: 'card-list__hidden' %}
+                    <div class="card-price card-list__hidden">{% render 'price', product: product_card_product, price_class: '' %}</div>
+                    <div class="card-list__hidden">
+                        {%- if isColor -%}
+                            {%- unless settings.show_swatch -%}
+                            <div class="hidden">
+                            {%- endunless -%}
+                                {% render 'product-swatch', product: product_card_product, index: index %}
+                            {%- unless settings.show_swatch -%}
+                            </div>
+                            {%- endunless -%}
+                        {%- endif -%}
+                    </div>
+                {%- endif -%}
+
+            </div>{%- comment -%} /card-information__wrapper {%- endcomment -%}
+
+            {%- comment -%} === SWATCH / COMBINED PRODUCTS (outside wrapper, layouts default, 02, 03, 04, 06, 07, 08) === {%- endcomment -%}
+            {%- if card_layout != '05' -%}
+                {%- if settings.enable_combined_products_listing and custom_fields != blank -%}
+                    {% render 'combined-products-listing', product: product %}
+                {%- else -%}
+                    {%- if card_layout == 'default' -%}
+                        {%- unless settings.enable_custom_position_swatch_layout_card_1 -%}
+                            {%- if isColor -%}
+                                {%- unless settings.show_swatch -%}
+                                <div class="hidden">
+                                {%- endunless -%}
+                                    {% render 'product-swatch', product: product_card_product, variant_selected: variant_selected, index: index %}
+                                {%- unless settings.show_swatch -%}
+                                </div>
+                                {%- endunless -%}
+                            {%- endif -%}
+                        {%- endunless -%}
+                    {%- else -%}
+                        {%- if isColor -%}
+                            {%- unless settings.show_swatch -%}
+                            <div class="hidden">
+                            {%- endunless -%}
+                                {% render 'product-swatch', product: product_card_product, index: index, variant_selected: variant_selected %}
+                            {%- unless settings.show_swatch -%}
+                            </div>
+                            {%- endunless -%}
+                        {%- endif -%}
+                    {%- endif -%}
+                {%- endif -%}
+            {%- endif -%}
+
+            {%- comment -%} === TEXT SIZE (outside wrapper, not layout 05 which handles it above) === {%- endcomment -%}
+            {%- if card_layout != '05' and card_layout != 'default' -%}
+                {%- if settings.display_text_size -%}
+                    {%- assign variant_size = product_card_product.options_by_name['Size'].values | size -%}
+                    {%- if variant_size > 0 -%}
+                        <span class="text-size text-{{ settings.product_content_text_align }}">{{ 'products.product.more_sizes' | t }}</span>
+                    {%- endif -%}
+                {%- endif -%}
+            {%- endif -%}
+            {%- if card_layout == 'default' -%}
+                {% unless settings.enable_custom_layout_card_1 %}
+                    {%- if settings.display_text_size -%}
+                        {% assign variant_size = product_card_product.options_by_name['Size'].values | size %}
+                        {%- if variant_size > 0 -%}
+                            <span class="text-size text-{{ settings.product_content_text_align }}">{{ 'products.product.more_sizes' | t }}</span>
+                        {%- endif -%}
+                    {%- endif -%}
+                {%- endunless -%}
+            {%- endif -%}
+
+            {%- comment -%} === CARD ACTION / ATC (in card-information, layout 02) === {%- endcomment -%}
+            {%- if card_layout == '02' -%}
+                {%- if settings.enable_custom_layout_card -%}
+                    <div class="wrapper__card{% if show_wishlist %} show-wishlist{% endif %}{% if settings.show_wishlist_card_mb %} show-mb{% endif %}">
+                        {%- if settings.show_action and complementary_product_button_atc -%}
+                            <div class="card-action{% if settings.show_compare and settings.product_compare_type == 'default' %} has-compare{% endif %}">
+                                {% render 'add-to-cart-form', product: product_card_product, id: 'form', position: position, sectionId: sectionId %}
+                            </div>
+                        {%- endif -%}
+                        {%- if settings.show_action and complementary_product_button_atc -%}
+                            {% render 'add-to-cart-form-category-list', product: product_card_product, id: 'form', list: 'list', position: position, sectionId: sectionId %}
+                        {%- endif -%}
+                        {%- if show_wishlist -%}
+                            <div class="card-product__group-item card-wishlist">
+                                <button type="button" title="{{ 'wishlist.general.add' | t }}" class="wishlist-icon{% if settings.show_wishlist_card_mb %} show-mb{% endif %}" data-wishlist data-wishlist-handle="{{ product_card_product.handle }}" data-product-id="{{ product_card_product.id }}">
+                                    <span class="visually-hidden">{{ 'wishlist.general.add' | t }}</span>
+                                    <span class="text">{{ 'wishlist.general.add' | t }}</span>
+                                    {% render 'icon-heart-2' %}
+                                    {% if settings.show_wishlist_full_icon %}{% render 'icon-heart-add' %}{% endif %}
+                                </button>
+                            </div>
+                        {%- endif -%}
+                    </div>
+                {%- else -%}
+                    {%- if settings.show_action and complementary_product_button_atc -%}
+                        <div class="card-action{% if settings.show_compare and settings.product_compare_type == 'default' %} has-compare{% endif %}">
+                            {% render 'add-to-cart-form', product: product_card_product, id: 'form', position: position, sectionId: sectionId %}
+                        </div>
+                    {%- endif -%}
+                    {%- if settings.show_action and complementary_product_button_atc -%}
+                        {% render 'add-to-cart-form-category-list', product: product_card_product, id: 'form', list: 'list', position: position, sectionId: sectionId %}
+                    {%- endif -%}
+                    {%- if settings.show_compare and settings.product_compare_type == 'default' -%}
+                        <div class="card-compare-wrapper">
+                            {% render 'product-compare', product: product_card_product, sectionId: sectionId, class: 'card-compare' %}
+                        </div>
+                    {%- endif -%}
+                {%- endif -%}
+            {%- endif -%}
+
+            {%- comment -%} === ATC CATEGORY LIST (layouts default, 03, 04, 05, 06, 07, 08) === {%- endcomment -%}
+            {%- if card_layout != '02' -%}
+                {%- if settings.show_action and complementary_product_button_atc -%}
+                    {%- if card_layout == 'default' -%}
+                        {% render 'add-to-cart-form-category-list', product: product_card_product, id: 'form', list: 'list', position: position, sectionId: sectionId %}
+                    {%- elsif card_layout == '03' or card_layout == '04' or card_layout == '05' or card_layout == '06' or card_layout == '07' or card_layout == '08' -%}
+                        {% render 'add-to-cart-form-category-list', product: product_card_product, id: 'form', list: 'list', position: position, sectionId: sectionId %}
+                    {%- endif -%}
+                {%- endif -%}
+            {%- endif -%}
+
+            {%- comment -%} === COMPARE DEFAULT (in card-information) === {%- endcomment -%}
+            {%- if card_layout == 'default' -%}
+                {%- if settings.show_compare and settings.product_compare_type == 'default' -%}
+                    <div class="card-compare-wrapper card-list__hidden">
+                        {% render 'product-compare', product: product_card_product, sectionId: sectionId, check: true %}
+                    </div>
+                {%- endif -%}
+            {%- elsif card_layout == '03' or card_layout == '04' -%}
+                {%- if settings.show_compare and settings.product_compare_type == 'default' -%}
+                    {% render 'product-compare', product: product_card_product, sectionId: sectionId, class: 'card-compare' %}
+                {%- endif -%}
+            {%- elsif card_layout == '05' -%}
+                {%- comment -%} Layout 05 compare is in card-action-bottom above {%- endcomment -%}
+            {%- elsif card_layout == '06' or card_layout == '07' or card_layout == '08' -%}
+                {%- if settings.show_compare and settings.product_compare_type == 'default' -%}
+                    <div class="card-compare-wrapper">
+                        {% render 'product-compare', product: product_card_product, sectionId: sectionId, check: true %}
+                    </div>
+                {%- endif -%}
+            {%- endif -%}
+
+            {%- comment -%} === LAYOUT 08: view details link === {%- endcomment -%}
+            {%- if card_layout == '08' -%}
+                <a class="view-details d-none" href="{{ product_card_product.url }}">{{ 'blogs.article.read_more' | t }}</a>
+            {%- endif -%}
+
+        </div>{%- comment -%} /card-information {%- endcomment -%}
+    </div>{%- comment -%} /card {%- endcomment -%}
+</div>{%- comment -%} /product-item {%- endcomment -%}

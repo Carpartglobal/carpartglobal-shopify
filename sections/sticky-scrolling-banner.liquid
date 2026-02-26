@@ -177,7 +177,7 @@
                     {%- if image != blank -%}
                         <a class="image image-adapt"{% if link == blank %} role="link" aria-disabled="true"{% else %} href="{{ link }}"{% endif %} style="padding-top: 100vh;">
                             {%- assign height_dsk = image.width | divided_by: image.aspect_ratio | round -%}
-                            {{ image | image_url: width: 3840 | image_tag: loading: 'lazy', class: lazy, height: height_dsk, sizes: "100vw", widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840' }}
+                            {{ image | image_url: width: 3840 | image_tag: loading: 'lazy', class: lazy, height: height_dsk, sizes: "100vw", widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840', alt: image.alt | default: shop.name | escape }}
                             {%- if settings.enable_lazyload -%}<span class="data-lazy-loading"></span>{%- endif -%}
                         </a>
                     {%- else -%}
@@ -190,14 +190,14 @@
                     {%- if mobile_image != blank -%}
                         <a class="image image-mobile image-adapt adaptive_height"{% if link == blank %} role="link" aria-disabled="true"{% else %} href="{{ link }}"{% endif %} {% if link == blank %} role="link" aria-disabled="true"{% else %} href="{{ link }}"{% endif %} style="padding-top: 100vh;">
                             {%- assign height_mb = mobile_image.width | divided_by: mobile_image.aspect_ratio | round -%}
-                            {{ mobile_image | image_url: width: 750 | image_tag: loading: 'lazy',class: lazy, height: height_mb, sizes: "100vw", widths: '375, 550, 750'}}
+                            {{ mobile_image | image_url: width: 750 | image_tag: loading: 'lazy',class: lazy, height: height_mb, sizes: "100vw", widths: '375, 550, 750', alt: mobile_image.alt | default: shop.name | escape }}
                             {%- if settings.enable_lazyload -%}<span class="data-lazy-loading"></span>{%- endif -%}
                         </a>
                     {%- else -%}
                         {%- if image != blank -%}
                             <a class="image image-mobile image-adapt adaptive_height"{% if link == blank %} role="link" aria-disabled="true"{% else %} href="{{ link }}"{% endif %} style="padding-top: 100vh;">
                             {%- assign height_mb = image.width | divided_by: image.aspect_ratio | round -%}
-                            {{ image | image_url: width: 750 | image_tag: loading: 'lazy', class: lazy, height: height_mb, sizes: "100vw", widths: '375, 550, 750' }}
+                            {{ image | image_url: width: 750 | image_tag: loading: 'lazy', class: lazy, height: height_mb, sizes: "100vw", widths: '375, 550, 750', alt: image.alt | default: shop.name | escape }}
                             {%- if settings.enable_lazyload -%}<span class="data-lazy-loading"></span>{%- endif -%}
                             </a>
                         {%- else -%}

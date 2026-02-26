@@ -104,7 +104,7 @@
                                 <div class="faqs-icon-container">
                                     {% if message_method_icon_1 != blank %}
                                         <{% if message_method_link_1 != blank %}a href={{ message_method_link_1.url }}{% else %}div{% endif %} class='message-icon-1 message-icon'>
-                                            <img src="{{ message_method_icon_1 | image_url }}" width="{{ message_method_icon_1.width }}" height="{{ message_method_icon_2.height }}"{% if settings.enable_lazyload %} loading="lazy"{% endif %}/>
+                                            <img src="{{ message_method_icon_1 | image_url }}" width="{{ message_method_icon_1.width }}" height="{{ message_method_icon_2.height }}"{% if settings.enable_lazyload %} loading="lazy"{% endif %} alt="{{ message_method_text_1 | default: 'Contact method' | escape }}"/>
                                             {% if message_method_text_1 != blank %}
                                                 <span class="message-icon-text-1">{{ message_method_text_1 }}</span>
                                             {% endif %}
@@ -112,7 +112,7 @@
                                     {% endif %}
                                     {% if message_method_icon_2 != blank %}
                                         <{% if message_method_link_2 != blank %}a href={{ message_method_link_2.url }}{% else %}div{% endif %} class='message-icon-2 message-icon'>
-                                            <img src="{{ message_method_icon_2 | image_url }}" width="{{ message_method_icon_1.width }}" height="{{ message_method_icon_2.height }}"{% if settings.enable_lazyload %} loading="lazy"{% endif %}/>
+                                            <img src="{{ message_method_icon_2 | image_url }}" width="{{ message_method_icon_1.width }}" height="{{ message_method_icon_2.height }}"{% if settings.enable_lazyload %} loading="lazy"{% endif %} alt="{{ message_method_text_2 | default: 'Contact method' | escape }}"/>
                                             {% if message_method_text_2 != blank %}
                                                 <span class="message-icon-text-2">{{ message_method_text_2 }}</span>
                                             {% endif %}

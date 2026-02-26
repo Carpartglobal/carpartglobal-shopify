@@ -141,7 +141,6 @@ class ProductBundle extends HTMLElement {
                             $cartDropdown.html(response);
                         },
                         error: function (xhr, text) {
-                            console.log($.parseJSON(xhr.responseText).description);
                         },
                         complete: function () {
                             if($('.dropdown-item[data-currency]').length){
@@ -414,7 +413,6 @@ class ProductBundle extends HTMLElement {
                 if(availableVariants != undefined){
                     selectedVariant = availableVariants;
                 } else {
-                    console.log('Bundle Error: variant was soldout, on option selection #2')
                 }
 
                 break;
@@ -426,7 +424,6 @@ class ProductBundle extends HTMLElement {
                 if(availableVariants != undefined){
                    selectedVariant = availableVariants;
                 } else {
-                    console.log('Bundle Error: variant was soldout, on option selection #3')
                 }
 
                 break;

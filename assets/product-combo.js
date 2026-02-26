@@ -346,7 +346,6 @@ class ProductCombo extends HTMLElement {
                 if(availableVariants != undefined){
                     selectedVariant = availableVariants;
                 } else {
-                    console.log('Bundle Error: variant was soldout, on option selection #2')
                 }
 
                 break;
@@ -358,7 +357,6 @@ class ProductCombo extends HTMLElement {
                 if(availableVariants != undefined){
                    selectedVariant = availableVariants;
                 } else {
-                    console.log('Bundle Error: variant was soldout, on option selection #3')
                 }
 
                 break;

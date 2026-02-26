@@ -184,7 +184,7 @@
                                 <div class="review_flex">
                                     <div class="customer-review__item--left{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}"{% if settings.banner_animation == 'effect_fade_up' %} data-cascade style="--animation-order: 1;"{% endif %}>
                                         {%- if block.settings.heading != blank -%}
-                                            <span class="heading">{{ block.settings.heading }}</span>
+                                            <h3 class="heading">{{ block.settings.heading }}</h3>
                                         {%- endif -%}
                                         {%- if block.settings.sub_heading != blank -%}
                                             <div class="sub_heading">{{ block.settings.sub_heading }}</div>
@@ -228,7 +228,7 @@
                                         <div class="sub_heading">{{ block.settings.sub_heading }}</div>
                                     {%- endif -%}
                                     {%- if block.settings.heading != blank -%}
-                                        <span class="heading">{{ block.settings.heading }}</span>
+                                        <h3 class="heading">{{ block.settings.heading }}</h3>
                                     {%- endif -%}
                                     {%- if review_style == 'style_3' -%}
                                         <div class="content__wrapper">
@@ -317,7 +317,7 @@
                                         </div>
                                     {%- endif -%}
                                     {%- if block.settings.heading != blank -%}
-                                        <span class="heading">{{ block.settings.heading }}</span>
+                                        <h3 class="heading">{{ block.settings.heading }}</h3>
                                     {%- endif -%}
                                     {%- if section.settings.start_position == 'below_title' and review_style != 'style_3' -%}
                                         <div class="star-reviews">

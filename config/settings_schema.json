@@ -9179,5 +9179,16 @@
         "default": "#fff"
       }
     ]
+  },
+  {
+    "name": "Google Tag Manager",
+    "settings": [
+      {
+        "type": "text",
+        "id": "gtm_container_id",
+        "label": "Google Tag Manager Container ID",
+        "default": "GTM-TPXT4VLM"
+      }
+    ]
   }
 ]

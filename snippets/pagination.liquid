@@ -1,3 +1,13 @@
+{% doc %}
+  @param {object} paginate - The Shopify paginate object. Must be used inside {% paginate %} tags
+  @param {string} anchor - An anchor fragment (e.g. "#yourID") appended to pagination links so the page scrolls to a specific element on reload. Optional
+  @param {string} class - CSS class appended to the container element. Defaults to "pagination-wrapper". Optional
+  @example
+    {% paginate collection.products by 12 %}
+      {% render 'pagination', paginate: paginate, anchor: '#ProductGrid', class: 'custom-pagination' %}
+    {% endpaginate %}
+{% enddoc %}
+
 {% comment %}
     Renders a set of links for paginated results. Must be used within paginate tags.
 

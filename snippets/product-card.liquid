@@ -1,3 +1,14 @@
+{% doc %}
+  @param {object} product_card_product - Product Liquid object to render the card for
+  @param {string} sectionId - The ID of the parent section, used for form and compare references
+  @param {boolean} loading - Enables a loading effect on the card media
+  @param {string} serial - Serial identifier passed to the product badge snippet
+  @param {boolean} hasCountdown - Whether to show a countdown timer in the price display
+  @param {boolean} complementary_product_button_atc - Enables the add-to-cart action button on the card
+  @example
+    {% render 'product-card', product_card_product: product, sectionId: section.id %}
+{% enddoc %}
+
 {%- comment -%}
     Renders a product card
 

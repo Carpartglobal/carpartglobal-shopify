@@ -11,7 +11,7 @@
           {% if block.type == 'item' %}
             <a href="{{ block.settings.link }}" class="mega-item">
               {% if block.settings.icon %}
-                <img src="{{ block.settings.icon | image_url: width: 60 }}">
+                <img src="{{ block.settings.icon | image_url: width: 60 }}" alt="{{ block.settings.label | escape }}" width="60" height="60">
               {% endif %}
               <span>{{ block.settings.label }}</span>
             </a>
@@ -24,7 +24,7 @@
         {% for block in section.blocks %}
           {% if block.type == 'banner' %}
             <a href="{{ block.settings.link }}" class="banner">
-              <img src="{{ block.settings.image | image_url: width: 500 }}">
+              <img src="{{ block.settings.image | image_url: width: 500 }}" alt="{{ block.settings.image.alt | default: block.settings.label | escape }}">
             </a>
           {% endif %}
         {% endfor %}

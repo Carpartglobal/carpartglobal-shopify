@@ -1,3 +1,12 @@
+{% doc %}
+  @param {object} product - Product Liquid object to display pricing for
+  @param {boolean} use_variant - When true, renders the selected or first available variant price instead of overall product pricing. Default: false
+  @param {string} price_class - Additional CSS class appended to the price container element
+  @param {string} price_style - Price layout style. Set to "2" for alternate styling. Optional
+  @example
+    {% render 'price', product: product, use_variant: true, price_class: 'price--large' %}
+{% enddoc %}
+
 {%- comment -%}
     Renders a list of product's price (regular, sale)
 

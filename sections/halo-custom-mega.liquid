@@ -13,9 +13,9 @@
   <div class="container">
     <div class="mega-inner">
  <!-- MAIN TITLE -->
-  <span class="mega-item-main-title">
+  <h2 class="mega-item-main-title">
     {{ section.settings.menu_label }}
-  </span>
+  </h2>
   <div class="mega-inner-sub">
       <!-- LEFT ITEMS -->
   <div class="mega-items">
@@ -24,11 +24,11 @@
       <a href="{{ block.settings.link }}" class="mega-item">
         
         {% if block.settings.icon %}
-          <img src="{{ block.settings.icon | image_url: width: 60 }}">
+          <img src="{{ block.settings.icon | image_url: width: 60 }}" alt="{{ block.settings.title | escape }}">
         {% endif %}
 
         {% if block.settings.title != blank %}
-          <span class="mega-item-title">
+          <span class="mega-item-title h3">
             {{ block.settings.title }}
           </span>
         {% endif %}
@@ -42,14 +42,14 @@
       <!-- RIGHT BANNERS -->
       <div class="mega-banners">
        {% if section.settings.banner_1 %}
-  <img src="{{ section.settings.banner_1 | image_url: width: 400 }}">
+  <img src="{{ section.settings.banner_1 | image_url: width: 400 }}" alt="{{ section.settings.banner_1.alt | default: 'Menu banner' | escape }}">
 {% endif %}
 {% if section.settings.banner_2 %}
-  <img src="{{ section.settings.banner_2 | image_url: width: 400 }}">
+  <img src="{{ section.settings.banner_2 | image_url: width: 400 }}" alt="{{ section.settings.banner_2.alt | default: 'Menu banner' | escape }}">
 {% endif %}
 
     {% if section.settings.banner_3 %}
-  <img src="{{ section.settings.banner_3 | image_url: width: 400 }}">
+  <img src="{{ section.settings.banner_3 | image_url: width: 400 }}" alt="{{ section.settings.banner_3.alt | default: 'Menu banner' | escape }}">
 {% endif %}
 
       </div>

@@ -110,8 +110,7 @@ class VariantQuickViewSelects extends HTMLElement {
                 }
 
                 destination?.classList.remove('visibility-hidden');
-            } catch (err) { 
-                console.log('Something went wrong to fetch data!')
+            } catch (err) {
             }   
         }           
 

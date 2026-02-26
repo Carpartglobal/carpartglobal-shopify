@@ -156,7 +156,6 @@ Shopify.Products = (function () {
                     });
                 },
                 error: function () {
-                    console.log($.parseJSON(xhr.responseText).description);
                 }
             });
         } else {
