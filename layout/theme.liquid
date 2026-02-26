@@ -216,7 +216,7 @@ body .card-action .button:hover {
 
 
   
-    .header-advanced--style2 .header__search .search-modal__form .search__input {
+.header-advanced--style2 .header__search .search-modal__form .search__input {
     border-radius: 5px 0px 0px 5px;
    
     
@@ -425,7 +425,7 @@ span#closeVehicleModal {
 .formdiv .dba-search-btn {
     width: 100%;
 }
-div#vehicleModal diver {
+div#vehicleModal div {
     padding-left: 30px !important;
     padding-right: 30px !important;
     min-width: 870px;
@@ -467,7 +467,7 @@ select#model {
     border: none;
      border-color: rgb(204, 204, 204);
     opacity: 0.6;
-     border-width: 0px 0px 0px 01px;
+     border-width: 0px 0px 0px 1px;
     border-image: initial;
     border-style: solid;
 }
@@ -480,7 +480,7 @@ select#make {
     width: 200px;
      border-color: rgb(204, 204, 204);
     opacity: 0.6;
-    border-width: 0px 0px 0px 01px;
+    border-width: 0px 0px 0px 1px;
     border-image: initial;
     border-style: solid;
 
@@ -494,110 +494,170 @@ div#vehicleModal {
     border-radius: 5px;
 }
 
+/* Vehicle search form */
 form#vehicleSearchForm button {
     border: none;
     border-radius: 100px;
-    color: white;
     background: #000000;
+    color: white;
     width: 150px;
     height: 56px;
 }
+
+/* Quick search results */
 .quickSearchResultsBlock.quickSearchResultsWidget.quickSearchResultsWrap.is-show {
     transform: skew(10deg, 0deg) !important;
 }
+
+/* Header - Sign in text hover */
 .header-advanced--style2 .header-advanced-textRight span:hover {
     color: #e5002b;
 }
+
+/* Footer - content wrapper */
 .footer-block__details .rte .content-wrapper {
-    row-gap: 11px;
-    display: flex!important;
-    align-items: flex-start!!important;
-    justify-content: flex-start!!important;
-    margin-top: 10px;
-    flex-direction: column!important;
+    display: flex !important;
+    flex-direction: column !important;
     flex-wrap: nowrap;
-    align-content: flex-start!important;
-  align-items: flex-start!important;
-    justify-content: flex-start!important;
+    align-items: flex-start !important;
+    align-content: flex-start !important;
+    justify-content: flex-start !important;
+    row-gap: 11px;
+    margin-top: 10px;
 }
-            .footer-block__details .rte .content-wrapper .phone-wrapper {
-    order: 2;
-    margin-left: 0px!important;
+
+.footer-block__details .rte .content-wrapper .phone-wrapper {
+    display: flex !important;
+    order: 2 !important;
+    align-items: center !important;
+    margin-left: 0 !important;
 }
-            footer .halo-row {
+
+.footer-block__details .rte .content-piece a {
+    line-height: 37px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+footer .halo-row {
     display: flex;
     flex-wrap: nowrap;
     margin-left: -65px;
     margin-right: -65px;
 }
-            .footer-block__details .rte .content-piece a {
-    line-height: 37px;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
-            .footer-block__details .rte .content-wrapper .phone-wrapper {
-    display: flex!important;
-    order: 2 !important;
-    
-    align-items: center!important;
-}
-            .footer-block__column .footer-block__heading {
-   
-    font-size: 12px!important;
+
+.footer-block__column .footer-block__heading {
+    font-size: 12px !important;
     font-weight: 600;
-    text-transform: capitalize!important;
-            }
-            .main-menu--wrapper>.header__inline-menu>.list-menu {
-    margin-left: 0px !important;
+    text-transform: capitalize !important;
+}
+
+/* Main menu */
+.main-menu--wrapper > .header__inline-menu > .list-menu {
+    margin-left: 0 !important;
     margin-top: 10px;
-   
 }
-            span.header-advanced-text::after {
-  padding-left: 3px;
-  content: " to shop";
+
+/* Sign in to shop - " to shop" suffix */
+span.header-advanced-text::after {
+    padding-left: 3px;
+    content: " to shop";
 }
-            .header-advanced--style2 .header-advanced-textRight .hello {
+
+/* Header - Style 2 overrides */
+.header-advanced--style2 .header-advanced-textRight .hello {
     display: none;
     font-weight: var(--font-weight-normal);
 }
-            .header-advanced--style2 .header-advanced-account {
-    width: 124px!important;
+
+.header-advanced--style2 .header-advanced-account {
+    width: 124px !important;
     order: 1;
-    margin-left: 0px;
+    margin-left: 0;
     margin-right: 0;
 }
-            .header-advanced .header__icon--account svg {
-    width: 16px!mportant;
-    height: 16px!important;
 
-          }
-            a.become{
-          margin-right: 40px;
+.header-advanced .header__icon--account svg {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+/* Help Center & Sign in - equal heights */
+a.become,
+.header-advanced--style2 .header-advanced-account a.header__icon--account {
+    height: 43px;
+    min-height: 43px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* Help Center button */
+a.become {
+    margin-right: 40px;
+    min-width: 180px;
     font-weight: 600;
     font-size: 14px;
-    padding: 13px 24px;
-   min-width: 180px;
     background: #fff;
     color: #e5002b;
-                  transform: skewX(-10deg);
-            }
-                a.become:hover{
-        
+    transform: skewX(-10deg);
+}
+
+a.become:hover {
     background: #000000;
     color: white;
-                  transform: skewX(-10deg);
-            }
-            .header-advanced-textRight {
+    transform: skewX(-10deg);
+}
+
+/* Sign in to shop button */
+.header-advanced--style2 .header-advanced-account a.header__icon--account {
+    min-width: 140px;
+    background: #000000 !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transform: skewX(-10deg);
+}
+
+.header-advanced--style2 .header-advanced-account a.header__icon--account:hover {
+    background: #ffffff !important;
+    color: #e5002b !important;
+    transform: skewX(-10deg);
+}
+
+.header-advanced--style2 .header-advanced-account a.header__icon--account > *,
+.header-advanced--style2 .header-advanced-account a.header__icon--account .header-advanced-textRight {
+    transform: skewX(10deg);
+}
+
+/* Sign in - solid filled icon: white normally, red on hover */
+.header-advanced--style2 .header-advanced-account a.header__icon--account svg,
+.header-advanced--style2 .header-advanced-account a.header__icon--account svg path,
+.header-advanced--style2 .header-advanced-account a.header__icon--account svg * {
+    fill: #ffffff !important;
+    /*stroke: none !important;*/
+    /*stroke-width: 0 !important;*/
+}
+.header-advanced--style2 .header-advanced-account a.header__icon--account:hover svg,
+.header-advanced--style2 .header-advanced-account a.header__icon--account:hover svg path,
+.header-advanced--style2 .header-advanced-account a.header__icon--account:hover svg * {
+    fill: #e5002b !important;
+    /*stroke: none !important;*/
+    /*stroke-width: 0 !important;*/
+}
+.header-advanced-textRight {
     display: flex !important;
     flex-direction: column;
-    margin-left: 2px!important;
+    margin-left: 2px !important;
 }
-          }
-          @media (max-width:600px){
-.header__search .search-modal__form {
-    max-width: 100%;
-}
-.predictive-search--header {
+@media (max-width:600px){
+    .header__search .search-modal__form {
+        max-width: 100%;
+    }
+    .predictive-search--header {
   
     justify-self: center!important;
     right: 194px!important;
@@ -1662,6 +1722,59 @@ span.cm_vehicle-widget_header-label {
     padding: 3px 0px 3px 70px!important;
    
 }
+}
+/* Fix: Garage + Cart icons inline on same horizontal line (desktop) */
+@media (min-width: 1025px) {
+    .header-nav-vertical-menu #cm-garage {
+        display: flex !important;
+        align-items: center !important;
+    }
+    .header-nav-vertical-menu #cm-garage .cm_garage,
+    .header-nav-vertical-menu #cm-garage .cm_garage__container-desktop {
+        display: flex !important;
+        align-items: center !important;
+    }
+    .header-nav-vertical-menu .header-icons {
+        align-items: center !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .header-nav-vertical-menu .header__icon--cart,
+    .header-nav-vertical-menu .header__icon--cart a {
+        display: inline-flex !important;
+        align-items: center !important;
+        vertical-align: middle !important;
+        margin-top: 0 !important;
+    }
+    .header-nav-vertical-menu .header__icon--cart svg {
+        margin-top: 8px !important;
+        vertical-align: middle !important;
+        width: 28px !important;
+        height: 28px !important;
+    }
+    /* Both badges: same size + same vertical position */
+    .header-nav-vertical-menu #cm-garage .garage-size,
+    .header-nav-vertical-menu .header__icon--cart .cart-count-bubble {
+        top: 0 !important;
+        min-width: 24px !important;
+        width: 24px !important;
+        max-width: 24px !important;
+        min-height: 18px !important;
+        height: 18px !important;
+        max-height: 18px !important;
+        border-radius: 80px !important;
+        font-size: 12px !important;
+        line-height: 18px !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    /* Garage bubble: pull left to cover car icon */
+    .header-nav-vertical-menu #cm-garage .garage-size {
+        transform: translateX(-10px) !important;
+    }
 }
           </style>
     </head>

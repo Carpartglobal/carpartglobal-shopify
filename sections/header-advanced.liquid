@@ -204,8 +204,14 @@
                                                     {% assign is_contained = false %}
                                                 {% endif %}
                                                 {%- if section.settings.layout == 'style2' -%}
-                                                    <a href="{{ routes.account_login_url }}" class="header__icon header__icon--account link link--text"{% if is_contained %} data-open-auth-sidebar{% endif %}>
-                                                        {% render 'icon-account-2' %}
+                                                    <a href="{{ routes.account_login_url }}" class="header__icon header__icon--account sign-in-btn link link--text"{% if is_contained %} data-open-auth-sidebar{% endif %}>
+                                                        {%- case block.settings.account_icon -%}
+                                                        {%- when '1' -%}{% render 'icon-account-5', class: 'icon w-h-16' %}
+                                                        {%- when '2' -%}{% render 'icon-account-3' %}
+                                                        {%- when '3' -%}{% render 'icon-account', class: 'user-circle' %}
+                                                        {%- when '4' -%}{% render 'icon-account-4' %}
+                                                        {%- else -%}{% render 'icon-account-5', class: 'icon' %}
+                                                    {%- endcase -%}
                                                         <div class="header-advanced-textRight">
                                                             <span class="hello">{{ 'customer.hello' | t }}</span>
                                                             <span class="header-advanced-text">
@@ -233,7 +239,13 @@
                                                                     {{ customer | avatar }}
                                                                 </account-icon>
                                                             {%- else -%}
-                                                                {% render 'icon-account-2' %}
+                                                               {%- case block.settings.account_icon -%}
+                                                                {%- when '1' -%}{% render 'icon-account-5', class: 'icon w-h-16' %}
+                                                                {%- when '2' -%}{% render 'icon-account-3' %}
+                                                                {%- when '3' -%}{% render 'icon-account', class: 'user-circle' %}
+                                                                {%- when '4' -%}{% render 'icon-account-4' %}
+                                                                {%- else -%}{% render 'icon-account-5', class: 'icon' %}
+                                                            {%- endcase -%}
                                                             {%- endif -%}
                                                         </a>
                                                         <div class="header-advanced-textRight">
@@ -268,12 +280,14 @@
                                 </div>
                             {%- endif -%}
                     {%- endcase -%}
-         <a class="become" href="https://carpartglobal.com/pages/contact"> ☎  &nbsp; &nbsp; Help Center</a>
+                    <a class="become" href="https://carpartglobal.com/pages/contact"> ☎  &nbsp; &nbsp; Help Center</a>
+         
                 </div>
            
             </div>
         </div>
     {%- endfor -%}
+    
 </header>
 
 {% schema %}
@@ -913,6 +927,19 @@
                     "id": "show_account",
                     "label": "t:sections.header.settings.header_icons.label__2",
                     "default": true
+                },
+                {
+                    "type": "select",
+                    "id": "account_icon",
+                    "label": "Account icon style",
+                    "default": "5",
+                    "options": [
+                        {"value": "1", "label": "Icon 1"},
+                        {"value": "2", "label": "Icon 2"},
+                        {"value": "3", "label": "Icon 3"},
+                        {"value": "4", "label": "Icon 4"},
+                        {"value": "5", "label": "Icon 5 (Filled)"}
+                    ]
                 },
                 {
                     "type": "color",

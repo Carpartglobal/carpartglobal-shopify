@@ -982,6 +982,72 @@ body:not(:has(.productList)) .card-information:has(.card-information__wrapper.te
     font-size: var(--text-size-font-size);
 }
 
+/* Equal height product cards in halo block content (carousel & grid) */
+.halo-product-block .products-carousel .slick-track,
+.halo-product-block .products-carousel .slick-list {
+    display: flex !important;
+    align-items: stretch;
+}
+
+.halo-product-block .products-carousel .slick-slide,
+.halo-product-block .products-carousel .slick-slide > div {
+    height: auto !important;
+    display: flex !important;
+}
+
+.halo-product-block .products-carousel .product,
+.halo-product-block .products-grid .product {
+    height: 100%;
+    display: flex !important;
+    width: 100%;
+}
+
+.halo-product-block .products-carousel .product .product-item,
+.halo-product-block .products-grid .product .product-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.halo-product-block .products-carousel .product .card,
+.halo-product-block .products-grid .product .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.halo-product-block .products-carousel .product .card-information,
+.halo-product-block .products-grid .product .card-information {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.halo-product-block .products-carousel .product .card-information .card-information__wrapper,
+.halo-product-block .products-grid .product .card-information .card-information__wrapper {
+    flex: 1;
+}
+
+/* Consistent image height - square aspect ratio for uniform card sizes */
+.halo-product-block .products-carousel .product .card-media,
+.halo-product-block .products-grid .product .card-media {
+    aspect-ratio: 1 / 1;
+    padding-bottom: 0 !important;
+    flex-shrink: 0;
+}
+
+.halo-product-block .products-carousel .product .card-media img,
+.halo-product-block .products-grid .product .card-media img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* Product Tab */
 .product-tab-block .halo-block-header {
     margin-bottom: 0px;
