@@ -1,3 +1,11 @@
+.footer-block__details .rte .content-piece a {
+    /* text-decoration: underline; */
+    text-underline-offset: 4px;
+}
+
+.footer-block__details .rte .content-piece a{
+    text-decoration:none !important;
+}
 .rte > p:first-child {
     margin-top: 0;
 }
