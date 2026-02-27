@@ -1,3 +1,11 @@
+.footer-block__details .rte .content-piece a {
+    /* text-decoration: underline; */
+    text-underline-offset: 4px;
+}
+
+.footer-block__details .rte .content-piece a{
+    text-decoration:none !important;
+}
 .footer-block__item {
     display: inline-block;
     vertical-align: top;
@@ -225,8 +233,8 @@
 }
 
 .footer-block__details .rte .content-piece a {
-    text-decoration: underline;
-    text-underline-offset: 4px;
+    text-decoration:none !important;
+    text-underline-offset: 0%px;
 }
 
 .footer-block__details.has-content-piece .rte>p:last-of-type {
