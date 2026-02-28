@@ -1374,7 +1374,7 @@ span.cm_vehicle-widget_header-label::before {
   color: #1f2937 !important;
   padding: 0 5px 0 10px !important;
   background-color: #ffffff !important;
-  border: 1px solid #000000 !important;
+  {% comment %} border: 1px solid #000000 !important; {% endcomment %}
   border-radius: 2px !important;
       transform: skewX(-13deg) !important;
 }
@@ -2073,12 +2073,14 @@ html body .header-advanced .header-vehicle-search-bar .search__input {
 {% comment %} .header__search .search-modal__form {
     max-width: 100px !important;
 } {% endcomment %}
+
+
 .cm_search-box-root .cm_search-box_form-container {
   width: 127% !important;
 
   }
 
-
+}
 
 
       </style>
