@@ -1374,7 +1374,7 @@ span.cm_vehicle-widget_header-label::before {
   color: #1f2937 !important;
   padding: 0 5px 0 10px !important;
   background-color: #ffffff !important;
-  border: 1px solid #000000 !important;
+  {% comment %} border: 1px solid #000000 !important; {% endcomment %}
   border-radius: 2px !important;
       transform: skewX(-13deg) !important;
 }
@@ -1385,7 +1385,7 @@ span.cm_vehicle-widget_header-label::before {
   font-weight: 600 !important;
   text-wrap: nowrap !important;
   background: white !important;
-  padding: 13px 0 !important;
+  padding: 13px 0 ;
 }
 
 #cm-ymm-tabs {
@@ -1848,7 +1848,7 @@ transform: skewX(-10deg);
   right: auto !important;
   margin: 0 !important;
   width: 420px !important;
-  min-width: 320px !important;
+  {% comment %} min-width: 320px !important; {% endcomment %}
   max-width: 90% !important;
   padding: 20px !important;
   transform: skewX(12deg) !important;
@@ -2019,6 +2019,113 @@ html body #cm-garage .cm_collapsible-elem a.cm_button {
   outline: none !important;
   box-shadow: none !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+  
+.cm_collapsible-elem{
+    min-width: 396px !important;
+        margin-left: -9px !important;
+}
+  #cm-ymm-tabs{
+        margin-left: 104px;
+  }
+  .cm_vehicle-widget_header-label{
+  padding: 10px ;
+  }
+  .cm_collapsible-elem{
+      min-width: 380px !important;
+  }
+  .cm_tabs{
+      margin-top: 1px;
+  }
+  html body .header-advanced--style2 .header__search .search-modal__form .search__input,
+html body .header-advanced__content .header__search .search-modal__form .search__input,
+html body .header-advanced .header-vehicle-search-bar .search__input {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: -20px !important;
+    text-align: center;
+
+}
+.cm_vehicle-widget_header-label{
+    border-right: 2px solid #000000 !important;
+}
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+    #cm-ymm-tabs {
+        margin-left: -1px;
+    }
+{% comment %} .header__search .search-modal__form {
+    max-width: 100px !important;
+} {% endcomment %}
+
+    .cm_collapsible-elem {
+        min-width: 390px !important;
+    }
+.cm_search-box-root .cm_search-box_form-container {
+  width: 127% !important;
+
+  }
+  .cm_vehicle-widget_header-label {
+   margin-top: 0px !important;
+           padding: 10px !important;
+  }
+
+}
+@media (min-width: 400px){
+  .cm_collapsible-elem{
+  max-width: 100% !important;
+  }
+.header-vehicle-slot .cm_collapsible-elem,
+#cm-garage .cm_collapsible-elem,
+.cm_vehicle-widget .cm_collapsible-elem,
+[id^="shopify-block-"][id*="convermax_year_make_model"] .cm_collapsible-elem {
+
+  max-width: 186% !important;
+}
+.cm_vehicle-widget_header-label{
+    border-right: 2px solid #000000 !important;
+    box-shadow: unset !important;
+  
+}
+.cm_tabs .cm_tab-content{
+box-shadow: unset !important;
+}
+.cm_vehicle-widget_header-label {
+    background: #ffffff !important;
+    border-radius: 6px;
+            box-shadow: 10px 0 15px rgba(0, 0, 0, 0.3) !important;
+            padding: 9px ;
+    margin-top: 5px;
+}
+
+
+
+.header-vehicle-slot .cm_collapsible-elem,
+#cm-garage .cm_collapsible-elem,
+.cm_vehicle-widget .cm_collapsible-elem,
+[id^="shopify-block-"][id*="convermax_year_make_model"] .cm_collapsible-elem {
+padding: 9px !important;
+    margin-top: 5px;
+}
+}
+
+
       </style>
     </head>
 
