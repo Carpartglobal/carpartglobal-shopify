@@ -724,7 +724,7 @@
           "type": "item",
           "settings": {
             "title": "Suspension",
-            "link": "shopify://collections/suspension",
+            "link": "shopify://collections/suspension-manual-legacy",
             "icon": "shopify://shop_images/Suspension.png"
           }
         },
