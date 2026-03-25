@@ -1,1 +1,1930 @@
-{"type":"header","name":"Header Group","sections":{"announcement_bar_HRHFKc":{"type":"announcement-bar","blocks":{"announcement_6YPWeN":{"type":"announcement","settings":{"text":"★★★★★  4.7 stars | 19,389 + Reviews","btn_color":"#f84248","btn_border_color":"#ffffff","btn_bg_color":"#ffffff","btn_bg_color_gradient":""}},"announcement_cAULE7":{"type":"announcement","disabled":true,"settings":{"text":"<p>Welcome to our store<\/p>","btn_color":"#f84248","btn_border_color":"#ffffff","btn_bg_color":"#ffffff","btn_bg_color_gradient":""}},"announcement_JkgyAj":{"type":"announcement","settings":{"text":"<p>          <\/p>","btn_color":"#f84248","btn_border_color":"#ffffff","btn_bg_color":"#ffffff","btn_bg_color_gradient":""}}},"block_order":["announcement_6YPWeN","announcement_cAULE7","announcement_JkgyAj"],"custom_css":[],"name":"t:sections.announcement-bar.name","settings":{"layout":"scroll","enable_close":true,"color_text":"#ffffff","bg_color_text":"#000000","bg_color_text_gradient":"","font_size_text":12,"font_style_text":"normal","font_weight_text":"500","arrow_active":false,"content_max_width":80,"padding_top":0,"padding_top_tablet":0,"padding_top_mobile":0,"padding_bottom":0,"padding_bottom_tablet":0,"padding_bottom_mobile":0}},"header_navigation_full_elements_rmYqXe":{"type":"header-navigation-full-elements","blocks":{"main_menu_P9jdRd":{"type":"main_menu","settings":{"menu":"","menu_top_spacing":20,"menu_bottom_spacing":20,"grid_gap_menu_item":20,"alignment":"left","bg_mega_menu":"#ffffff","bg_mega_menu_gradient":"","lv_1_color":"#232323","lv_1_color_hover":"#232323","lv_2_color":"#232323","lv_2_color_hover":"#232323","lv_3_color":"#3c3c3c","lv_3_color_hover":"#3c3c3c","sale_item_1":"","sale_item_2":"","sale_item_3":"","sale_item_color":"#d12442","label_position":"main_menu","show_label_blink":false,"new_label_1":"","new_label_2":"","new_label_3":"","new_label_color":"#ffffff","new_label_bg":"#bae4ed","new_label_bg_gradient":"","sale_label_1":"","sale_label_2":"","sale_label_3":"","sale_label_color":"#ffffff","sale_label_bg":"#d12442","sale_label_bg_gradient":"","hot_label_1":"","hot_label_2":"","hot_label_3":"","hot_label_color":"#ffffff","hot_label_bg":"#fff993","hot_label_bg_gradient":""}},"header_icons_fdtDQj":{"type":"header_icons","settings":{"show_customer":false,"show_search":false,"show_wishlist":false,"show_cart":true,"show_language_currency":false,"text_font_size":12,"show_customer_sticky":false,"show_search_sticky":false,"show_wishlist_sticky":false,"show_cart_sticky":true,"show_language_currency_sticky":true,"header_icons_color":"#e5002b","header_icons_color_hover":"#000000","cart_count_bubble_color":"#ffffff","cart_count_bubble_bg":"#e5002b","cart_count_bubble_bg_gradient":""}}},"block_order":["main_menu_P9jdRd","header_icons_fdtDQj"],"disabled":true,"custom_css":["ul.list-menu.list-menu--inline.text-left {padding-top: 2px !important; margin: auto; text-wrap: nowrap;}",".header-nav-full-elements .header-item:nth-child(2) {justify-content: right;}",".header-navigation > .container {height: 40px; gap: 30px;}","nav.header__inline-menu {display: none;}",".header-icons.header-item.header-item--side.d-flex.flex-align-center.flex-wrap.fs-0.pt-10.pb-10 {justify-content: center;}"],"name":"t:sections.header.settings.navigation.name_6","settings":{"container":"full","padding_full_width":30,"header_navigation_bg":"#ffffff","header_navigation_bg_gradient":"","sticky_header_type":"none","sticky_header_width":"default"}},"b20ae388-36ab-4ac2-b170-b0d3bb832958":{"type":"header-advanced","blocks":{"sections--14682829619277__b20ae388-36ab-4ac2-b170-b0d3bb832958-16810329778eaf9e51-1":{"type":"group_2","settings":{"container":"1470","padding_full_width":0,"background":"#e5002b","gradient":"","show_logo":true,"logo_position":"left","logo":"shopify:\/\/shop_images\/new_20250807_223815_0000.png","logo_width":180,"logo_text":"","logo_font_size":20,"logo_font_weight":"900","logo_text_transform":"uppercase","logo_color":"#ffffff","show_search":true,"show_box_shadow":false,"search_color":"#e5002b","bg_search_color":"#ffffff","search_icon_color":"#ffffff","search_icon_bg":"#000000","search_icon_gradient":"","search_border_radius":5,"show_cart":false,"cart_color":"#323232","cart_bg_item":"#e5002b","cart_color_item":"#ffffff","cart_item_font_size":12,"show_wishlist":false,"wishlist_color":"#323232","show_wishlist_number":false,"wishlist_color_item":"#ffffff","wishlist_bg_item":"#232323","show_account":true,"account_icon":"5","customer_color":"#ffffff","padding_top":5,"padding_bottom":0}}},"block_order":["sections--14682829619277__b20ae388-36ab-4ac2-b170-b0d3bb832958-16810329778eaf9e51-1"],"custom_css":["span.header-advanced-text {text-wrap: nowrap; font-size: 12px;}",".header-advanced--style2 .header-advanced-account {margin-left: 90px !important;}"],"settings":{"layout":"style2","border_top":"rgba(0,0,0,0)"}},"header-mobile":{"type":"header-mobile","blocks":{"7de2266e-0cd4-4fda-9f09-06f75a17f944":{"type":"menu","settings":{"color":"#ffffff","menu_tab_bg":"#000000"}},"550fbd21-75fb-4051-9dee-77d91b5239f0":{"type":"logo","settings":{"logo_mobile":"shopify:\/\/shop_images\/WhatsApp_Image_2025-08-07_at_8.07.04_PM.jpg","logo_width_mobile":130,"logo_text":"","logo_font_size":20,"logo_font_weight":"900","logo_text_transform":"uppercase","logo_color":"#232323","alignment":"center"}},"wishlist_7jMGcX":{"type":"wishlist","settings":{"color":"#232323","show_wishlist_number":false,"wishlist_color_item":"#ffffff","wishlist_bg_item":"#232323"}},"20dae707-64c0-4ea3-a05e-561cae9836d8":{"type":"customer","settings":{"icon":"1","color":"#232323"}},"633f9dae-3f65-4bda-9ca8-9d3e231aaf9d":{"type":"cart","settings":{"icon":"5","show_cart_count_bubble":true,"color":"#000000","color_bubble":"#ffffff","bg_bubble":"#000000"}}},"block_order":["7de2266e-0cd4-4fda-9f09-06f75a17f944","550fbd21-75fb-4051-9dee-77d91b5239f0","wishlist_7jMGcX","20dae707-64c0-4ea3-a05e-561cae9836d8","633f9dae-3f65-4bda-9ca8-9d3e231aaf9d"],"settings":{"background":"#e5002b","gradient":"","sticky_header_type":"none","enable_transparent":false,"transparent_color":"#ffffff","transparent_border_color":"","padding_top":5,"padding_bottom":5}},"019dd18f-f51d-4292-8462-8c945e0efa4f":{"type":"header-navigation-vertical-menu","blocks":{"megamenu_v2_c4bTBW":{"type":"megamenu_v2","settings":{"menu_trigger_name":"Lighting"}},"sections--14682829619277__019dd18f-f51d-4292-8462-8c945e0efa4f-168104747253394989-0":{"type":"logo","settings":{"logo_position":"sticky_menu","logo":"shopify:\/\/shop_images\/1_7e56d887-91d3-48d9-a117-e21736c18e9a.png","logo_width":185,"logo_width_fixed":55,"logo_text":"","logo_font_size":20,"logo_font_weight":"900","logo_text_transform":"uppercase","logo_color":"#232323"}},"sections--14682829619277__019dd18f-f51d-4292-8462-8c945e0efa4f-168104747253394989-1":{"type":"main_menu","settings":{"menu":"main-menu","menu_top_spacing":20,"menu_bottom_spacing":10,"grid_gap_menu_item":20,"alignment":"center","bg_mega_menu":"#ffffff","bg_mega_menu_gradient":"","lv_1_color":"#000000","lv_1_color_hover":"#ec1f2f","lv_2_color":"#000000","lv_2_color_hover":"#000000","lv_3_color":"#000000","lv_3_color_hover":"#000000","sale_item_1":"Categories","sale_item_2":"","sale_item_3":"","sale_item_color":"#ea4226","label_position":"main_menu","show_label_blink":true,"new_label_1":"","new_label_2":"","new_label_3":"","new_label_color":"#ffffff","new_label_bg":"#06bfe2","new_label_bg_gradient":"","sale_label_1":"","sale_label_2":"","sale_label_3":"","sale_label_color":"#ffffff","sale_label_bg":"#ef6454","sale_label_bg_gradient":"","hot_label_1":"","hot_label_2":"","hot_label_3":"Bundle - Upsell, Variant Image Grouped, Home 02 - Trendy Style, Home 04 - High Fashion, Home 06 - SuperMarket, Home 15 - Automotive 2, Home 09 - Pet Supplies, Different Mobile Menu, Custom Options, Variant Metafield, Notify Me (Out Of Stock), Color Comparison, Product Combo","hot_label_color":"#ffffff","hot_label_bg":"#ffbb49","hot_label_bg_gradient":"","vertical_menu_layout":"none","vertical_menu":"","title_categories":"Auto Parts","title_categories_font_size":12,"title_categories_color":"#ffffff","icon_title_categories_color":"#ffffff","title_categories_border_color":"#dedede","title_categories_bg":"#ffffff","title_categories_bg_gradient":"linear-gradient(90deg, rgba(236, 97, 49, 1), rgba(231, 51, 79, 1) 100%)","view_all":"","view_all_link":"","view_all_font_size":12,"view_all_link_color":"#ffffff","vertical_menu_lv1_color":"#000000","vertical_menu_lv1_hover_color":"#000000","vertical_menu_bg":"#ffffff","vertical_menu_bg_gradient":"","vertical_menu_lv1_hover_bg":"#ffffff","vertical_menu_lv1_hover_bg_gradient":"#ffffff"}},"sections--14682829619277__019dd18f-f51d-4292-8462-8c945e0efa4f-168104747253394989-2":{"type":"header_icons","settings":{"customer_service_text":"","show_help":false,"help_text":"Help Center","help_text_link":"shopify:\/\/pages\/contact","show_language_currency":false,"show_search":false,"show_customer":false,"show_wishlist":false,"show_wishlist_number":false,"show_cart":true,"text_font_size":12,"show_language_currency_sticky":false,"show_search_sticky":true,"show_customer_sticky":false,"show_wishlist_sticky":false,"show_cart_sticky":true,"header_icons_color":"#000000","header_icons_color_hover":"#e5002b","icon_help_color":"#000000","icon_help_border_color":"#ffffff","cart_count_bubble_color":"#ffffff","cart_count_bubble_bg":"#e7334f","cart_count_bubble_bg_gradient":"","wishlist_color_item":"#ffffff","wishlist_bg_item":"#232323"}}},"block_order":["megamenu_v2_c4bTBW","sections--14682829619277__019dd18f-f51d-4292-8462-8c945e0efa4f-168104747253394989-0","sections--14682829619277__019dd18f-f51d-4292-8462-8c945e0efa4f-168104747253394989-1","sections--14682829619277__019dd18f-f51d-4292-8462-8c945e0efa4f-168104747253394989-2"],"custom_css":[".menu-lv-item .text {text-transform: capitalize; font-weight: 500;}","@media (min-width: 600px) {.menu-lv-item:hover > .header__submenu {display: none; }}"],"settings":{"container":"1370","padding_full_width":0,"header_navigation_bg":"#ffffff","header_navigation_bg_gradient":"","header_navigation_border_bottom":"border","header_navigation_border_bottom_color":"#e5002b","sticky_header_type":"none","sticky_header_width":"full"}},"sema_search_bar_3DH4We":{"type":"sema-search-bar","disabled":true,"name":"SEMA Search Bar","settings":{}},"halo_custom_mega_WRCkUd":{"type":"halo-custom-mega","blocks":{"item_wwAQyJ":{"type":"item","settings":{"title":"Brake Pads","link":"shopify:\/\/collections\/brake","icon":"shopify:\/\/shop_images\/Brake_pads.png"}},"item_DhFr9q":{"type":"item","settings":{"title":"Brake Rotors","link":"shopify:\/\/collections\/brake","icon":"shopify:\/\/shop_images\/Brake_rotors_ddc61175-37ca-4d4b-8798-f6974245c64b.png"}},"item_LrqfVq":{"type":"item","settings":{"title":"Cabin Filter","link":"shopify:\/\/collections\/filters","icon":"shopify:\/\/shop_images\/cabin_filterv.png"}},"item_Rnh7pN":{"type":"item","settings":{"title":"Control Arm","link":"shopify:\/\/collections\/suspension-control-arm","icon":"shopify:\/\/shop_images\/control_arm_ead8f6f6-7f10-4d4c-bd10-a1e223cabb74.png"}},"item_9y4hAE":{"type":"item","settings":{"title":"CV Shaft","link":"shopify:\/\/collections\/cv-axle-shaft-seal","icon":"shopify:\/\/shop_images\/CV_Shaft_38ab64ab-f900-4873-86e2-ee9d8abb2d5e.png"}},"item_WLLwAg":{"type":"item","settings":{"title":"Driveline and Axles","link":"shopify:\/\/collections\/driveline-and-axles","icon":"shopify:\/\/shop_images\/Front_Hub_Assemblies_73a5aad0-1fb9-4eb8-8cf5-db4912495102.png"}},"item_QtdEWN":{"type":"item","settings":{"title":"Shocks and Struts","link":"shopify:\/\/collections\/shocks-and-struts","icon":"shopify:\/\/shop_images\/Front_Strut_Assemblies_41ae0cb8-87d5-489a-994e-b99d481aa9c7.png"}},"item_4QzXG7":{"type":"item","settings":{"title":"Jumpstarters","link":"shopify:\/\/collections\/auxiliary-jump-start-terminal-base","icon":"shopify:\/\/shop_images\/Jump_starter_0592ee5c-bd05-4139-9b72-216e2ceacbf1.png"}},"item_WX9fRW":{"type":"item","settings":{"title":"Muffler & Pipe","link":"shopify:\/\/collections\/mufflers","icon":"shopify:\/\/shop_images\/Muffler_and_pipe_16b3b3c6-9d9b-4c9b-97d7-87ce7e60d097.png"}},"item_AGwaFV":{"type":"item","settings":{"title":"Filters","link":"shopify:\/\/collections\/filters","icon":"shopify:\/\/shop_images\/Oil_filter_9fff6805-0e76-452b-9cf3-bd2006b7945e.png"}},"item_3X9Ngy":{"type":"item","settings":{"title":"Oxygen Sensor","link":"shopify:\/\/collections\/oxygen-sensor","icon":"shopify:\/\/shop_images\/Oxygen_sensor_fc38b837-a4e1-4936-8df6-e8cd6b10d50c.png"}},"item_jdXTP7":{"type":"item","settings":{"title":"Radiators","link":"shopify:\/\/collections\/radiators-coolers-and-related-components","icon":"shopify:\/\/shop_images\/Radiators_b92f96a2-08a8-45ce-9d32-8ec46788a0e5.png"}},"item_XzjjpN":{"type":"item","settings":{"title":"Spark Plug","link":"shopify:\/\/collections\/spark-plug","icon":"shopify:\/\/shop_images\/spark_plug.png"}},"item_EAXQJJ":{"type":"item","settings":{"title":"Tires","link":"shopify:\/\/collections\/wheels-tires","icon":"shopify:\/\/shop_images\/Tires_ce0a0297-c47c-4cef-b8f5-8a1b638b69ae.png"}},"item_VtKKxh":{"type":"item","settings":{"title":"Transmission Fluids","link":"shopify:\/\/collections\/transmission","icon":"shopify:\/\/shop_images\/Transmission_Fluid_02488d1e-d7b4-40b9-9213-f081c4860b75.png"}},"item_WUCgDJ":{"type":"item","settings":{"title":"Wiper Blade","link":"shopify:\/\/collections\/wiper-blade","icon":"shopify:\/\/shop_images\/Wiper_blade_00e17ae0-aa6e-400b-9272-7641f99aba1d.png"}}},"block_order":["item_wwAQyJ","item_DhFr9q","item_LrqfVq","item_Rnh7pN","item_9y4hAE","item_WLLwAg","item_QtdEWN","item_4QzXG7","item_WX9fRW","item_AGwaFV","item_3X9Ngy","item_jdXTP7","item_XzjjpN","item_EAXQJJ","item_VtKKxh","item_WUCgDJ"],"name":"Halo Custom Mega Menu","settings":{"enable":true,"menu_label":"Regular Service","banner_1":"shopify:\/\/shop_images\/1_449e3e21-8574-4b5f-8bc9-1dcc3cb0042f.png","banner_1_link":"shopify:\/\/collections\/accessories","banner_2":"shopify:\/\/shop_images\/Gemini_Generated_Image_hjkk39hjkk39hjkk-removebg-preview.png","banner_2_link":"shopify:\/\/collections\/brake","banner_3_link":""}},"halo_custom_mega_qhBpNE":{"type":"halo-custom-mega","blocks":{"item_CKTKrn":{"type":"item","settings":{"title":"Brakes","link":"shopify:\/\/collections\/brake","icon":"shopify:\/\/shop_images\/Brakes.png"}},"item_NG9YEj":{"type":"item","settings":{"title":"Clutch & Flywheels","link":"shopify:\/\/collections\/clutch-flywheel","icon":"shopify:\/\/shop_images\/Clutch_and_Flywheels.png"}},"item_YnkNxF":{"type":"item","settings":{"title":"Cooling Systems","link":"shopify:\/\/collections\/belts-and-cooling","icon":"shopify:\/\/shop_images\/Cooling_Systems.png"}},"item_yMjjFH":{"type":"item","settings":{"title":"Drive Belts","link":"shopify:\/\/collections\/belts-and-cooling","icon":"shopify:\/\/shop_images\/Drive_Belts.png"}},"item_bU9gBW":{"type":"item","settings":{"title":"Drivetrain","link":"shopify:\/\/collections\/driveline-and-axles","icon":"shopify:\/\/shop_images\/Drivetrain.png"}},"item_ncRqQk":{"type":"item","settings":{"title":"Emissions","link":"shopify:\/\/collections\/emission-control","icon":"shopify:\/\/shop_images\/Emissions.png"}},"item_JMRwWq":{"type":"item","settings":{"title":"Engine","link":"shopify:\/\/collections\/engine","icon":"shopify:\/\/shop_images\/Engine.png"}},"item_x7npDH":{"type":"item","settings":{"title":"Exhausts","link":"shopify:\/\/collections\/exhaust","icon":"shopify:\/\/shop_images\/Exhausts.png"}},"item_agkEMG":{"type":"item","settings":{"title":"Filters","link":"shopify:\/\/collections\/filters","icon":"shopify:\/\/shop_images\/Car_Filters.png"}},"item_MKferH":{"type":"item","settings":{"title":"Fuel And Air","link":"shopify:\/\/collections\/air-and-fuel-delivery","icon":"shopify:\/\/shop_images\/Fuel_and_Air.png"}},"item_qjpYiW":{"type":"item","settings":{"title":"Hardware And Fuses","link":"shopify:\/\/collections\/hardware-and-service-supplies","icon":"shopify:\/\/shop_images\/Car_Hardware_and_Fuses.png"}},"item_7nYTmg":{"type":"item","settings":{"title":"Heating & Air Conditioning","link":"shopify:\/\/collections\/hvac-heater-hose","icon":"shopify:\/\/shop_images\/Heating_and_Air_Conditioning.png"}},"item_LL84Mm":{"type":"item","settings":{"title":"Ignition","link":"shopify:\/\/collections\/ignition","icon":"shopify:\/\/shop_images\/Ignition.png"}},"item_VLkREb":{"type":"item","settings":{"title":"Sensors","link":"shopify:\/\/collections\/sensors","icon":"shopify:\/\/shop_images\/Car_Sensors.png"}},"item_9cLhni":{"type":"item","settings":{"title":"Starting & Charging","link":"shopify:\/\/collections\/electrical-charging-and-starting","icon":"shopify:\/\/shop_images\/Starting_Charging.png"}},"item_wYd7iY":{"type":"item","settings":{"title":"Steering","link":"shopify:\/\/collections\/steering","icon":"shopify:\/\/shop_images\/Steering.png"}},"item_bwfJjk":{"type":"item","settings":{"title":"Suspension","link":"shopify:\/\/collections\/suspension","icon":"shopify:\/\/shop_images\/Suspension.png"}},"item_pqAX6f":{"type":"item","settings":{"title":"Transmissions","link":"shopify:\/\/collections\/transmission","icon":"shopify:\/\/shop_images\/Transmissions.png"}},"item_J7rUBR":{"type":"item","settings":{"title":"Turbo & Superchargers","link":"shopify:\/\/collections\/turbocharger-supercharger-and-ram-air","icon":"shopify:\/\/shop_images\/Turbo_and_Superchargers.png"}},"item_M9aFQa":{"type":"item","settings":{"title":"Wheel Bearings","link":"shopify:\/\/collections\/bearings-1","icon":"shopify:\/\/shop_images\/Wheel_Bearings.png"}},"item_Ue37Fk":{"type":"item","settings":{"title":"Window & Door Parts","link":"shopify:\/\/collections\/door","icon":"shopify:\/\/shop_images\/Window_and_Door_Parts.png"}},"item_gdDUXN":{"type":"item","settings":{"title":"Wiper Blades & Parts","link":"shopify:\/\/collections\/wiper-and-washer","icon":"shopify:\/\/shop_images\/Wiper_Blades_and_Parts.png"}}},"block_order":["item_CKTKrn","item_NG9YEj","item_YnkNxF","item_yMjjFH","item_bU9gBW","item_ncRqQk","item_JMRwWq","item_x7npDH","item_agkEMG","item_MKferH","item_qjpYiW","item_7nYTmg","item_LL84Mm","item_VLkREb","item_9cLhni","item_wYd7iY","item_bwfJjk","item_pqAX6f","item_J7rUBR","item_M9aFQa","item_Ue37Fk","item_gdDUXN"],"name":"Halo Custom Mega Menu","settings":{"enable":true,"menu_label":"Replacement Parts","banner_1":"shopify:\/\/shop_images\/3_84d26171-5d92-4c8a-a86d-34a3bcad7c2e.png","banner_1_link":"","banner_2":"shopify:\/\/shop_images\/1_2ca4a341-8d13-4138-b360-386ed2890729.png","banner_2_link":"","banner_3":"shopify:\/\/shop_images\/2_11e6f056-e2bc-4075-8ca6-b2bcabac773f.png","banner_3_link":""}},"halo_custom_mega_eQJKJx":{"type":"halo-custom-mega","blocks":{"item_wTfNNQ":{"type":"item","settings":{"title":"Custom Lights","link":"shopify:\/\/collections\/electrical-lighting-and-body","icon":"shopify:\/\/shop_images\/Lighting.png"}},"item_zhTyRN":{"type":"item","settings":{"title":"Auxiliary Light","link":"shopify:\/\/collections\/auxiliary-light","icon":"shopify:\/\/shop_images\/Untitled1_c6ccbdaf-85aa-4c99-92bd-122cd90c4996.webp"}},"item_FnMcJL":{"type":"item","settings":{"title":"Fog Lights","link":"shopify:\/\/collections\/fog-light","icon":"shopify:\/\/shop_images\/91305_Aux_Light_1.jpg"}},"item_7TC4mE":{"type":"item","settings":{"title":"Center High Mount Stop Light","link":"shopify:\/\/collections\/center-high-mount-stop-light","icon":"shopify:\/\/shop_images\/91318_Aux_Light_1.jpg"}},"item_gVjtcQ":{"type":"item","settings":{"title":"Headlight Set","link":"shopify:\/\/collections\/headlight-set","icon":"shopify:\/\/shop_images\/111525_v1.jpg"}},"item_azGFYL":{"type":"item","settings":{"title":"Parking Light Assembly","link":"shopify:\/\/collections\/parking-light-assembly","icon":"shopify:\/\/shop_images\/D-JP-180007-BL_2007-10-Jeep-JK-parking-brake-bezel.jpg"}},"item_36PAYN":{"type":"item","settings":{"title":"Tail Light Set","link":"shopify:\/\/collections\/tail-light-set","icon":"shopify:\/\/shop_images\/311316_v2.jpg"}},"item_fe6LYW":{"type":"item","settings":{"title":"Side Marker Light Assembly","link":"shopify:\/\/collections\/side-marker-light-assembly"}},"item_x36ig4":{"type":"item","settings":{"title":"Roof Marker Light","link":"shopify:\/\/collections\/roof-marker-light","icon":"shopify:\/\/shop_images\/VisionX_MiniCannon_CG2_Round_1.jpg"}},"item_iR7a8h":{"type":"item","settings":{"title":"Off-Road Light","link":"shopify:\/\/collections\/off-road-light","icon":"shopify:\/\/shop_images\/1282_Aux_Light_1.jpg"}},"item_nTGCrQ":{"type":"item","settings":{"title":"Light Bar","link":"shopify:\/\/collections\/light-bar","icon":"shopify:\/\/shop_images\/v7pz2u5dka5mtmdrajme.jpg"}},"item_QzqwJE":{"type":"item","settings":{"title":"Driving Light Bracket","link":"shopify:\/\/collections\/driving-light-bracket","icon":"shopify:\/\/shop_images\/502313_D-SERIES_PRO_DRIVING_SM_2.jpg"}},"item_CYb9xp":{"type":"item","settings":{"title":"Lighting - Exterior","link":"shopify:\/\/collections\/lighting-exterior","icon":"shopify:\/\/shop_images\/490_Aux_Light_1.jpg"}},"item_NPaR4t":{"type":"item","settings":{"title":"Brackets, Flanges & Hangers","link":"shopify:\/\/collections\/brackets-flanges-and-hangers","icon":"shopify:\/\/shop_images\/YPKTLCS30.jpg"}}},"block_order":["item_wTfNNQ","item_zhTyRN","item_FnMcJL","item_7TC4mE","item_gVjtcQ","item_azGFYL","item_36PAYN","item_fe6LYW","item_x36ig4","item_iR7a8h","item_nTGCrQ","item_QzqwJE","item_CYb9xp","item_NPaR4t"],"name":"Halo Custom Mega Menu","settings":{"enable":true,"menu_label":"Lighting","banner_1":"shopify:\/\/shop_images\/VisionX_XPL_Curved_LightBar_1_037a6bad-74cc-4a61-a084-b1cc098d8f9d.jpg","banner_1_link":"","banner_2_link":"","banner_3":"shopify:\/\/shop_images\/286_Aux_Light_7.jpg","banner_3_link":""}},"halo_custom_mega_D6ajar":{"type":"halo-custom-mega","blocks":{"item_ppcYgE":{"type":"item","settings":{"title":"Body","link":"shopify:\/\/collections\/body","icon":"shopify:\/\/shop_images\/YGK2234.4.jpg"}},"item_tiei6B":{"type":"item","settings":{"title":"Bumper Grilles","link":"shopify:\/\/collections\/bumper","icon":"shopify:\/\/shop_images\/73440_Brackets_Mounts_1.jpg"}},"item_a9zXnn":{"type":"item","settings":{"title":"Convertible Tops","link":"shopify:\/\/collections\/convertible-top-retainer","icon":"shopify:\/\/shop_images\/140534_2.jpg"}},"item_qgTXk7":{"type":"item","settings":{"title":"Doors","link":"shopify:\/\/collections\/doors","icon":"shopify:\/\/shop_images\/Body_Parts.png"}},"item_mDabAn":{"type":"item","settings":{"title":"Engine Covers","link":"shopify:\/\/collections\/engine-timing-cover-gasket-set","icon":"shopify:\/\/shop_images\/YPC5M226.jpg"}},"item_zRPUrH":{"type":"item","settings":{"title":"Fenders","link":"shopify:\/\/collections\/fenders","icon":"shopify:\/\/shop_images\/M-9608-M50SC_V2.jpg"}},"item_zpxMDw":{"type":"item","settings":{"title":"Floors","link":"shopify:\/\/collections\/floor","icon":"shopify:\/\/shop_images\/M-13086-M60.jpg"}},"item_xffiyr":{"type":"item","settings":{"title":"Frame","link":"shopify:\/\/collections\/frame","icon":"shopify:\/\/shop_images\/YTS01.jpg"}},"item_t3af8L":{"type":"item","settings":{"title":"Front Bumpers","link":"shopify:\/\/collections\/bumper","icon":"shopify:\/\/shop_images\/fts22313-beauty.jpg"}},"item_g7Enge":{"type":"item","settings":{"title":"Rocker Panels","link":"shopify:\/\/collections\/rocker-panel","icon":"shopify:\/\/shop_images\/husky-liners-truck-trail-armor-rocker-panel-2020-ford-f-150-2874066-ov-16.jpg"}},"item_XHtiBV":{"type":"item","settings":{"title":"Hood Deflector","link":"shopify:\/\/collections\/hood-deflector","icon":"shopify:\/\/shop_images\/20200810-Husky-Matte-Black-AeroSkin-Bug-Shield-2877168-CU.jpg"}},"item_WJCDRF":{"type":"item","settings":{"title":"Mirrors","link":"shopify:\/\/collections\/mirrors","icon":"shopify:\/\/shop_images\/Exterior.png"}},"item_xLTcWk":{"type":"item","settings":{"title":"Quarter Panels","link":"shopify:\/\/collections\/exterior-accessories","icon":"shopify:\/\/shop_images\/038989_v1.jpg"}},"item_h9CiYi":{"type":"item","settings":{"title":"Radiator Support","link":"shopify:\/\/collections\/radiator-coolant-hose-kit","icon":"shopify:\/\/shop_images\/Radiators_b92f96a2-08a8-45ce-9d32-8ec46788a0e5.png"}},"item_bzdhdY":{"type":"item","settings":{"title":"Tailgate and Midgate","link":"shopify:\/\/collections\/tailgate-and-midgate","icon":"shopify:\/\/shop_images\/69127_onvehicle_01.jpg"}},"item_eWWXgq":{"type":"item","settings":{"title":"Windshields","link":"shopify:\/\/collections\/windshield-banner","icon":"shopify:\/\/shop_images\/7340_Brackets_Mounts_2.jpg"}},"item_Lg6dmK":{"type":"item","settings":{"title":"Cargo Floor Liner","link":"shopify:\/\/collections\/cargo-floor-liner","icon":"shopify:\/\/shop_images\/753933252915_P04.jpg"}},"item_ExEdLF":{"type":"item","settings":{"title":"Door Edge Guard Set","link":"shopify:\/\/collections\/door-edge-guard-set","icon":"shopify:\/\/shop_images\/husky-liners-door-edge-guards-HLDEG20F150SC-JS-ow-008_b1faab5c-27fa-4eaa-ae98-10b11667a96f.jpg"}},"item_etJ7YM":{"type":"item","settings":{"title":"Floor Liner","link":"shopify:\/\/collections\/floor-liner","icon":"shopify:\/\/shop_images\/753933980917_P04.jpg"}},"item_6CVb3Y":{"type":"item","settings":{"title":"Grille","link":"shopify:\/\/collections\/grille","icon":"shopify:\/\/shop_images\/fts24211-kit.jpg"}},"item_hBNYBC":{"type":"item","settings":{"title":"Side Body","link":"shopify:\/\/collections\/side-body","icon":"shopify:\/\/shop_images\/93110_Side.jpg"}},"item_GK8zNg":{"type":"item","settings":{"title":"Skid Plate","link":"shopify:\/\/collections\/skid-plate","icon":"shopify:\/\/shop_images\/77202_3QTR_WEB_LARGE_7b0c495a-56f9-4ea7-a616-43fa42d4aeaa.jpg"}},"item_xbBpNt":{"type":"item","settings":{"title":"Step Nerf Bar","link":"shopify:\/\/collections\/step-nerf-bar","icon":"shopify:\/\/shop_images\/M-16600-FM.jpg"}},"item_6rkHgG":{"type":"item","settings":{"title":"Tow Hook","link":"shopify:\/\/collections\/tow-hook","icon":"shopify:\/\/shop_images\/F230194130103.PT03.jpg"}},"item_fV9zWU":{"type":"item","settings":{"title":"Trailer Hitch D-Ring","link":"shopify:\/\/collections\/trailer-hitch-d-ring-mount","icon":"shopify:\/\/shop_images\/100625.jpg"}},"item_8AV4xe":{"type":"item","settings":{"title":"Truck Bed Rack","link":"shopify:\/\/collections\/truck-bed-rack","icon":"shopify:\/\/shop_images\/C9988320001NA.PT03.jpg"}},"item_JwQKgW":{"type":"item","settings":{"title":"Truck Box","link":"shopify:\/\/collections\/truck-box","icon":"shopify:\/\/shop_images\/JFK2021-3.jpg"}},"item_dHAKQd":{"type":"item","settings":{"title":"Truck Cab","link":"shopify:\/\/collections\/truck-cab","icon":"shopify:\/\/shop_images\/cabin_filterv.png"}},"item_XJ3K8B":{"type":"item","settings":{"title":"Trunk Lid & Compartment","link":"shopify:\/\/collections\/trunk-lid-and-compartment","icon":"shopify:\/\/shop_images\/WBcargo_Hunting_P06_b0ea09cc-eac6-4b2c-bd70-61375806f6b4.jpg"}}},"block_order":["item_ppcYgE","item_tiei6B","item_a9zXnn","item_qgTXk7","item_mDabAn","item_zRPUrH","item_zpxMDw","item_xffiyr","item_t3af8L","item_g7Enge","item_XHtiBV","item_WJCDRF","item_xLTcWk","item_h9CiYi","item_bzdhdY","item_eWWXgq","item_Lg6dmK","item_ExEdLF","item_etJ7YM","item_6CVb3Y","item_hBNYBC","item_GK8zNg","item_xbBpNt","item_6rkHgG","item_fV9zWU","item_8AV4xe","item_JwQKgW","item_dHAKQd","item_XJ3K8B"],"name":"Halo Custom Mega Menu","settings":{"enable":true,"menu_label":"Body","banner_1":"shopify:\/\/shop_images\/Gemini_Generated_Image_i1nhk8i1nhk8i1nh-removebg-preview.png","banner_1_link":"","banner_2":"shopify:\/\/shop_images\/husky-liners-pocket-style-flares-2024-toyota-tacoma-2803930-ov-078.jpg","banner_2_link":"","banner_3":"shopify:\/\/shop_images\/60570_Veh.jpg","banner_3_link":""}},"halo_custom_mega_pg3WDr":{"type":"halo-custom-mega","blocks":{"item_mVaEdm":{"type":"item","settings":{"title":"Accessories","link":"shopify:\/\/collections\/accessories","icon":"shopify:\/\/shop_images\/827-770_accessories_e17f0e61-1f1e-4111-93d0-266ac02ea8a2.jpg"}},"item_TyAKzj":{"type":"item","settings":{"title":"Lug Nuts & Locks","link":"shopify:\/\/collections\/wheel-lug-nut","icon":"shopify:\/\/shop_images\/008011_v1.jpg"}},"item_6qtK83":{"type":"item","settings":{"title":"Wheel Covers","link":"shopify:\/\/collections\/wheels-tires","icon":"shopify:\/\/shop_images\/Tires_Wheels.png"}},"item_fApYXq":{"type":"item","settings":{"title":"Caliper Covers","link":"shopify:\/\/collections\/disc-brake-caliper","icon":"shopify:\/\/shop_images\/Tires_Wheels.png"}},"item_PnPdUm":{"type":"item","settings":{"title":"Spare Tire Covers & Carriers","link":"shopify:\/\/collections\/spare-tire-carrier","icon":"shopify:\/\/shop_images\/HPS-9147_closeup_4ab7bf00-2aa6-44cc-9536-a6c12f97a29a.jpg"}},"item_Kcc6jX":{"type":"item","settings":{"title":"Wheel Spacers","link":"shopify:\/\/collections\/wheel-spacer","icon":"shopify:\/\/shop_images\/zone_f5601_ford_driveshaft_spacer_card.jpg"}},"item_kfcJBR":{"type":"item","settings":{"title":"Center Caps","link":"","icon":"shopify:\/\/shop_images\/M-1096K-RA_93faadc5-be7f-47d1-abb4-79ec8d87ab27.jpg"}},"item_dmdfhc":{"type":"item","settings":{"title":"Tires","link":"shopify:\/\/collections\/tire-1","icon":"shopify:\/\/shop_images\/M-1096K-RA_93faadc5-be7f-47d1-abb4-79ec8d87ab27.jpg"}},"item_KE8R7b":{"type":"item","settings":{"title":"Wheels","link":"shopify:\/\/collections\/wheel-1","icon":"shopify:\/\/shop_images\/Tires_Wheels.png"}},"item_Yt4eBB":{"type":"item","settings":{"title":"Custom Wheels","link":"shopify:\/\/collections\/tire-and-wheel","icon":"shopify:\/\/shop_images\/wheels.png"}},"item_7HNfcF":{"type":"item","settings":{"title":"TPMS Sensors","link":"shopify:\/\/collections\/tire-pressure-monitoring-system-tpms-sensor","icon":"shopify:\/\/shop_images\/TPMS_sensor_4.png"}},"item_fTgyTm":{"type":"item","settings":{"title":"Wheels and Tires Packages","link":"shopify:\/\/collections\/tire-and-wheel","icon":"shopify:\/\/shop_images\/Gemini_Generated_Image_pdms3xpdms3xpdms-removebg-preview_c208ef9e-c778-4296-af50-e52f4fbde56f.png"}}},"block_order":["item_mVaEdm","item_TyAKzj","item_6qtK83","item_fApYXq","item_PnPdUm","item_Kcc6jX","item_kfcJBR","item_dmdfhc","item_KE8R7b","item_Yt4eBB","item_7HNfcF","item_fTgyTm"],"name":"Halo Custom Mega Menu","settings":{"enable":true,"menu_label":"Tire","banner_1":"shopify:\/\/shop_images\/M-1007K-RGR1785OR.jpg","banner_1_link":"shopify:\/\/collections\/tire-and-wheel","banner_2":"shopify:\/\/shop_images\/M-1007K-S2295SB_V8.jpg","banner_2_link":"shopify:\/\/collections\/wheel","banner_3_link":""}},"halo_custom_mega_zFA4KW":{"type":"halo-custom-mega","blocks":{"item_EWNKgG":{"type":"item","settings":{"title":"Apparel & Safety Gear","link":"shopify:\/\/collections\/safety-equipment-tools-and-accessories","icon":"shopify:\/\/shop_images\/YRGKIT2.jpg"}},"item_KpnJcB":{"type":"item","settings":{"title":"Automotive Service Tools","link":"shopify:\/\/collections\/service-kits-8","icon":"shopify:\/\/shop_images\/zonc8311_zone-service-kit-uca-ball-joint-pr.jpg"}},"item_gbjByK":{"type":"item","settings":{"title":"Pneumatic Air Tools","link":"shopify:\/\/collections\/power-air-and-hand-tools-and-accessories","icon":"shopify:\/\/shop_images\/Fuel_and_Air.png"}},"item_gW7Q67":{"type":"item","settings":{"title":"Auto Body Shop Tools & Equipment","link":"shopify:\/\/collections\/vehicles-equipment-tools-and-supplies","icon":"shopify:\/\/shop_images\/47-165403_1.jpg"}},"item_YQnk4t":{"type":"item","settings":{"title":"Garage & Auto Shop Equipment","link":"shopify:\/\/collections\/cylinder-block-components","icon":"shopify:\/\/shop_images\/M-9603-M8A.jpg"}},"item_AJCtAU":{"type":"item","settings":{"title":"Power Tools & Accessories","link":"shopify:\/\/collections\/power-air-and-hand-tools-and-accessories","icon":"shopify:\/\/shop_images\/M-10665-C_V7.jpg"}},"item_Y6yQRx":{"type":"item","settings":{"title":"Automotive Paints","link":"","icon":"shopify:\/\/shop_images\/Transmission_Fluid.png"}},"item_imL4hP":{"type":"item","settings":{"title":"Hand Tools & Accessories","link":"shopify:\/\/collections\/power-air-and-hand-tools-and-accessories","icon":"shopify:\/\/shop_images\/YKGM825IFSA.jpg"}},"item_dMyQV7":{"type":"item","settings":{"title":"Vehicle Lifting Equipment","link":"shopify:\/\/collections\/vehicles-equipment-tools-and-supplies","icon":"shopify:\/\/shop_images\/K53152_WEB_LARGE_0a14c7ce-521c-4539-b04d-bea10193269b.jpg"}}},"block_order":["item_EWNKgG","item_KpnJcB","item_gbjByK","item_gW7Q67","item_YQnk4t","item_AJCtAU","item_Y6yQRx","item_imL4hP","item_dMyQV7"],"name":"Halo Custom Mega Menu","settings":{"enable":true,"menu_label":"Tools","banner_1":"shopify:\/\/shop_images\/Tools.png","banner_1_link":"shopify:\/\/collections\/power-air-and-hand-tools-and-accessories","banner_2_link":"","banner_3_link":""}},"halo_custom_mega_JUXBaV":{"type":"halo-custom-mega","blocks":{"item_e787fP":{"type":"item","settings":{"title":"Engine Cold Air Intake","link":"shopify:\/\/collections\/engine-cold-air-intake","icon":"shopify:\/\/shop_images\/YRGKIT2.jpg"}},"item_97wHqP":{"type":"item","settings":{"title":"Exhaust System Kit","link":"shopify:\/\/collections\/exhaust-system-kit","icon":"shopify:\/\/shop_images\/zonc8311_zone-service-kit-uca-ball-joint-pr.jpg"}},"item_MJV4E8":{"type":"item","settings":{"title":"Electrical, Charging and Starting","link":"shopify:\/\/collections\/electrical-charging-and-starting","icon":"shopify:\/\/shop_images\/Fuel_and_Air.png"}},"item_PLLdMG":{"type":"item","settings":{"title":"Drive Axle Shaft","link":"shopify:\/\/collections\/drive-axle-shaft","icon":"shopify:\/\/shop_images\/47-165403_1.jpg"}},"item_eRgBh7":{"type":"item","settings":{"title":"Air and Fuel Delivery","link":"shopify:\/\/collections\/air-and-fuel-delivery","icon":"shopify:\/\/shop_images\/M-9603-M8A.jpg"}},"item_3rEXza":{"type":"item","settings":{"title":"Steering","link":"shopify:\/\/collections\/steering","icon":"shopify:\/\/shop_images\/M-10665-C_V7.jpg"}},"item_8NyTW8":{"type":"item","settings":{"title":"Brake","link":"shopify:\/\/collections\/brake","icon":"shopify:\/\/shop_images\/Brakes.png"}},"item_hiypXG":{"type":"item","settings":{"title":"HVAC Heater Hose","link":"shopify:\/\/collections\/hvac-heater-hose","icon":"shopify:\/\/shop_images\/YKGM825IFSA.jpg"}},"item_FAL4D3":{"type":"item","settings":{"title":"Ignition","link":"shopify:\/\/collections\/ignition","icon":"shopify:\/\/shop_images\/K53152_WEB_LARGE_0a14c7ce-521c-4539-b04d-bea10193269b.jpg"}}},"block_order":["item_e787fP","item_97wHqP","item_MJV4E8","item_PLLdMG","item_eRgBh7","item_3rEXza","item_8NyTW8","item_hiypXG","item_FAL4D3"],"name":"Halo Custom Mega Menu","settings":{"enable":true,"menu_label":"Performance","banner_1":"shopify:\/\/shop_images\/Performance.png","banner_1_link":"shopify:\/\/collections\/power-air-and-hand-tools-and-accessories","banner_2_link":"","banner_3_link":""}},"halo_custom_mega_7AzLKn":{"type":"halo-custom-mega","blocks":{"item_cf3VaK":{"type":"item","settings":{"title":"Apparel & Safety Gear","link":"shopify:\/\/collections\/safety-equipment-tools-and-accessories","icon":"shopify:\/\/shop_images\/YRGKIT2.jpg"}},"item_VHyG3D":{"type":"item","settings":{"title":"Automotive Service Tools","link":"shopify:\/\/collections\/service-kits-8","icon":"shopify:\/\/shop_images\/zonc8311_zone-service-kit-uca-ball-joint-pr.jpg"}},"item_VcfUHa":{"type":"item","settings":{"title":"Pneumatic Air Tools","link":"shopify:\/\/collections\/power-air-and-hand-tools-and-accessories","icon":"shopify:\/\/shop_images\/Fuel_and_Air.png"}},"item_atmcKA":{"type":"item","settings":{"title":"Auto Body Shop Tools & Equipment","link":"shopify:\/\/collections\/vehicles-equipment-tools-and-supplies","icon":"shopify:\/\/shop_images\/47-165403_1.jpg"}},"item_AFNmHN":{"type":"item","settings":{"title":"Garage & Auto Shop Equipment","link":"shopify:\/\/collections\/cylinder-block-components","icon":"shopify:\/\/shop_images\/M-9603-M8A.jpg"}},"item_8eGJG9":{"type":"item","settings":{"title":"Power Tools & Accessories","link":"shopify:\/\/collections\/power-air-and-hand-tools-and-accessories","icon":"shopify:\/\/shop_images\/M-10665-C_V7.jpg"}},"item_GrjfPM":{"type":"item","settings":{"title":"Automotive Paints","link":"","icon":"shopify:\/\/shop_images\/Transmission_Fluid.png"}},"item_pfraMt":{"type":"item","settings":{"title":"Hand Tools & Accessories","link":"shopify:\/\/collections\/power-air-and-hand-tools-and-accessories","icon":"shopify:\/\/shop_images\/YKGM825IFSA.jpg"}},"item_qNeiAx":{"type":"item","settings":{"title":"Vehicle Lifting Equipment","link":"shopify:\/\/collections\/vehicles-equipment-tools-and-supplies","icon":"shopify:\/\/shop_images\/K53152_WEB_LARGE_0a14c7ce-521c-4539-b04d-bea10193269b.jpg"}},"item_dtbkbG":{"type":"item","settings":{"title":"Floor","link":"shopify:\/\/collections\/floor","icon":"shopify:\/\/shop_images\/M-13086-M60.jpg"}},"item_7bHCVk":{"type":"item","settings":{"title":"Seats","link":"shopify:\/\/collections\/seat","icon":"shopify:\/\/shop_images\/Interior.png"}}},"block_order":["item_cf3VaK","item_VHyG3D","item_VcfUHa","item_atmcKA","item_AFNmHN","item_8eGJG9","item_GrjfPM","item_pfraMt","item_qNeiAx","item_dtbkbG","item_7bHCVk"],"name":"Halo Custom Mega Menu","settings":{"enable":true,"menu_label":"Interior","banner_1":"shopify:\/\/shop_images\/Interior.png","banner_1_link":"shopify:\/\/collections\/power-air-and-hand-tools-and-accessories","banner_2_link":"","banner_3_link":""}},"halo_custom_mega_f7bGx9":{"type":"halo-custom-mega","blocks":{"item_VFVNHn":{"type":"item","settings":{"title":"Body","link":"shopify:\/\/collections\/body","icon":"shopify:\/\/shop_images\/M-6880-M501.jpg"}},"item_6b6XFN":{"type":"item","settings":{"title":"Accessories","link":"shopify:\/\/collections\/accessories","icon":"shopify:\/\/shop_images\/zonc8311_zone-service-kit-uca-ball-joint-pr.jpg"}},"item_piJXTE":{"type":"item","settings":{"title":"Car Cover","link":"shopify:\/\/collections\/car-cover","icon":"shopify:\/\/shop_images\/M-9680-M50B.jpg"}},"item_ARctNY":{"type":"item","settings":{"title":"Headlight Cover","link":"shopify:\/\/collections\/headlight-cover","icon":"shopify:\/\/shop_images\/088104_v1.jpg"}},"item_7aGffH":{"type":"item","settings":{"title":"Hood Deflector","link":"shopify:\/\/collections\/hood-deflector","icon":"shopify:\/\/shop_images\/302-338.jpg"}},"item_GMA9aF":{"type":"item","settings":{"title":"Mud Flap","link":"shopify:\/\/collections\/mud-flap","icon":"shopify:\/\/shop_images\/MudGuard_P01_2e34d066-ca45-48b3-8fc4-eba5f5de6941.jpg"}},"item_DWgBBU":{"type":"item","settings":{"title":"Vehicle Accessory Trim Kit","link":"shopify:\/\/collections\/vehicle-accessory-trim-kit","icon":"shopify:\/\/shop_images\/M-12297-L900.jpg"}},"item_e3TEc9":{"type":"item","settings":{"title":"License Plate Frame","link":"shopify:\/\/collections\/license-plate-frame","icon":"shopify:\/\/shop_images\/YKGM825IFSA.jpg"}},"item_pWhkEN":{"type":"item","settings":{"title":"Mirrors","link":"shopify:\/\/collections\/mirrors","icon":"shopify:\/\/shop_images\/Exterior.png"}},"item_NTA76X":{"type":"item","settings":{"title":"Tow Hook","link":"shopify:\/\/collections\/tow-hook","icon":"shopify:\/\/shop_images\/K53152_WEB_LARGE_0a14c7ce-521c-4539-b04d-bea10193269b.jpg"}},"item_VtX6pi":{"type":"item","settings":{"title":"Roof","link":"shopify:\/\/collections\/roof","icon":"shopify:\/\/shop_images\/M-98150-FP_V5.jpg"}},"item_B8Eqfz":{"type":"item","settings":{"title":"Running Board","link":"shopify:\/\/collections\/running-board","icon":"shopify:\/\/shop_images\/SRSOTB-13_1.jpg"}}},"block_order":["item_VFVNHn","item_6b6XFN","item_piJXTE","item_ARctNY","item_7aGffH","item_GMA9aF","item_DWgBBU","item_e3TEc9","item_pWhkEN","item_NTA76X","item_VtX6pi","item_B8Eqfz"],"name":"Halo Custom Mega Menu","settings":{"enable":true,"menu_label":"Exterior","banner_1":"shopify:\/\/shop_images\/42-120WB_installed2.jpg","banner_1_link":"shopify:\/\/collections\/exterior-accessories","banner_2_link":"","banner_3_link":""}},"halo_custom_mega_X7jqGk":{"type":"halo-custom-mega","blocks":{"item_8BMURB":{"type":"item","settings":{"title":"Audio & Electronics","link":"shopify:\/\/products\/2021-2023-ford-mustang-mach-e-active-performance-sound-system","icon":"shopify:\/\/shop_images\/253100_1.jpg"}},"item_fPbeeG":{"type":"item","settings":{"title":"Outdoor & Recreation","link":"shopify:\/\/collections\/sports-and-outdoors","icon":"shopify:\/\/shop_images\/65715B_onvehicle_01.jpg"}},"item_kUKPXB":{"type":"item","settings":{"title":"Semi Truck Shop","link":"shopify:\/\/collections\/truck-box","icon":"shopify:\/\/shop_images\/5206_Cover_Grill_Shield_9.jpg"}},"item_hepeYw":{"type":"item","settings":{"title":"Boating & Marine","link":"shopify:\/\/collections\/truck-box","icon":"shopify:\/\/shop_images\/51201-SR-L_Series_Marine_White_Spreader_FM_Blue_Halo.jpg"}},"item_4CWjRe":{"type":"item","settings":{"title":"Racing Gear","link":"shopify:\/\/collections\/differential-carrier-gear-kit","icon":"shopify:\/\/shop_images\/RIGID_300423_XP_Amber_Cover_Web.jpg"}},"item_EiGCYt":{"type":"item","settings":{"title":"Graphics","link":"shopify:\/\/collections\/graphics-kit","icon":"shopify:\/\/shop_images\/140746_vehicle.jpg"}},"item_z3ccpQ":{"type":"item","settings":{"title":"RV & Camper","link":"shopify:\/\/collections\/graphics-kit","icon":"shopify:\/\/shop_images\/ICON_2022_Tundra-9_58b595e6-5b4c-4864-a167-b03a61cc176e.jpg"}}},"block_order":["item_8BMURB","item_fPbeeG","item_kUKPXB","item_hepeYw","item_4CWjRe","item_EiGCYt","item_z3ccpQ"],"name":"Halo Custom Mega Menu","settings":{"enable":true,"menu_label":"Specialty","banner_1":"shopify:\/\/shop_images\/Window_and_Door_Parts.png","banner_1_link":"shopify:\/\/collections\/specialty-trailer","banner_2_link":"","banner_3_link":""}},"apps_XU4GEn":{"type":"apps","blocks":{"convermax_year_make_model_home_ymm_fcMAjE":{"type":"shopify:\/\/apps\/convermax-year-make-model\/blocks\/home-ymm\/874383ce-1b49-4436-9ea6-3697a3a5a3d5","settings":{"wrapper_classes":"container","desktop_min_height":90,"mobile_min_height":330,"mobile_breakpoint":1024,"header_padding_top":0,"header_padding_bottom":0,"show_vehicle":true,"vehicle_label":"By Vehicle","show_wheels":false,"wheels_label":"By Wheels","show_tires":false,"tires_label":"By Tires","show_search":false,"search_label":"By Keywords","bg_color":"#f5f5f5","active_bg_color":"#ffffff","tab_text_color":"#666666","active_text_color":"#000000","tabs_border_color":"#ffffff","tabs_headers_bottom_margin":0,"tabs_headers_gap":0,"tabs_border_radius":0,"tabs_border_width":0,"tab_font_size":16}}},"block_order":["convermax_year_make_model_home_ymm_fcMAjE"],"custom_css":["{left: 25%; top: 64px; position: absolute; width: 210px; z-index: 99;}","@media (max-width: 600px) {{width: 210px !important; z-index: 99; left: 2%; top: 115px; position: absolute; }}"],"settings":{"include_margins":false}}},"order":["announcement_bar_HRHFKc","header_navigation_full_elements_rmYqXe","b20ae388-36ab-4ac2-b170-b0d3bb832958","header-mobile","019dd18f-f51d-4292-8462-8c945e0efa4f","sema_search_bar_3DH4We","halo_custom_mega_WRCkUd","halo_custom_mega_qhBpNE","halo_custom_mega_eQJKJx","halo_custom_mega_D6ajar","halo_custom_mega_pg3WDr","halo_custom_mega_zFA4KW","halo_custom_mega_JUXBaV","halo_custom_mega_7AzLKn","halo_custom_mega_f7bGx9","halo_custom_mega_X7jqGk","apps_XU4GEn"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement_bar_HRHFKc": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_6YPWeN": {
+          "type": "announcement",
+          "settings": {
+            "text": "★★★★★  4.7 stars | 19,389 + Reviews",
+            "btn_color": "#f84248",
+            "btn_border_color": "#ffffff",
+            "btn_bg_color": "#ffffff",
+            "btn_bg_color_gradient": ""
+          }
+        },
+        "announcement_cAULE7": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Welcome to our store</p>",
+            "btn_color": "#f84248",
+            "btn_border_color": "#ffffff",
+            "btn_bg_color": "#ffffff",
+            "btn_bg_color_gradient": ""
+          }
+        },
+        "announcement_JkgyAj": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>          </p>",
+            "btn_color": "#f84248",
+            "btn_border_color": "#ffffff",
+            "btn_bg_color": "#ffffff",
+            "btn_bg_color_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_6YPWeN",
+        "announcement_cAULE7",
+        "announcement_JkgyAj"
+      ],
+      "custom_css": [],
+      "name": "t:sections.announcement-bar.name",
+      "settings": {
+        "layout": "scroll",
+        "enable_close": true,
+        "color_text": "#ffffff",
+        "bg_color_text": "#000000",
+        "bg_color_text_gradient": "",
+        "font_size_text": 12,
+        "font_style_text": "normal",
+        "font_weight_text": "500",
+        "arrow_active": false,
+        "content_max_width": 80,
+        "padding_top": 0,
+        "padding_top_tablet": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom": 0,
+        "padding_bottom_tablet": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "header_navigation_full_elements_rmYqXe": {
+      "type": "header-navigation-full-elements",
+      "blocks": {
+        "main_menu_P9jdRd": {
+          "type": "main_menu",
+          "settings": {
+            "menu": "",
+            "menu_top_spacing": 20,
+            "menu_bottom_spacing": 20,
+            "grid_gap_menu_item": 20,
+            "alignment": "left",
+            "bg_mega_menu": "#ffffff",
+            "bg_mega_menu_gradient": "",
+            "lv_1_color": "#232323",
+            "lv_1_color_hover": "#232323",
+            "lv_2_color": "#232323",
+            "lv_2_color_hover": "#232323",
+            "lv_3_color": "#3c3c3c",
+            "lv_3_color_hover": "#3c3c3c",
+            "sale_item_1": "",
+            "sale_item_2": "",
+            "sale_item_3": "",
+            "sale_item_color": "#d12442",
+            "label_position": "main_menu",
+            "show_label_blink": false,
+            "new_label_1": "",
+            "new_label_2": "",
+            "new_label_3": "",
+            "new_label_color": "#ffffff",
+            "new_label_bg": "#bae4ed",
+            "new_label_bg_gradient": "",
+            "sale_label_1": "",
+            "sale_label_2": "",
+            "sale_label_3": "",
+            "sale_label_color": "#ffffff",
+            "sale_label_bg": "#d12442",
+            "sale_label_bg_gradient": "",
+            "hot_label_1": "",
+            "hot_label_2": "",
+            "hot_label_3": "",
+            "hot_label_color": "#ffffff",
+            "hot_label_bg": "#fff993",
+            "hot_label_bg_gradient": ""
+          }
+        },
+        "header_icons_fdtDQj": {
+          "type": "header_icons",
+          "settings": {
+            "show_customer": false,
+            "show_search": false,
+            "show_wishlist": false,
+            "show_cart": true,
+            "show_language_currency": false,
+            "text_font_size": 12,
+            "show_customer_sticky": false,
+            "show_search_sticky": false,
+            "show_wishlist_sticky": false,
+            "show_cart_sticky": true,
+            "show_language_currency_sticky": true,
+            "header_icons_color": "#e5002b",
+            "header_icons_color_hover": "#000000",
+            "cart_count_bubble_color": "#ffffff",
+            "cart_count_bubble_bg": "#e5002b",
+            "cart_count_bubble_bg_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "main_menu_P9jdRd",
+        "header_icons_fdtDQj"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "ul.list-menu.list-menu--inline.text-left {padding-top: 2px !important; margin: auto; text-wrap: nowrap;}",
+        ".header-nav-full-elements .header-item:nth-child(2) {justify-content: right;}",
+        ".header-navigation > .container {height: 40px; gap: 30px;}",
+        "nav.header__inline-menu {display: none;}",
+        ".header-icons.header-item.header-item--side.d-flex.flex-align-center.flex-wrap.fs-0.pt-10.pb-10 {justify-content: center;}"
+      ],
+      "name": "t:sections.header.settings.navigation.name_6",
+      "settings": {
+        "container": "full",
+        "padding_full_width": 30,
+        "header_navigation_bg": "#ffffff",
+        "header_navigation_bg_gradient": "",
+        "sticky_header_type": "none",
+        "sticky_header_width": "default"
+      }
+    },
+    "b20ae388-36ab-4ac2-b170-b0d3bb832958": {
+      "type": "header-advanced",
+      "blocks": {
+        "sections--14682829619277__b20ae388-36ab-4ac2-b170-b0d3bb832958-16810329778eaf9e51-1": {
+          "type": "group_2",
+          "settings": {
+            "container": "1470",
+            "padding_full_width": 0,
+            "background": "#e5002b",
+            "gradient": "",
+            "show_logo": true,
+            "logo_position": "left",
+            "logo": "shopify://shop_images/new_20250807_223815_0000.png",
+            "logo_width": 180,
+            "logo_text": "",
+            "logo_font_size": 20,
+            "logo_font_weight": "900",
+            "logo_text_transform": "uppercase",
+            "logo_color": "#ffffff",
+            "show_search": true,
+            "show_box_shadow": false,
+            "search_color": "#e5002b",
+            "bg_search_color": "#ffffff",
+            "search_icon_color": "#ffffff",
+            "search_icon_bg": "#000000",
+            "search_icon_gradient": "",
+            "search_border_radius": 5,
+            "show_cart": false,
+            "cart_color": "#323232",
+            "cart_bg_item": "#e5002b",
+            "cart_color_item": "#ffffff",
+            "cart_item_font_size": 12,
+            "show_wishlist": false,
+            "wishlist_color": "#323232",
+            "show_wishlist_number": false,
+            "wishlist_color_item": "#ffffff",
+            "wishlist_bg_item": "#232323",
+            "show_account": true,
+            "account_icon": "5",
+            "customer_color": "#ffffff",
+            "padding_top": 5,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "sections--14682829619277__b20ae388-36ab-4ac2-b170-b0d3bb832958-16810329778eaf9e51-1"
+      ],
+      "custom_css": [
+        "span.header-advanced-text {text-wrap: nowrap; font-size: 12px;}",
+        ".header-advanced--style2 .header-advanced-account {margin-left: 90px !important;}"
+      ],
+      "settings": {
+        "layout": "style2",
+        "border_top": "rgba(0,0,0,0)"
+      }
+    },
+    "header-mobile": {
+      "type": "header-mobile",
+      "blocks": {
+        "7de2266e-0cd4-4fda-9f09-06f75a17f944": {
+          "type": "menu",
+          "settings": {
+            "color": "#ffffff",
+            "menu_tab_bg": "#000000"
+          }
+        },
+        "550fbd21-75fb-4051-9dee-77d91b5239f0": {
+          "type": "logo",
+          "settings": {
+            "logo_mobile": "shopify://shop_images/WhatsApp_Image_2025-08-07_at_8.07.04_PM.jpg",
+            "logo_width_mobile": 130,
+            "logo_text": "",
+            "logo_font_size": 20,
+            "logo_font_weight": "900",
+            "logo_text_transform": "uppercase",
+            "logo_color": "#232323",
+            "alignment": "center"
+          }
+        },
+        "wishlist_7jMGcX": {
+          "type": "wishlist",
+          "settings": {
+            "color": "#232323",
+            "show_wishlist_number": false,
+            "wishlist_color_item": "#ffffff",
+            "wishlist_bg_item": "#232323"
+          }
+        },
+        "20dae707-64c0-4ea3-a05e-561cae9836d8": {
+          "type": "customer",
+          "settings": {
+            "icon": "1",
+            "color": "#232323"
+          }
+        },
+        "633f9dae-3f65-4bda-9ca8-9d3e231aaf9d": {
+          "type": "cart",
+          "settings": {
+            "icon": "5",
+            "show_cart_count_bubble": true,
+            "color": "#000000",
+            "color_bubble": "#ffffff",
+            "bg_bubble": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "7de2266e-0cd4-4fda-9f09-06f75a17f944",
+        "550fbd21-75fb-4051-9dee-77d91b5239f0",
+        "wishlist_7jMGcX",
+        "20dae707-64c0-4ea3-a05e-561cae9836d8",
+        "633f9dae-3f65-4bda-9ca8-9d3e231aaf9d"
+      ],
+      "settings": {
+        "background": "#e5002b",
+        "gradient": "",
+        "sticky_header_type": "none",
+        "enable_transparent": false,
+        "transparent_color": "#ffffff",
+        "transparent_border_color": "",
+        "padding_top": 5,
+        "padding_bottom": 5
+      }
+    },
+    "019dd18f-f51d-4292-8462-8c945e0efa4f": {
+      "type": "header-navigation-vertical-menu",
+      "blocks": {
+        "megamenu_v2_c4bTBW": {
+          "type": "megamenu_v2",
+          "settings": {
+            "menu_trigger_name": "Lighting"
+          }
+        },
+        "sections--14682829619277__019dd18f-f51d-4292-8462-8c945e0efa4f-168104747253394989-0": {
+          "type": "logo",
+          "settings": {
+            "logo_position": "sticky_menu",
+            "logo": "shopify://shop_images/1_7e56d887-91d3-48d9-a117-e21736c18e9a.png",
+            "logo_width": 185,
+            "logo_width_fixed": 55,
+            "logo_text": "",
+            "logo_font_size": 20,
+            "logo_font_weight": "900",
+            "logo_text_transform": "uppercase",
+            "logo_color": "#232323"
+          }
+        },
+        "sections--14682829619277__019dd18f-f51d-4292-8462-8c945e0efa4f-168104747253394989-1": {
+          "type": "main_menu",
+          "settings": {
+            "menu": "main-menu",
+            "menu_top_spacing": 20,
+            "menu_bottom_spacing": 10,
+            "grid_gap_menu_item": 20,
+            "alignment": "center",
+            "bg_mega_menu": "#ffffff",
+            "bg_mega_menu_gradient": "",
+            "lv_1_color": "#000000",
+            "lv_1_color_hover": "#ec1f2f",
+            "lv_2_color": "#000000",
+            "lv_2_color_hover": "#000000",
+            "lv_3_color": "#000000",
+            "lv_3_color_hover": "#000000",
+            "sale_item_1": "Categories",
+            "sale_item_2": "",
+            "sale_item_3": "",
+            "sale_item_color": "#ea4226",
+            "label_position": "main_menu",
+            "show_label_blink": true,
+            "new_label_1": "",
+            "new_label_2": "",
+            "new_label_3": "",
+            "new_label_color": "#ffffff",
+            "new_label_bg": "#06bfe2",
+            "new_label_bg_gradient": "",
+            "sale_label_1": "",
+            "sale_label_2": "",
+            "sale_label_3": "",
+            "sale_label_color": "#ffffff",
+            "sale_label_bg": "#ef6454",
+            "sale_label_bg_gradient": "",
+            "hot_label_1": "",
+            "hot_label_2": "",
+            "hot_label_3": "Bundle - Upsell, Variant Image Grouped, Home 02 - Trendy Style, Home 04 - High Fashion, Home 06 - SuperMarket, Home 15 - Automotive 2, Home 09 - Pet Supplies, Different Mobile Menu, Custom Options, Variant Metafield, Notify Me (Out Of Stock), Color Comparison, Product Combo",
+            "hot_label_color": "#ffffff",
+            "hot_label_bg": "#ffbb49",
+            "hot_label_bg_gradient": "",
+            "vertical_menu_layout": "none",
+            "vertical_menu": "",
+            "title_categories": "Auto Parts",
+            "title_categories_font_size": 12,
+            "title_categories_color": "#ffffff",
+            "icon_title_categories_color": "#ffffff",
+            "title_categories_border_color": "#dedede",
+            "title_categories_bg": "#ffffff",
+            "title_categories_bg_gradient": "linear-gradient(90deg, rgba(236, 97, 49, 1), rgba(231, 51, 79, 1) 100%)",
+            "view_all": "",
+            "view_all_link": "",
+            "view_all_font_size": 12,
+            "view_all_link_color": "#ffffff",
+            "vertical_menu_lv1_color": "#000000",
+            "vertical_menu_lv1_hover_color": "#000000",
+            "vertical_menu_bg": "#ffffff",
+            "vertical_menu_bg_gradient": "",
+            "vertical_menu_lv1_hover_bg": "#ffffff",
+            "vertical_menu_lv1_hover_bg_gradient": "#ffffff"
+          }
+        },
+        "sections--14682829619277__019dd18f-f51d-4292-8462-8c945e0efa4f-168104747253394989-2": {
+          "type": "header_icons",
+          "settings": {
+            "customer_service_text": "",
+            "show_help": false,
+            "help_text": "Help Center",
+            "help_text_link": "shopify://pages/contact",
+            "show_language_currency": false,
+            "show_search": false,
+            "show_customer": false,
+            "show_wishlist": false,
+            "show_wishlist_number": false,
+            "show_cart": true,
+            "text_font_size": 12,
+            "show_language_currency_sticky": false,
+            "show_search_sticky": true,
+            "show_customer_sticky": false,
+            "show_wishlist_sticky": false,
+            "show_cart_sticky": true,
+            "header_icons_color": "#000000",
+            "header_icons_color_hover": "#e5002b",
+            "icon_help_color": "#000000",
+            "icon_help_border_color": "#ffffff",
+            "cart_count_bubble_color": "#ffffff",
+            "cart_count_bubble_bg": "#e7334f",
+            "cart_count_bubble_bg_gradient": "",
+            "wishlist_color_item": "#ffffff",
+            "wishlist_bg_item": "#232323"
+          }
+        }
+      },
+      "block_order": [
+        "megamenu_v2_c4bTBW",
+        "sections--14682829619277__019dd18f-f51d-4292-8462-8c945e0efa4f-168104747253394989-0",
+        "sections--14682829619277__019dd18f-f51d-4292-8462-8c945e0efa4f-168104747253394989-1",
+        "sections--14682829619277__019dd18f-f51d-4292-8462-8c945e0efa4f-168104747253394989-2"
+      ],
+      "custom_css": [
+        ".menu-lv-item .text {text-transform: capitalize; font-weight: 500;}",
+        "@media (min-width: 600px) {.menu-lv-item:hover > .header__submenu {display: none; }}"
+      ],
+      "settings": {
+        "container": "1370",
+        "padding_full_width": 0,
+        "header_navigation_bg": "#ffffff",
+        "header_navigation_bg_gradient": "",
+        "header_navigation_border_bottom": "border",
+        "header_navigation_border_bottom_color": "#e5002b",
+        "sticky_header_type": "none",
+        "sticky_header_width": "full"
+      }
+    },
+    "sema_search_bar_3DH4We": {
+      "type": "sema-search-bar",
+      "disabled": true,
+      "name": "SEMA Search Bar",
+      "settings": {}
+    },
+    "halo_custom_mega_WRCkUd": {
+      "type": "halo-custom-mega",
+      "blocks": {
+        "item_wwAQyJ": {
+          "type": "item",
+          "settings": {
+            "title": "Brake Pads",
+            "link": "shopify://collections/brake",
+            "icon": "shopify://shop_images/Brake_pads.png"
+          }
+        },
+        "item_DhFr9q": {
+          "type": "item",
+          "settings": {
+            "title": "Brake Rotors",
+            "link": "shopify://collections/brake",
+            "icon": "shopify://shop_images/Brake_rotors_ddc61175-37ca-4d4b-8798-f6974245c64b.png"
+          }
+        },
+        "item_LrqfVq": {
+          "type": "item",
+          "settings": {
+            "title": "Cabin Filter",
+            "link": "shopify://collections/filters",
+            "icon": "shopify://shop_images/cabin_filterv.png"
+          }
+        },
+        "item_Rnh7pN": {
+          "type": "item",
+          "settings": {
+            "title": "Control Arm",
+            "link": "shopify://collections/suspension-control-arm",
+            "icon": "shopify://shop_images/control_arm_ead8f6f6-7f10-4d4c-bd10-a1e223cabb74.png"
+          }
+        },
+        "item_9y4hAE": {
+          "type": "item",
+          "settings": {
+            "title": "CV Shaft",
+            "link": "shopify://collections/cv-axle-shaft-seal",
+            "icon": "shopify://shop_images/CV_Shaft_38ab64ab-f900-4873-86e2-ee9d8abb2d5e.png"
+          }
+        },
+        "item_WLLwAg": {
+          "type": "item",
+          "settings": {
+            "title": "Driveline and Axles",
+            "link": "shopify://collections/driveline-and-axles",
+            "icon": "shopify://shop_images/Front_Hub_Assemblies_73a5aad0-1fb9-4eb8-8cf5-db4912495102.png"
+          }
+        },
+        "item_QtdEWN": {
+          "type": "item",
+          "settings": {
+            "title": "Shocks and Struts",
+            "link": "shopify://collections/shocks-and-struts",
+            "icon": "shopify://shop_images/Front_Strut_Assemblies_41ae0cb8-87d5-489a-994e-b99d481aa9c7.png"
+          }
+        },
+        "item_4QzXG7": {
+          "type": "item",
+          "settings": {
+            "title": "Jumpstarters",
+            "link": "shopify://collections/auxiliary-jump-start-terminal-base",
+            "icon": "shopify://shop_images/Jump_starter_0592ee5c-bd05-4139-9b72-216e2ceacbf1.png"
+          }
+        },
+        "item_WX9fRW": {
+          "type": "item",
+          "settings": {
+            "title": "Muffler & Pipe",
+            "link": "shopify://collections/mufflers",
+            "icon": "shopify://shop_images/Muffler_and_pipe_16b3b3c6-9d9b-4c9b-97d7-87ce7e60d097.png"
+          }
+        },
+        "item_AGwaFV": {
+          "type": "item",
+          "settings": {
+            "title": "Filters",
+            "link": "shopify://collections/filters",
+            "icon": "shopify://shop_images/Oil_filter_9fff6805-0e76-452b-9cf3-bd2006b7945e.png"
+          }
+        },
+        "item_3X9Ngy": {
+          "type": "item",
+          "settings": {
+            "title": "Oxygen Sensor",
+            "link": "shopify://collections/oxygen-sensor",
+            "icon": "shopify://shop_images/Oxygen_sensor_fc38b837-a4e1-4936-8df6-e8cd6b10d50c.png"
+          }
+        },
+        "item_jdXTP7": {
+          "type": "item",
+          "settings": {
+            "title": "Radiators",
+            "link": "shopify://collections/radiators-coolers-and-related-components",
+            "icon": "shopify://shop_images/Radiators_b92f96a2-08a8-45ce-9d32-8ec46788a0e5.png"
+          }
+        },
+        "item_XzjjpN": {
+          "type": "item",
+          "settings": {
+            "title": "Spark Plug",
+            "link": "shopify://collections/spark-plug",
+            "icon": "shopify://shop_images/spark_plug.png"
+          }
+        },
+        "item_EAXQJJ": {
+          "type": "item",
+          "settings": {
+            "title": "Tires",
+            "link": "shopify://collections/wheels-tires",
+            "icon": "shopify://shop_images/Tires_ce0a0297-c47c-4cef-b8f5-8a1b638b69ae.png"
+          }
+        },
+        "item_VtKKxh": {
+          "type": "item",
+          "settings": {
+            "title": "Transmission Fluids",
+            "link": "shopify://collections/transmission",
+            "icon": "shopify://shop_images/Transmission_Fluid_02488d1e-d7b4-40b9-9213-f081c4860b75.png"
+          }
+        },
+        "item_WUCgDJ": {
+          "type": "item",
+          "settings": {
+            "title": "Wiper Blade",
+            "link": "shopify://collections/wiper-blade",
+            "icon": "shopify://shop_images/Wiper_blade_00e17ae0-aa6e-400b-9272-7641f99aba1d.png"
+          }
+        }
+      },
+      "block_order": [
+        "item_wwAQyJ",
+        "item_DhFr9q",
+        "item_LrqfVq",
+        "item_Rnh7pN",
+        "item_9y4hAE",
+        "item_WLLwAg",
+        "item_QtdEWN",
+        "item_4QzXG7",
+        "item_WX9fRW",
+        "item_AGwaFV",
+        "item_3X9Ngy",
+        "item_jdXTP7",
+        "item_XzjjpN",
+        "item_EAXQJJ",
+        "item_VtKKxh",
+        "item_WUCgDJ"
+      ],
+      "name": "Halo Custom Mega Menu",
+      "settings": {
+        "enable": true,
+        "menu_label": "Regular Service",
+        "banner_1": "shopify://shop_images/1_449e3e21-8574-4b5f-8bc9-1dcc3cb0042f.png",
+        "banner_1_link": "shopify://collections/accessories",
+        "banner_2": "shopify://shop_images/Gemini_Generated_Image_hjkk39hjkk39hjkk-removebg-preview.png",
+        "banner_2_link": "shopify://collections/brake",
+        "banner_3_link": ""
+      }
+    },
+    "halo_custom_mega_qhBpNE": {
+      "type": "halo-custom-mega",
+      "blocks": {
+        "item_CKTKrn": {
+          "type": "item",
+          "settings": {
+            "title": "Brakes",
+            "link": "shopify://collections/brake",
+            "icon": "shopify://shop_images/Brakes.png"
+          }
+        },
+        "item_NG9YEj": {
+          "type": "item",
+          "settings": {
+            "title": "Clutch & Flywheels",
+            "link": "shopify://collections/clutch-flywheel",
+            "icon": "shopify://shop_images/Clutch_and_Flywheels.png"
+          }
+        },
+        "item_YnkNxF": {
+          "type": "item",
+          "settings": {
+            "title": "Cooling Systems",
+            "link": "shopify://collections/belts-and-cooling",
+            "icon": "shopify://shop_images/Cooling_Systems.png"
+          }
+        },
+        "item_yMjjFH": {
+          "type": "item",
+          "settings": {
+            "title": "Drive Belts",
+            "link": "shopify://collections/belts-and-cooling",
+            "icon": "shopify://shop_images/Drive_Belts.png"
+          }
+        },
+        "item_bU9gBW": {
+          "type": "item",
+          "settings": {
+            "title": "Drivetrain",
+            "link": "shopify://collections/driveline-and-axles",
+            "icon": "shopify://shop_images/Drivetrain.png"
+          }
+        },
+        "item_ncRqQk": {
+          "type": "item",
+          "settings": {
+            "title": "Emissions",
+            "link": "shopify://collections/emission-control",
+            "icon": "shopify://shop_images/Emissions.png"
+          }
+        },
+        "item_JMRwWq": {
+          "type": "item",
+          "settings": {
+            "title": "Engine",
+            "link": "shopify://collections/engine",
+            "icon": "shopify://shop_images/Engine.png"
+          }
+        },
+        "item_x7npDH": {
+          "type": "item",
+          "settings": {
+            "title": "Exhausts",
+            "link": "shopify://collections/exhaust",
+            "icon": "shopify://shop_images/Exhausts.png"
+          }
+        },
+        "item_agkEMG": {
+          "type": "item",
+          "settings": {
+            "title": "Filters",
+            "link": "shopify://collections/filters",
+            "icon": "shopify://shop_images/Car_Filters.png"
+          }
+        },
+        "item_MKferH": {
+          "type": "item",
+          "settings": {
+            "title": "Fuel And Air",
+            "link": "shopify://collections/air-and-fuel-delivery",
+            "icon": "shopify://shop_images/Fuel_and_Air.png"
+          }
+        },
+        "item_qjpYiW": {
+          "type": "item",
+          "settings": {
+            "title": "Hardware And Fuses",
+            "link": "shopify://collections/hardware-and-service-supplies",
+            "icon": "shopify://shop_images/Car_Hardware_and_Fuses.png"
+          }
+        },
+        "item_7nYTmg": {
+          "type": "item",
+          "settings": {
+            "title": "Heating & Air Conditioning",
+            "link": "shopify://collections/hvac-heater-hose",
+            "icon": "shopify://shop_images/Heating_and_Air_Conditioning.png"
+          }
+        },
+        "item_LL84Mm": {
+          "type": "item",
+          "settings": {
+            "title": "Ignition",
+            "link": "shopify://collections/ignition",
+            "icon": "shopify://shop_images/Ignition.png"
+          }
+        },
+        "item_VLkREb": {
+          "type": "item",
+          "settings": {
+            "title": "Sensors",
+            "link": "shopify://collections/sensors",
+            "icon": "shopify://shop_images/Car_Sensors.png"
+          }
+        },
+        "item_9cLhni": {
+          "type": "item",
+          "settings": {
+            "title": "Starting & Charging",
+            "link": "shopify://collections/electrical-charging-and-starting",
+            "icon": "shopify://shop_images/Starting_Charging.png"
+          }
+        },
+        "item_wYd7iY": {
+          "type": "item",
+          "settings": {
+            "title": "Steering",
+            "link": "shopify://collections/steering",
+            "icon": "shopify://shop_images/Steering.png"
+          }
+        },
+        "item_bwfJjk": {
+          "type": "item",
+          "settings": {
+            "title": "Suspension",
+            "link": "shopify://collections/suspension-manual-legacy",
+            "icon": "shopify://shop_images/Suspension.png"
+          }
+        },
+        "item_pqAX6f": {
+          "type": "item",
+          "settings": {
+            "title": "Transmissions",
+            "link": "shopify://collections/transmission",
+            "icon": "shopify://shop_images/Transmissions.png"
+          }
+        },
+        "item_J7rUBR": {
+          "type": "item",
+          "settings": {
+            "title": "Turbo & Superchargers",
+            "link": "shopify://collections/turbocharger-supercharger-and-ram-air",
+            "icon": "shopify://shop_images/Turbo_and_Superchargers.png"
+          }
+        },
+        "item_M9aFQa": {
+          "type": "item",
+          "settings": {
+            "title": "Wheel Bearings",
+            "link": "shopify://collections/bearings-1",
+            "icon": "shopify://shop_images/Wheel_Bearings.png"
+          }
+        },
+        "item_Ue37Fk": {
+          "type": "item",
+          "settings": {
+            "title": "Window & Door Parts",
+            "link": "shopify://collections/door",
+            "icon": "shopify://shop_images/Window_and_Door_Parts.png"
+          }
+        },
+        "item_gdDUXN": {
+          "type": "item",
+          "settings": {
+            "title": "Wiper Blades & Parts",
+            "link": "shopify://collections/wiper-and-washer",
+            "icon": "shopify://shop_images/Wiper_Blades_and_Parts.png"
+          }
+        }
+      },
+      "block_order": [
+        "item_CKTKrn",
+        "item_NG9YEj",
+        "item_YnkNxF",
+        "item_yMjjFH",
+        "item_bU9gBW",
+        "item_ncRqQk",
+        "item_JMRwWq",
+        "item_x7npDH",
+        "item_agkEMG",
+        "item_MKferH",
+        "item_qjpYiW",
+        "item_7nYTmg",
+        "item_LL84Mm",
+        "item_VLkREb",
+        "item_9cLhni",
+        "item_wYd7iY",
+        "item_bwfJjk",
+        "item_pqAX6f",
+        "item_J7rUBR",
+        "item_M9aFQa",
+        "item_Ue37Fk",
+        "item_gdDUXN"
+      ],
+      "name": "Halo Custom Mega Menu",
+      "settings": {
+        "enable": true,
+        "menu_label": "Replacement Parts",
+        "banner_1": "shopify://shop_images/3_84d26171-5d92-4c8a-a86d-34a3bcad7c2e.png",
+        "banner_1_link": "",
+        "banner_2": "shopify://shop_images/1_2ca4a341-8d13-4138-b360-386ed2890729.png",
+        "banner_2_link": "",
+        "banner_3": "shopify://shop_images/2_11e6f056-e2bc-4075-8ca6-b2bcabac773f.png",
+        "banner_3_link": ""
+      }
+    },
+    "halo_custom_mega_eQJKJx": {
+      "type": "halo-custom-mega",
+      "blocks": {
+        "item_wTfNNQ": {
+          "type": "item",
+          "settings": {
+            "title": "Custom Lights",
+            "link": "shopify://collections/electrical-lighting-and-body",
+            "icon": "shopify://shop_images/Lighting.png"
+          }
+        },
+        "item_zhTyRN": {
+          "type": "item",
+          "settings": {
+            "title": "Auxiliary Light",
+            "link": "shopify://collections/auxiliary-light",
+            "icon": "shopify://shop_images/Untitled1_c6ccbdaf-85aa-4c99-92bd-122cd90c4996.webp"
+          }
+        },
+        "item_FnMcJL": {
+          "type": "item",
+          "settings": {
+            "title": "Fog Lights",
+            "link": "shopify://collections/fog-light",
+            "icon": "shopify://shop_images/91305_Aux_Light_1.jpg"
+          }
+        },
+        "item_7TC4mE": {
+          "type": "item",
+          "settings": {
+            "title": "Center High Mount Stop Light",
+            "link": "shopify://collections/center-high-mount-stop-light",
+            "icon": "shopify://shop_images/91318_Aux_Light_1.jpg"
+          }
+        },
+        "item_gVjtcQ": {
+          "type": "item",
+          "settings": {
+            "title": "Headlight Set",
+            "link": "shopify://collections/headlight-set",
+            "icon": "shopify://shop_images/111525_v1.jpg"
+          }
+        },
+        "item_azGFYL": {
+          "type": "item",
+          "settings": {
+            "title": "Parking Light Assembly",
+            "link": "shopify://collections/parking-light-assembly",
+            "icon": "shopify://shop_images/D-JP-180007-BL_2007-10-Jeep-JK-parking-brake-bezel.jpg"
+          }
+        },
+        "item_36PAYN": {
+          "type": "item",
+          "settings": {
+            "title": "Tail Light Set",
+            "link": "shopify://collections/tail-light-set",
+            "icon": "shopify://shop_images/311316_v2.jpg"
+          }
+        },
+        "item_fe6LYW": {
+          "type": "item",
+          "settings": {
+            "title": "Side Marker Light Assembly",
+            "link": "shopify://collections/side-marker-light-assembly"
+          }
+        },
+        "item_x36ig4": {
+          "type": "item",
+          "settings": {
+            "title": "Roof Marker Light",
+            "link": "shopify://collections/roof-marker-light",
+            "icon": "shopify://shop_images/VisionX_MiniCannon_CG2_Round_1.jpg"
+          }
+        },
+        "item_iR7a8h": {
+          "type": "item",
+          "settings": {
+            "title": "Off-Road Light",
+            "link": "shopify://collections/off-road-light",
+            "icon": "shopify://shop_images/1282_Aux_Light_1.jpg"
+          }
+        },
+        "item_nTGCrQ": {
+          "type": "item",
+          "settings": {
+            "title": "Light Bar",
+            "link": "shopify://collections/light-bar",
+            "icon": "shopify://shop_images/v7pz2u5dka5mtmdrajme.jpg"
+          }
+        },
+        "item_QzqwJE": {
+          "type": "item",
+          "settings": {
+            "title": "Driving Light Bracket",
+            "link": "shopify://collections/driving-light-bracket",
+            "icon": "shopify://shop_images/502313_D-SERIES_PRO_DRIVING_SM_2.jpg"
+          }
+        },
+        "item_CYb9xp": {
+          "type": "item",
+          "settings": {
+            "title": "Lighting - Exterior",
+            "link": "shopify://collections/lighting-exterior",
+            "icon": "shopify://shop_images/490_Aux_Light_1.jpg"
+          }
+        },
+        "item_NPaR4t": {
+          "type": "item",
+          "settings": {
+            "title": "Brackets, Flanges & Hangers",
+            "link": "shopify://collections/brackets-flanges-and-hangers",
+            "icon": "shopify://shop_images/YPKTLCS30.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_wTfNNQ",
+        "item_zhTyRN",
+        "item_FnMcJL",
+        "item_7TC4mE",
+        "item_gVjtcQ",
+        "item_azGFYL",
+        "item_36PAYN",
+        "item_fe6LYW",
+        "item_x36ig4",
+        "item_iR7a8h",
+        "item_nTGCrQ",
+        "item_QzqwJE",
+        "item_CYb9xp",
+        "item_NPaR4t"
+      ],
+      "name": "Halo Custom Mega Menu",
+      "settings": {
+        "enable": true,
+        "menu_label": "Lighting",
+        "banner_1": "shopify://shop_images/VisionX_XPL_Curved_LightBar_1_037a6bad-74cc-4a61-a084-b1cc098d8f9d.jpg",
+        "banner_1_link": "",
+        "banner_2_link": "",
+        "banner_3": "shopify://shop_images/286_Aux_Light_7.jpg",
+        "banner_3_link": ""
+      }
+    },
+    "halo_custom_mega_D6ajar": {
+      "type": "halo-custom-mega",
+      "blocks": {
+        "item_ppcYgE": {
+          "type": "item",
+          "settings": {
+            "title": "Body",
+            "link": "shopify://collections/body",
+            "icon": "shopify://shop_images/YGK2234.4.jpg"
+          }
+        },
+        "item_tiei6B": {
+          "type": "item",
+          "settings": {
+            "title": "Bumper Grilles",
+            "link": "shopify://collections/bumper",
+            "icon": "shopify://shop_images/73440_Brackets_Mounts_1.jpg"
+          }
+        },
+        "item_a9zXnn": {
+          "type": "item",
+          "settings": {
+            "title": "Convertible Tops",
+            "link": "shopify://collections/convertible-top-retainer",
+            "icon": "shopify://shop_images/140534_2.jpg"
+          }
+        },
+        "item_qgTXk7": {
+          "type": "item",
+          "settings": {
+            "title": "Doors",
+            "link": "shopify://collections/doors",
+            "icon": "shopify://shop_images/Body_Parts.png"
+          }
+        },
+        "item_mDabAn": {
+          "type": "item",
+          "settings": {
+            "title": "Engine Covers",
+            "link": "shopify://collections/engine-timing-cover-gasket-set",
+            "icon": "shopify://shop_images/YPC5M226.jpg"
+          }
+        },
+        "item_zRPUrH": {
+          "type": "item",
+          "settings": {
+            "title": "Fenders",
+            "link": "shopify://collections/fenders",
+            "icon": "shopify://shop_images/M-9608-M50SC_V2.jpg"
+          }
+        },
+        "item_zpxMDw": {
+          "type": "item",
+          "settings": {
+            "title": "Floors",
+            "link": "shopify://collections/floor",
+            "icon": "shopify://shop_images/M-13086-M60.jpg"
+          }
+        },
+        "item_xffiyr": {
+          "type": "item",
+          "settings": {
+            "title": "Frame",
+            "link": "shopify://collections/frame",
+            "icon": "shopify://shop_images/YTS01.jpg"
+          }
+        },
+        "item_t3af8L": {
+          "type": "item",
+          "settings": {
+            "title": "Front Bumpers",
+            "link": "shopify://collections/bumper",
+            "icon": "shopify://shop_images/fts22313-beauty.jpg"
+          }
+        },
+        "item_g7Enge": {
+          "type": "item",
+          "settings": {
+            "title": "Rocker Panels",
+            "link": "shopify://collections/rocker-panel",
+            "icon": "shopify://shop_images/husky-liners-truck-trail-armor-rocker-panel-2020-ford-f-150-2874066-ov-16.jpg"
+          }
+        },
+        "item_XHtiBV": {
+          "type": "item",
+          "settings": {
+            "title": "Hood Deflector",
+            "link": "shopify://collections/hood-deflector",
+            "icon": "shopify://shop_images/20200810-Husky-Matte-Black-AeroSkin-Bug-Shield-2877168-CU.jpg"
+          }
+        },
+        "item_WJCDRF": {
+          "type": "item",
+          "settings": {
+            "title": "Mirrors",
+            "link": "shopify://collections/mirrors",
+            "icon": "shopify://shop_images/Exterior.png"
+          }
+        },
+        "item_xLTcWk": {
+          "type": "item",
+          "settings": {
+            "title": "Quarter Panels",
+            "link": "shopify://collections/exterior-accessories",
+            "icon": "shopify://shop_images/038989_v1.jpg"
+          }
+        },
+        "item_h9CiYi": {
+          "type": "item",
+          "settings": {
+            "title": "Radiator Support",
+            "link": "shopify://collections/radiator-coolant-hose-kit",
+            "icon": "shopify://shop_images/Radiators_b92f96a2-08a8-45ce-9d32-8ec46788a0e5.png"
+          }
+        },
+        "item_bzdhdY": {
+          "type": "item",
+          "settings": {
+            "title": "Tailgate and Midgate",
+            "link": "shopify://collections/tailgate-and-midgate",
+            "icon": "shopify://shop_images/69127_onvehicle_01.jpg"
+          }
+        },
+        "item_eWWXgq": {
+          "type": "item",
+          "settings": {
+            "title": "Windshields",
+            "link": "shopify://collections/windshield-banner",
+            "icon": "shopify://shop_images/7340_Brackets_Mounts_2.jpg"
+          }
+        },
+        "item_Lg6dmK": {
+          "type": "item",
+          "settings": {
+            "title": "Cargo Floor Liner",
+            "link": "shopify://collections/cargo-floor-liner",
+            "icon": "shopify://shop_images/753933252915_P04.jpg"
+          }
+        },
+        "item_ExEdLF": {
+          "type": "item",
+          "settings": {
+            "title": "Door Edge Guard Set",
+            "link": "shopify://collections/door-edge-guard-set",
+            "icon": "shopify://shop_images/husky-liners-door-edge-guards-HLDEG20F150SC-JS-ow-008_b1faab5c-27fa-4eaa-ae98-10b11667a96f.jpg"
+          }
+        },
+        "item_etJ7YM": {
+          "type": "item",
+          "settings": {
+            "title": "Floor Liner",
+            "link": "shopify://collections/floor-liner",
+            "icon": "shopify://shop_images/753933980917_P04.jpg"
+          }
+        },
+        "item_6CVb3Y": {
+          "type": "item",
+          "settings": {
+            "title": "Grille",
+            "link": "shopify://collections/grille",
+            "icon": "shopify://shop_images/fts24211-kit.jpg"
+          }
+        },
+        "item_hBNYBC": {
+          "type": "item",
+          "settings": {
+            "title": "Side Body",
+            "link": "shopify://collections/side-body",
+            "icon": "shopify://shop_images/93110_Side.jpg"
+          }
+        },
+        "item_GK8zNg": {
+          "type": "item",
+          "settings": {
+            "title": "Skid Plate",
+            "link": "shopify://collections/skid-plate",
+            "icon": "shopify://shop_images/77202_3QTR_WEB_LARGE_7b0c495a-56f9-4ea7-a616-43fa42d4aeaa.jpg"
+          }
+        },
+        "item_xbBpNt": {
+          "type": "item",
+          "settings": {
+            "title": "Step Nerf Bar",
+            "link": "shopify://collections/step-nerf-bar",
+            "icon": "shopify://shop_images/M-16600-FM.jpg"
+          }
+        },
+        "item_6rkHgG": {
+          "type": "item",
+          "settings": {
+            "title": "Tow Hook",
+            "link": "shopify://collections/tow-hook",
+            "icon": "shopify://shop_images/F230194130103.PT03.jpg"
+          }
+        },
+        "item_fV9zWU": {
+          "type": "item",
+          "settings": {
+            "title": "Trailer Hitch D-Ring",
+            "link": "shopify://collections/trailer-hitch-d-ring-mount",
+            "icon": "shopify://shop_images/100625.jpg"
+          }
+        },
+        "item_8AV4xe": {
+          "type": "item",
+          "settings": {
+            "title": "Truck Bed Rack",
+            "link": "shopify://collections/truck-bed-rack",
+            "icon": "shopify://shop_images/C9988320001NA.PT03.jpg"
+          }
+        },
+        "item_JwQKgW": {
+          "type": "item",
+          "settings": {
+            "title": "Truck Box",
+            "link": "shopify://collections/truck-box",
+            "icon": "shopify://shop_images/JFK2021-3.jpg"
+          }
+        },
+        "item_dHAKQd": {
+          "type": "item",
+          "settings": {
+            "title": "Truck Cab",
+            "link": "shopify://collections/truck-cab",
+            "icon": "shopify://shop_images/cabin_filterv.png"
+          }
+        },
+        "item_XJ3K8B": {
+          "type": "item",
+          "settings": {
+            "title": "Trunk Lid & Compartment",
+            "link": "shopify://collections/trunk-lid-and-compartment",
+            "icon": "shopify://shop_images/WBcargo_Hunting_P06_b0ea09cc-eac6-4b2c-bd70-61375806f6b4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_ppcYgE",
+        "item_tiei6B",
+        "item_a9zXnn",
+        "item_qgTXk7",
+        "item_mDabAn",
+        "item_zRPUrH",
+        "item_zpxMDw",
+        "item_xffiyr",
+        "item_t3af8L",
+        "item_g7Enge",
+        "item_XHtiBV",
+        "item_WJCDRF",
+        "item_xLTcWk",
+        "item_h9CiYi",
+        "item_bzdhdY",
+        "item_eWWXgq",
+        "item_Lg6dmK",
+        "item_ExEdLF",
+        "item_etJ7YM",
+        "item_6CVb3Y",
+        "item_hBNYBC",
+        "item_GK8zNg",
+        "item_xbBpNt",
+        "item_6rkHgG",
+        "item_fV9zWU",
+        "item_8AV4xe",
+        "item_JwQKgW",
+        "item_dHAKQd",
+        "item_XJ3K8B"
+      ],
+      "name": "Halo Custom Mega Menu",
+      "settings": {
+        "enable": true,
+        "menu_label": "Body",
+        "banner_1": "shopify://shop_images/Gemini_Generated_Image_i1nhk8i1nhk8i1nh-removebg-preview.png",
+        "banner_1_link": "",
+        "banner_2": "shopify://shop_images/husky-liners-pocket-style-flares-2024-toyota-tacoma-2803930-ov-078.jpg",
+        "banner_2_link": "",
+        "banner_3": "shopify://shop_images/60570_Veh.jpg",
+        "banner_3_link": ""
+      }
+    },
+    "halo_custom_mega_pg3WDr": {
+      "type": "halo-custom-mega",
+      "blocks": {
+        "item_mVaEdm": {
+          "type": "item",
+          "settings": {
+            "title": "Accessories",
+            "link": "shopify://collections/accessories",
+            "icon": "shopify://shop_images/827-770_accessories_e17f0e61-1f1e-4111-93d0-266ac02ea8a2.jpg"
+          }
+        },
+        "item_TyAKzj": {
+          "type": "item",
+          "settings": {
+            "title": "Lug Nuts & Locks",
+            "link": "shopify://collections/wheel-lug-nut",
+            "icon": "shopify://shop_images/008011_v1.jpg"
+          }
+        },
+        "item_6qtK83": {
+          "type": "item",
+          "settings": {
+            "title": "Wheel Covers",
+            "link": "shopify://collections/wheels-tires",
+            "icon": "shopify://shop_images/Tires_Wheels.png"
+          }
+        },
+        "item_fApYXq": {
+          "type": "item",
+          "settings": {
+            "title": "Caliper Covers",
+            "link": "shopify://collections/disc-brake-caliper",
+            "icon": "shopify://shop_images/Tires_Wheels.png"
+          }
+        },
+        "item_PnPdUm": {
+          "type": "item",
+          "settings": {
+            "title": "Spare Tire Covers & Carriers",
+            "link": "shopify://collections/spare-tire-carrier",
+            "icon": "shopify://shop_images/HPS-9147_closeup_4ab7bf00-2aa6-44cc-9536-a6c12f97a29a.jpg"
+          }
+        },
+        "item_Kcc6jX": {
+          "type": "item",
+          "settings": {
+            "title": "Wheel Spacers",
+            "link": "shopify://collections/wheel-spacer",
+            "icon": "shopify://shop_images/zone_f5601_ford_driveshaft_spacer_card.jpg"
+          }
+        },
+        "item_kfcJBR": {
+          "type": "item",
+          "settings": {
+            "title": "Center Caps",
+            "link": "",
+            "icon": "shopify://shop_images/M-1096K-RA_93faadc5-be7f-47d1-abb4-79ec8d87ab27.jpg"
+          }
+        },
+        "item_dmdfhc": {
+          "type": "item",
+          "settings": {
+            "title": "Tires",
+            "link": "shopify://collections/tire-1",
+            "icon": "shopify://shop_images/M-1096K-RA_93faadc5-be7f-47d1-abb4-79ec8d87ab27.jpg"
+          }
+        },
+        "item_KE8R7b": {
+          "type": "item",
+          "settings": {
+            "title": "Wheels",
+            "link": "shopify://collections/wheel-1",
+            "icon": "shopify://shop_images/Tires_Wheels.png"
+          }
+        },
+        "item_Yt4eBB": {
+          "type": "item",
+          "settings": {
+            "title": "Custom Wheels",
+            "link": "shopify://collections/tire-and-wheel",
+            "icon": "shopify://shop_images/wheels.png"
+          }
+        },
+        "item_7HNfcF": {
+          "type": "item",
+          "settings": {
+            "title": "TPMS Sensors",
+            "link": "shopify://collections/tire-pressure-monitoring-system-tpms-sensor",
+            "icon": "shopify://shop_images/TPMS_sensor_4.png"
+          }
+        },
+        "item_fTgyTm": {
+          "type": "item",
+          "settings": {
+            "title": "Wheels and Tires Packages",
+            "link": "shopify://collections/tire-and-wheel",
+            "icon": "shopify://shop_images/Gemini_Generated_Image_pdms3xpdms3xpdms-removebg-preview_c208ef9e-c778-4296-af50-e52f4fbde56f.png"
+          }
+        }
+      },
+      "block_order": [
+        "item_mVaEdm",
+        "item_TyAKzj",
+        "item_6qtK83",
+        "item_fApYXq",
+        "item_PnPdUm",
+        "item_Kcc6jX",
+        "item_kfcJBR",
+        "item_dmdfhc",
+        "item_KE8R7b",
+        "item_Yt4eBB",
+        "item_7HNfcF",
+        "item_fTgyTm"
+      ],
+      "name": "Halo Custom Mega Menu",
+      "settings": {
+        "enable": true,
+        "menu_label": "Tire",
+        "banner_1": "shopify://shop_images/M-1007K-RGR1785OR.jpg",
+        "banner_1_link": "shopify://collections/tire-and-wheel",
+        "banner_2": "shopify://shop_images/M-1007K-S2295SB_V8.jpg",
+        "banner_2_link": "shopify://collections/wheel",
+        "banner_3_link": ""
+      }
+    },
+    "halo_custom_mega_zFA4KW": {
+      "type": "halo-custom-mega",
+      "blocks": {
+        "item_EWNKgG": {
+          "type": "item",
+          "settings": {
+            "title": "Apparel & Safety Gear",
+            "link": "shopify://collections/safety-equipment-tools-and-accessories",
+            "icon": "shopify://shop_images/YRGKIT2.jpg"
+          }
+        },
+        "item_KpnJcB": {
+          "type": "item",
+          "settings": {
+            "title": "Automotive Service Tools",
+            "link": "shopify://collections/service-kits-8",
+            "icon": "shopify://shop_images/zonc8311_zone-service-kit-uca-ball-joint-pr.jpg"
+          }
+        },
+        "item_gbjByK": {
+          "type": "item",
+          "settings": {
+            "title": "Pneumatic Air Tools",
+            "link": "shopify://collections/power-air-and-hand-tools-and-accessories",
+            "icon": "shopify://shop_images/Fuel_and_Air.png"
+          }
+        },
+        "item_gW7Q67": {
+          "type": "item",
+          "settings": {
+            "title": "Auto Body Shop Tools & Equipment",
+            "link": "shopify://collections/vehicles-equipment-tools-and-supplies",
+            "icon": "shopify://shop_images/47-165403_1.jpg"
+          }
+        },
+        "item_YQnk4t": {
+          "type": "item",
+          "settings": {
+            "title": "Garage & Auto Shop Equipment",
+            "link": "shopify://collections/cylinder-block-components",
+            "icon": "shopify://shop_images/M-9603-M8A.jpg"
+          }
+        },
+        "item_AJCtAU": {
+          "type": "item",
+          "settings": {
+            "title": "Power Tools & Accessories",
+            "link": "shopify://collections/power-air-and-hand-tools-and-accessories",
+            "icon": "shopify://shop_images/M-10665-C_V7.jpg"
+          }
+        },
+        "item_Y6yQRx": {
+          "type": "item",
+          "settings": {
+            "title": "Automotive Paints",
+            "link": "",
+            "icon": "shopify://shop_images/Transmission_Fluid.png"
+          }
+        },
+        "item_imL4hP": {
+          "type": "item",
+          "settings": {
+            "title": "Hand Tools & Accessories",
+            "link": "shopify://collections/power-air-and-hand-tools-and-accessories",
+            "icon": "shopify://shop_images/YKGM825IFSA.jpg"
+          }
+        },
+        "item_dMyQV7": {
+          "type": "item",
+          "settings": {
+            "title": "Vehicle Lifting Equipment",
+            "link": "shopify://collections/vehicles-equipment-tools-and-supplies",
+            "icon": "shopify://shop_images/K53152_WEB_LARGE_0a14c7ce-521c-4539-b04d-bea10193269b.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_EWNKgG",
+        "item_KpnJcB",
+        "item_gbjByK",
+        "item_gW7Q67",
+        "item_YQnk4t",
+        "item_AJCtAU",
+        "item_Y6yQRx",
+        "item_imL4hP",
+        "item_dMyQV7"
+      ],
+      "name": "Halo Custom Mega Menu",
+      "settings": {
+        "enable": true,
+        "menu_label": "Tools",
+        "banner_1": "shopify://shop_images/Tools.png",
+        "banner_1_link": "shopify://collections/power-air-and-hand-tools-and-accessories",
+        "banner_2_link": "",
+        "banner_3_link": ""
+      }
+    },
+    "halo_custom_mega_JUXBaV": {
+      "type": "halo-custom-mega",
+      "blocks": {
+        "item_e787fP": {
+          "type": "item",
+          "settings": {
+            "title": "Engine Cold Air Intake",
+            "link": "shopify://collections/engine-cold-air-intake",
+            "icon": "shopify://shop_images/YRGKIT2.jpg"
+          }
+        },
+        "item_97wHqP": {
+          "type": "item",
+          "settings": {
+            "title": "Exhaust System Kit",
+            "link": "shopify://collections/exhaust-system-kit",
+            "icon": "shopify://shop_images/zonc8311_zone-service-kit-uca-ball-joint-pr.jpg"
+          }
+        },
+        "item_MJV4E8": {
+          "type": "item",
+          "settings": {
+            "title": "Electrical, Charging and Starting",
+            "link": "shopify://collections/electrical-charging-and-starting",
+            "icon": "shopify://shop_images/Fuel_and_Air.png"
+          }
+        },
+        "item_PLLdMG": {
+          "type": "item",
+          "settings": {
+            "title": "Drive Axle Shaft",
+            "link": "shopify://collections/drive-axle-shaft",
+            "icon": "shopify://shop_images/47-165403_1.jpg"
+          }
+        },
+        "item_eRgBh7": {
+          "type": "item",
+          "settings": {
+            "title": "Air and Fuel Delivery",
+            "link": "shopify://collections/air-and-fuel-delivery",
+            "icon": "shopify://shop_images/M-9603-M8A.jpg"
+          }
+        },
+        "item_3rEXza": {
+          "type": "item",
+          "settings": {
+            "title": "Steering",
+            "link": "shopify://collections/steering",
+            "icon": "shopify://shop_images/M-10665-C_V7.jpg"
+          }
+        },
+        "item_8NyTW8": {
+          "type": "item",
+          "settings": {
+            "title": "Brake",
+            "link": "shopify://collections/brake",
+            "icon": "shopify://shop_images/Brakes.png"
+          }
+        },
+        "item_hiypXG": {
+          "type": "item",
+          "settings": {
+            "title": "HVAC Heater Hose",
+            "link": "shopify://collections/hvac-heater-hose",
+            "icon": "shopify://shop_images/YKGM825IFSA.jpg"
+          }
+        },
+        "item_FAL4D3": {
+          "type": "item",
+          "settings": {
+            "title": "Ignition",
+            "link": "shopify://collections/ignition",
+            "icon": "shopify://shop_images/K53152_WEB_LARGE_0a14c7ce-521c-4539-b04d-bea10193269b.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_e787fP",
+        "item_97wHqP",
+        "item_MJV4E8",
+        "item_PLLdMG",
+        "item_eRgBh7",
+        "item_3rEXza",
+        "item_8NyTW8",
+        "item_hiypXG",
+        "item_FAL4D3"
+      ],
+      "name": "Halo Custom Mega Menu",
+      "settings": {
+        "enable": true,
+        "menu_label": "Performance",
+        "banner_1": "shopify://shop_images/Performance.png",
+        "banner_1_link": "shopify://collections/power-air-and-hand-tools-and-accessories",
+        "banner_2_link": "",
+        "banner_3_link": ""
+      }
+    },
+    "halo_custom_mega_7AzLKn": {
+      "type": "halo-custom-mega",
+      "blocks": {
+        "item_cf3VaK": {
+          "type": "item",
+          "settings": {
+            "title": "Apparel & Safety Gear",
+            "link": "shopify://collections/safety-equipment-tools-and-accessories",
+            "icon": "shopify://shop_images/YRGKIT2.jpg"
+          }
+        },
+        "item_VHyG3D": {
+          "type": "item",
+          "settings": {
+            "title": "Automotive Service Tools",
+            "link": "shopify://collections/service-kits-8",
+            "icon": "shopify://shop_images/zonc8311_zone-service-kit-uca-ball-joint-pr.jpg"
+          }
+        },
+        "item_VcfUHa": {
+          "type": "item",
+          "settings": {
+            "title": "Pneumatic Air Tools",
+            "link": "shopify://collections/power-air-and-hand-tools-and-accessories",
+            "icon": "shopify://shop_images/Fuel_and_Air.png"
+          }
+        },
+        "item_atmcKA": {
+          "type": "item",
+          "settings": {
+            "title": "Auto Body Shop Tools & Equipment",
+            "link": "shopify://collections/vehicles-equipment-tools-and-supplies",
+            "icon": "shopify://shop_images/47-165403_1.jpg"
+          }
+        },
+        "item_AFNmHN": {
+          "type": "item",
+          "settings": {
+            "title": "Garage & Auto Shop Equipment",
+            "link": "shopify://collections/cylinder-block-components",
+            "icon": "shopify://shop_images/M-9603-M8A.jpg"
+          }
+        },
+        "item_8eGJG9": {
+          "type": "item",
+          "settings": {
+            "title": "Power Tools & Accessories",
+            "link": "shopify://collections/power-air-and-hand-tools-and-accessories",
+            "icon": "shopify://shop_images/M-10665-C_V7.jpg"
+          }
+        },
+        "item_GrjfPM": {
+          "type": "item",
+          "settings": {
+            "title": "Automotive Paints",
+            "link": "",
+            "icon": "shopify://shop_images/Transmission_Fluid.png"
+          }
+        },
+        "item_pfraMt": {
+          "type": "item",
+          "settings": {
+            "title": "Hand Tools & Accessories",
+            "link": "shopify://collections/power-air-and-hand-tools-and-accessories",
+            "icon": "shopify://shop_images/YKGM825IFSA.jpg"
+          }
+        },
+        "item_qNeiAx": {
+          "type": "item",
+          "settings": {
+            "title": "Vehicle Lifting Equipment",
+            "link": "shopify://collections/vehicles-equipment-tools-and-supplies",
+            "icon": "shopify://shop_images/K53152_WEB_LARGE_0a14c7ce-521c-4539-b04d-bea10193269b.jpg"
+          }
+        },
+        "item_dtbkbG": {
+          "type": "item",
+          "settings": {
+            "title": "Floor",
+            "link": "shopify://collections/floor",
+            "icon": "shopify://shop_images/M-13086-M60.jpg"
+          }
+        },
+        "item_7bHCVk": {
+          "type": "item",
+          "settings": {
+            "title": "Seats",
+            "link": "shopify://collections/seat",
+            "icon": "shopify://shop_images/Interior.png"
+          }
+        }
+      },
+      "block_order": [
+        "item_cf3VaK",
+        "item_VHyG3D",
+        "item_VcfUHa",
+        "item_atmcKA",
+        "item_AFNmHN",
+        "item_8eGJG9",
+        "item_GrjfPM",
+        "item_pfraMt",
+        "item_qNeiAx",
+        "item_dtbkbG",
+        "item_7bHCVk"
+      ],
+      "name": "Halo Custom Mega Menu",
+      "settings": {
+        "enable": true,
+        "menu_label": "Interior",
+        "banner_1": "shopify://shop_images/Interior.png",
+        "banner_1_link": "shopify://collections/power-air-and-hand-tools-and-accessories",
+        "banner_2_link": "",
+        "banner_3_link": ""
+      }
+    },
+    "halo_custom_mega_f7bGx9": {
+      "type": "halo-custom-mega",
+      "blocks": {
+        "item_VFVNHn": {
+          "type": "item",
+          "settings": {
+            "title": "Body",
+            "link": "shopify://collections/body",
+            "icon": "shopify://shop_images/M-6880-M501.jpg"
+          }
+        },
+        "item_6b6XFN": {
+          "type": "item",
+          "settings": {
+            "title": "Accessories",
+            "link": "shopify://collections/accessories",
+            "icon": "shopify://shop_images/zonc8311_zone-service-kit-uca-ball-joint-pr.jpg"
+          }
+        },
+        "item_piJXTE": {
+          "type": "item",
+          "settings": {
+            "title": "Car Cover",
+            "link": "shopify://collections/car-cover",
+            "icon": "shopify://shop_images/M-9680-M50B.jpg"
+          }
+        },
+        "item_ARctNY": {
+          "type": "item",
+          "settings": {
+            "title": "Headlight Cover",
+            "link": "shopify://collections/headlight-cover",
+            "icon": "shopify://shop_images/088104_v1.jpg"
+          }
+        },
+        "item_7aGffH": {
+          "type": "item",
+          "settings": {
+            "title": "Hood Deflector",
+            "link": "shopify://collections/hood-deflector",
+            "icon": "shopify://shop_images/302-338.jpg"
+          }
+        },
+        "item_GMA9aF": {
+          "type": "item",
+          "settings": {
+            "title": "Mud Flap",
+            "link": "shopify://collections/mud-flap",
+            "icon": "shopify://shop_images/MudGuard_P01_2e34d066-ca45-48b3-8fc4-eba5f5de6941.jpg"
+          }
+        },
+        "item_DWgBBU": {
+          "type": "item",
+          "settings": {
+            "title": "Vehicle Accessory Trim Kit",
+            "link": "shopify://collections/vehicle-accessory-trim-kit",
+            "icon": "shopify://shop_images/M-12297-L900.jpg"
+          }
+        },
+        "item_e3TEc9": {
+          "type": "item",
+          "settings": {
+            "title": "License Plate Frame",
+            "link": "shopify://collections/license-plate-frame",
+            "icon": "shopify://shop_images/YKGM825IFSA.jpg"
+          }
+        },
+        "item_pWhkEN": {
+          "type": "item",
+          "settings": {
+            "title": "Mirrors",
+            "link": "shopify://collections/mirrors",
+            "icon": "shopify://shop_images/Exterior.png"
+          }
+        },
+        "item_NTA76X": {
+          "type": "item",
+          "settings": {
+            "title": "Tow Hook",
+            "link": "shopify://collections/tow-hook",
+            "icon": "shopify://shop_images/K53152_WEB_LARGE_0a14c7ce-521c-4539-b04d-bea10193269b.jpg"
+          }
+        },
+        "item_VtX6pi": {
+          "type": "item",
+          "settings": {
+            "title": "Roof",
+            "link": "shopify://collections/roof",
+            "icon": "shopify://shop_images/M-98150-FP_V5.jpg"
+          }
+        },
+        "item_B8Eqfz": {
+          "type": "item",
+          "settings": {
+            "title": "Running Board",
+            "link": "shopify://collections/running-board",
+            "icon": "shopify://shop_images/SRSOTB-13_1.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_VFVNHn",
+        "item_6b6XFN",
+        "item_piJXTE",
+        "item_ARctNY",
+        "item_7aGffH",
+        "item_GMA9aF",
+        "item_DWgBBU",
+        "item_e3TEc9",
+        "item_pWhkEN",
+        "item_NTA76X",
+        "item_VtX6pi",
+        "item_B8Eqfz"
+      ],
+      "name": "Halo Custom Mega Menu",
+      "settings": {
+        "enable": true,
+        "menu_label": "Exterior",
+        "banner_1": "shopify://shop_images/42-120WB_installed2.jpg",
+        "banner_1_link": "shopify://collections/exterior-accessories",
+        "banner_2_link": "",
+        "banner_3_link": ""
+      }
+    },
+    "halo_custom_mega_X7jqGk": {
+      "type": "halo-custom-mega",
+      "blocks": {
+        "item_8BMURB": {
+          "type": "item",
+          "settings": {
+            "title": "Audio & Electronics",
+            "link": "shopify://products/2021-2023-ford-mustang-mach-e-active-performance-sound-system",
+            "icon": "shopify://shop_images/253100_1.jpg"
+          }
+        },
+        "item_fPbeeG": {
+          "type": "item",
+          "settings": {
+            "title": "Outdoor & Recreation",
+            "link": "shopify://collections/sports-and-outdoors",
+            "icon": "shopify://shop_images/65715B_onvehicle_01.jpg"
+          }
+        },
+        "item_kUKPXB": {
+          "type": "item",
+          "settings": {
+            "title": "Semi Truck Shop",
+            "link": "shopify://collections/truck-box",
+            "icon": "shopify://shop_images/5206_Cover_Grill_Shield_9.jpg"
+          }
+        },
+        "item_hepeYw": {
+          "type": "item",
+          "settings": {
+            "title": "Boating & Marine",
+            "link": "shopify://collections/truck-box",
+            "icon": "shopify://shop_images/51201-SR-L_Series_Marine_White_Spreader_FM_Blue_Halo.jpg"
+          }
+        },
+        "item_4CWjRe": {
+          "type": "item",
+          "settings": {
+            "title": "Racing Gear",
+            "link": "shopify://collections/differential-carrier-gear-kit",
+            "icon": "shopify://shop_images/RIGID_300423_XP_Amber_Cover_Web.jpg"
+          }
+        },
+        "item_EiGCYt": {
+          "type": "item",
+          "settings": {
+            "title": "Graphics",
+            "link": "shopify://collections/graphics-kit",
+            "icon": "shopify://shop_images/140746_vehicle.jpg"
+          }
+        },
+        "item_z3ccpQ": {
+          "type": "item",
+          "settings": {
+            "title": "RV & Camper",
+            "link": "shopify://collections/graphics-kit",
+            "icon": "shopify://shop_images/ICON_2022_Tundra-9_58b595e6-5b4c-4864-a167-b03a61cc176e.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_8BMURB",
+        "item_fPbeeG",
+        "item_kUKPXB",
+        "item_hepeYw",
+        "item_4CWjRe",
+        "item_EiGCYt",
+        "item_z3ccpQ"
+      ],
+      "name": "Halo Custom Mega Menu",
+      "settings": {
+        "enable": true,
+        "menu_label": "Specialty",
+        "banner_1": "shopify://shop_images/Window_and_Door_Parts.png",
+        "banner_1_link": "shopify://collections/specialty-trailer",
+        "banner_2_link": "",
+        "banner_3_link": ""
+      }
+    },
+    "apps_XU4GEn": {
+      "type": "apps",
+      "blocks": {
+        "convermax_year_make_model_home_ymm_fcMAjE": {
+          "type": "shopify://apps/convermax-year-make-model/blocks/home-ymm/874383ce-1b49-4436-9ea6-3697a3a5a3d5",
+          "settings": {
+            "wrapper_classes": "container",
+            "desktop_min_height": 90,
+            "mobile_min_height": 330,
+            "mobile_breakpoint": 1024,
+            "header_padding_top": 0,
+            "header_padding_bottom": 0,
+            "show_vehicle": true,
+            "vehicle_label": "By Vehicle",
+            "show_wheels": false,
+            "wheels_label": "By Wheels",
+            "show_tires": false,
+            "tires_label": "By Tires",
+            "show_search": false,
+            "search_label": "By Keywords",
+            "bg_color": "#f5f5f5",
+            "active_bg_color": "#ffffff",
+            "tab_text_color": "#666666",
+            "active_text_color": "#000000",
+            "tabs_border_color": "#ffffff",
+            "tabs_headers_bottom_margin": 0,
+            "tabs_headers_gap": 0,
+            "tabs_border_radius": 0,
+            "tabs_border_width": 0,
+            "tab_font_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "convermax_year_make_model_home_ymm_fcMAjE"
+      ],
+      "custom_css": [
+        "{left: 25%; top: 64px; position: absolute; width: 210px; z-index: 99;}",
+        "@media (max-width: 600px) {{width: 210px !important; z-index: 99; left: 2%; top: 115px; position: absolute; }}"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "announcement_bar_HRHFKc",
+    "header_navigation_full_elements_rmYqXe",
+    "b20ae388-36ab-4ac2-b170-b0d3bb832958",
+    "header-mobile",
+    "019dd18f-f51d-4292-8462-8c945e0efa4f",
+    "sema_search_bar_3DH4We",
+    "halo_custom_mega_WRCkUd",
+    "halo_custom_mega_qhBpNE",
+    "halo_custom_mega_eQJKJx",
+    "halo_custom_mega_D6ajar",
+    "halo_custom_mega_pg3WDr",
+    "halo_custom_mega_zFA4KW",
+    "halo_custom_mega_JUXBaV",
+    "halo_custom_mega_7AzLKn",
+    "halo_custom_mega_f7bGx9",
+    "halo_custom_mega_X7jqGk",
+    "apps_XU4GEn"
+  ]
+}
